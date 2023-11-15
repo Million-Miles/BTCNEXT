@@ -1,0 +1,11 @@
+tasks:
+  - name: Install and run core wiki
+    init: |
+      corepack enable
+      yarn
+      yarn prepare
+      yarn generate:api
+    command: yarn start
+github:
+  prebuilds:
+    pullRequestsFromForks: true

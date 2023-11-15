@@ -1,0 +1,4 @@
+[submodule "docs/external/tips"]
+	path = docs/external/tips
+	url = https://github.com/iotaledger/tips
+	branch = main

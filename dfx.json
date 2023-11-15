@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "canisters": {
+    "btcnext_frontend": {
+      "type": "assets",
+      "source": [
+        "btcnext_docs/build"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "output_env_file": ".env"
+}

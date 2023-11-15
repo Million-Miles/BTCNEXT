@@ -1,0 +1,43 @@
+name: test
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  consistency:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Prepare Yarn
+        uses: ./.github/actions/prepare/
+      - name: Lint Wiki
+        run: yarn lint:check
+      # - name: Build Cli
+      #   run: yarn ./cli build
+      # - name: Lint IOTA Markdown
+      #   run: yarn lint:md:check
+      - name: Format Wiki
+        run: yarn format:check
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Prepare Yarn
+        uses: ./.github/actions/prepare/
+      - name: Prepare build
+        run: yarn prepare
+        shell: bash
+      - name: Checkout remote
+        run: yarn checkout:remote
+      - name: Generate API
+        run: yarn generate:api
+        shell: bash
+      - name: Build
+        run: yarn build

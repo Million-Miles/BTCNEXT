@@ -1,0 +1,27 @@
+name: tag packages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  tag:
+    strategy:
+      matrix:
+        package: [core, cli, plugin-tutorial]
+        include:
+          - package: core
+            path: 'package.json'
+            workspace: '@iota-wiki/core'
+          - package: cli
+            path: 'cli/package.json'
+            workspace: '@iota-wiki/cli'
+          - package: plugin-tutorial
+            path: 'plugins/tutorial/package.json'
+            workspace: '@iota-wiki/plugin-tutorial'
+    uses: ./.github/workflows/tag.reusable.yaml
+    with:
+      path: ${{ matrix.path }}
+      workspace: ${{ matrix.workspace }}

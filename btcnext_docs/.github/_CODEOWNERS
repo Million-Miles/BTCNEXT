@@ -1,0 +1,37 @@
+# clients
+**/iota.rs @thibault-martinez
+**/wallet.rs @thibault-martinez
+**/iota-sdk @thibault-martinez
+**/iota.js @thibault-martinez
+
+# chronicle
+**/chronicle @Alexandcoats
+
+# goshimmer
+**/goshimmer @karimodm
+
+# hornet and inx plugins
+**/hornet @muXxer
+**/inx-api-core-v0 @alexsporn
+**/inx-api-core-v1 @alexsporn
+**/inx-coordinator @alexsporn
+**/inx-dashboard @alexsporn
+**/inx-faucet @alexsporn
+**/inx-indexer @alexsporn
+**/inx-irc-metadata @alexsporn
+**/inx-mqtt @alexsporn
+**/inx-participation @alexsporn
+**/inx-poi @alexsporn
+**/inx-spammer @alexsporn
+
+# identity
+**/identity @eike-hass
+
+# protocol - introduction-docs
+**/introduction-docs @luca-moser
+
+# research
+**/iota-2.0-research-specifications @darcy-camargo
+
+# WASP - ISC
+**/wasp @fijter
