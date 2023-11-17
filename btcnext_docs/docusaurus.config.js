@@ -46,32 +46,32 @@ module.exports = async () => {
       to: '/learn/protocols/introduction',
       activeBaseRegex: '^(/[^/]+)?/learn/.*',
     },
-    // {
-    //   label: 'Build',
-    //   to: '/build/welcome/',
-    //   activeBaseRegex:
-    //     '^(/[^/]+)?/build/.*|' +
-    //     '^(/[^/]+)?/iota-sdk/.*|' +
-    //     '^(/[^/]+)?/identity.rs/.*|' +
-    //     '^(/[^/]+)?/iota.rs/.*|' +
-    //     '^(/[^/]+)?/iota.js/.*|' +
-    //     '^(/[^/]+)?/wallet.rs/.*|' +
-    //     '^(/[^/]+)?/stronghold.rs/.*|' +
-    //     '^(/[^/]+)?/streams/.*|' +
-    //     '^(/[^/]+)?/wasp-cli/.*|' +
-    //     '^(/[^/]+)?/wasp-wasm/.*|' +
-    //     '^(/[^/]+)?/wasp-evm/.*',
-    // },
-    // {
-    //   label: 'Maintain',
-    //   to: '/maintain/welcome',
-    //   activeBaseRegex:
-    //     '^(/[^/]+)?/maintain/.*|' +
-    //     '^(/[^/]+)?/hornet/.*|' +
-    //     '^(/[^/]+)?/wasp/.*|' +
-    //     '^(/[^/]+)?/chronicle/.*|' +
-    //     '^(/[^/]+)?/goshimmer/.*',
-    // },
+    {
+       label: 'Resource',
+       to: '/build/welcome/',
+       activeBaseRegex:
+         '^(/[^/]+)?/build/.*|' +
+         '^(/[^/]+)?/iota-sdk/.*|' +
+         '^(/[^/]+)?/identity.rs/.*|' +
+         '^(/[^/]+)?/iota.rs/.*|' +
+         '^(/[^/]+)?/iota.js/.*|' +
+         '^(/[^/]+)?/wallet.rs/.*|' +
+         '^(/[^/]+)?/stronghold.rs/.*|' +
+         '^(/[^/]+)?/streams/.*|' +
+         '^(/[^/]+)?/wasp-cli/.*|' +
+         '^(/[^/]+)?/wasp-wasm/.*|' +
+         '^(/[^/]+)?/wasp-evm/.*',
+     },
+     {
+       label: 'Support',
+       to: '/maintain/welcome',
+       activeBaseRegex:
+         '^(/[^/]+)?/maintain/.*|' +
+         '^(/[^/]+)?/hornet/.*|' +
+         '^(/[^/]+)?/wasp/.*|' +
+         '^(/[^/]+)?/chronicle/.*|' +
+         '^(/[^/]+)?/goshimmer/.*',
+     },
   ];
 
   const activeNavbarItems = navbarItems.filter((item) => {
@@ -96,32 +96,8 @@ module.exports = async () => {
       footer: {},
       socials: [
         {
-          url: 'https://www.youtube.com/c/iotafoundation',
-          backgroundColor: 'var(--ifm-color-gray-900)',
-        },
-        {
-          url: 'https://www.github.com/iotaledger/',
-          backgroundColor: '#2C3850',
-        },
-        {
-          url: 'https://discord.iota.org/',
-          backgroundColor: '#4B576F',
-        },
-        {
-          url: 'https://www.twitter.com/iota/',
+          url: 'https://www.twitter.com/BTC_NEXT/',
           backgroundColor: '#6A768E',
-        },
-        {
-          url: 'https://www.reddit.com/r/iota/',
-          backgroundColor: '#7D89A1',
-        },
-        {
-          url: 'https://www.linkedin.com/company/iotafoundation/',
-          backgroundColor: '#8995AD',
-        },
-        {
-          url: 'https://www.instagram.com/iotafoundation/',
-          backgroundColor: '#99A5BD',
         },
       ],
       algolia: {
@@ -175,10 +151,10 @@ module.exports = async () => {
 
   return merge(
     {
-      title: 'IOTA Wiki',
-      tagline: 'The complete reference for IOTA and Shimmer',
+      title: 'BTCNEXT',
+      tagline: '让我们共同建设下一个BTC新时代！',
       baseUrl: '/',
-      url: 'https://wiki.iota.org',
+      url: 'https://btcnext.org',
       onBrokenLinks: 'throw',
       onBrokenMarkdownLinks: 'log',
       favicon: 'img/favicon.ico',

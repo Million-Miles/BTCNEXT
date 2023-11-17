@@ -113,12 +113,12 @@ module.exports = async () => {
       sidebarPath: path.resolve(__dirname, 'docs/community/sidebars.ts'),
       routeBasePath: 'community',
     },
-    // ...buildPlugins,
+     ...buildPlugins,
     ...maintainPlugins,
   ];
 
   const sectionPluginMap = {
-    // build: buildPlugins,
+     build: buildPlugins,
     maintain: maintainPlugins,
     'get-started': getStartedPlugins,
     learn: learnPlugins,
