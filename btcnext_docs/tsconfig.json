@@ -1,9 +1,11 @@
 {
   "extends": "@tsconfig/docusaurus/tsconfig.json",
-  "include": ["src/**/*"],
   "compilerOptions": {
-    "baseUrl": ".",
-    "resolveJsonModule": true,
-    "lib": ["DOM", "ES2015"]
-  }
+    "target": "ES2015",
+    "module": "commonjs",
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/"
+  ]
 }

@@ -1,6 +1,16 @@
-import React from 'react';
-import HomeLayout from '@site/src/components/HomeLayout';
+import React, { useEffect } from 'react';
 
-export default function Home() {
-  return <HomeLayout />;
-}
+import LandingPage from '../_pages/LandingPage';
+import core from '../core';
+
+const Home = () => {
+  // Initial fetch Stats
+  useEffect(() => {
+    core.stats.getNPMDownloads();
+    core.stats.getGithubStats();
+  }, []);
+
+  return <LandingPage />;
+};
+
+export default Home;

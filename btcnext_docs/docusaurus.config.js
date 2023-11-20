@@ -1,444 +1,288 @@
-const { glob, merge } = require('./src/utils/config');
-const path = require('path');
-const { create_doc_plugin } = require('./src/utils/config');
-const contentConfigs = require('./contentPlugins');
-const articleRedirectsFile = require('./articleRedirects');
-const switcherConfig = require('./switcherConfig');
 const {
-  buildPluginsConfig,
-  maintainPluginsConfig,
-} = require('./versionedConfig');
+  Agile,
+  generateId,
+  createState,
+  createCollection,
+  createComputed,
+} = require('@agile-ts/core');
 const {
-  createVersionRedirects,
-} = require('./src/utils/pluginConfigGenerators');
+  AgileHOC,
+  useAgile,
+  useWatcher,
+  useProxy,
+  useSelector,
+  useValue,
+} = require('@agile-ts/react');
+const { Event, useEvent } = require('@agile-ts/event');
+const { toast } = require('react-toastify');
 
-module.exports = async () => {
-  const contentPlugins = await Promise.all(
-    (
-      await contentConfigs()
-    ).map(async (contentConfig) => await create_doc_plugin(contentConfig)),
-  );
+const githubOrgUrl = 'https://github.com/agile-ts';
+const domain = 'https://agile-ts.org';
+const npmOrgUrl = 'https://www.npmjs.com/package/@agile-ts';
 
-  const buildMainVersionRedirects = createVersionRedirects(buildPluginsConfig);
-  const maintainMainVersionRedirects = createVersionRedirects(
-    maintainPluginsConfig,
-  );
-
-  // Get tutorials
-  const additionalPlugins = await glob(['tutorials']);
-
-  const { MODE = 'development', SELECTED_SECTION = 'all' } = process.env;
-
-  if (!['development', 'production'].includes(MODE)) {
-    throw "Set MODE to 'development', or 'production'";
-  }
-
-  const isProduction = MODE === 'production';
-
-  const navbarItems = [
-    {
-      label: 'Get Started',
-      to: '/get-started/introduction/iota/introduction/',
-      activeBaseRegex: '^(/[^/]+)?/get-started/.*',
-    },
-    {
-      label: 'Learn',
-      to: '/learn/protocols/introduction',
-      activeBaseRegex: '^(/[^/]+)?/learn/.*',
-    },
-    {
-       label: 'Resource',
-       to: '/build/welcome/',
-       activeBaseRegex:
-         '^(/[^/]+)?/build/.*|' +
-         '^(/[^/]+)?/iota-sdk/.*|' +
-         '^(/[^/]+)?/identity.rs/.*|' +
-         '^(/[^/]+)?/iota.rs/.*|' +
-         '^(/[^/]+)?/iota.js/.*|' +
-         '^(/[^/]+)?/wallet.rs/.*|' +
-         '^(/[^/]+)?/stronghold.rs/.*|' +
-         '^(/[^/]+)?/streams/.*|' +
-         '^(/[^/]+)?/wasp-cli/.*|' +
-         '^(/[^/]+)?/wasp-wasm/.*|' +
-         '^(/[^/]+)?/wasp-evm/.*',
-     },
-     {
-       label: 'Support',
-       to: '/maintain/welcome',
-       activeBaseRegex:
-         '^(/[^/]+)?/maintain/.*|' +
-         '^(/[^/]+)?/hornet/.*|' +
-         '^(/[^/]+)?/wasp/.*|' +
-         '^(/[^/]+)?/chronicle/.*|' +
-         '^(/[^/]+)?/goshimmer/.*',
-     },
-  ];
-
-  const activeNavbarItems = navbarItems.filter((item) => {
-    return (
-      SELECTED_SECTION === 'all' ||
-      new RegExp(item.activeBaseRegex).test(`/${SELECTED_SECTION}/`)
-    );
-  });
-
-  const themeConfig = {
-    themeConfig: {
-      image: 'img/iota-wiki.png',
-      navbar: {
-        hideOnScroll: true,
-        logo: {
-          alt: 'IOTA Wiki Logo',
-          src: 'img/logo.svg',
-          srcDark: 'img/logo_dark.svg',
-        },
-        items: activeNavbarItems,
-      },
-      footer: {},
-      socials: [
-        {
-          url: 'https://www.twitter.com/BTC_NEXT/',
-          backgroundColor: '#6A768E',
-        },
-      ],
-      algolia: {
-        appId: 'YTLE56KAO4',
-        apiKey: '75358d60d302f7f93f630d63128abb03',
-        indexName: 'iota',
-        contextualSearch: true,
-      },
-      imageZoom: {
-        selector:
-          '.markdown :not(a) > img:not(.image-gallery-image):not(.image-gallery-thumbnail-image)',
-        // Optional medium-zoom options
-        // see: https://www.npmjs.com/package/medium-zoom#options
-        options: {
-          background: 'rgba(0, 0, 0, 0.6)',
-        },
-      },
-      imageSlider: {
-        videoPlaceholder: '/img/infographics/video-placeholder.png',
-      },
-      prism: {
-        additionalLanguages: ['java', 'rust', 'solidity', 'toml'],
-      },
-      colorMode: {
-        defaultMode: 'dark',
-      },
-      switcher: switcherConfig,
-    },
-  };
-
-  const production = {
-    themeConfig: {
-      matomo: {
-        matomoUrl: 'https://matomo.iota-community.org/',
-        siteId: '13',
-      },
-    },
-    plugins: [
-      // Temporarily disabled because of Cookiebot blocking required scripts.
-      // path.resolve(__dirname, 'plugins', 'cookiebot'),
-      path.resolve(__dirname, 'plugins', 'matomo'),
-      [
-        '@docusaurus/plugin-google-gtag',
-        {
-          trackingID: 'G-KVB88SVNF8',
-          anonymizeIP: true,
-        },
-      ],
+const customFields = {
+  copyright: `Made with  💜 by <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/DevBenno">BennoDev</a> and <a target="_blank" rel="noopener noreferrer" href="https://github.com/agile-ts/agile/graphs/contributors">these awesome people</a>`,
+  meta: {
+    title: 'An atom based state manager for JavaScript apps.',
+    image: '/img/meta.png',
+    description:
+      'An atom based global State and Logic Library implemented in Typescript, ' +
+      'offering a reimagined API that focuses on developer experience. ' +
+      'AgileTs is a more straightforward alternative to Redux ' +
+      'and allows you to easily manage your application States in React, Vue and plain Javascript.',
+    color: '#6c69a0',
+    keywords: [
+      'state management',
+      'react',
+      'state',
+      'react state management',
+      'react native state management',
+      'react state',
+      'typescript',
+      'react state management without redux',
+      'vue',
+      'webdev',
+      'redux',
+      'recoil',
+      'mobx',
+      'javascript',
+      'software',
+      'coding',
+      'development',
+      'engineering',
     ],
-  };
-
-  return merge(
-    {
-      title: 'BTCNEXT',
-      tagline: '让我们共同建设下一个BTC新时代！',
-      baseUrl: '/',
-      url: 'https://btcnext.org',
-      onBrokenLinks: 'throw',
-      onBrokenMarkdownLinks: 'log',
-      favicon: 'img/favicon.ico',
-      trailingSlash: true,
-      organizationName: 'iota-wiki', // Usually your GitHub org/user name.
-      projectName: 'iota-wiki', // Usually your repo name.
-      stylesheets: [
-        'https://fonts.googleapis.com/css?family=Material+Icons',
-        {
-          href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-          type: 'text/css',
-          integrity:
-            'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-          crossorigin: 'anonymous',
-        },
-      ],
-      presets: [
-        [
-          '@docusaurus/preset-classic',
-          {
-            docs: false,
-            blog: false,
-            theme: {
-              customCss: require.resolve('./src/css/custom.css'),
-            },
-            sitemap: {
-              changefreq: 'daily',
-              priority: 0.5,
-            },
-            pages: {
-              path: path.resolve(__dirname, './src/pages'),
-            },
-          },
-        ],
-      ],
-      plugins: [
-        ...contentPlugins,
-        [
-          '@docusaurus/plugin-content-docs',
-          {
-            id: 'iota-tips',
-            path: path.resolve(__dirname, './docs/external/tips'),
-            routeBasePath: 'tips',
-            editUrl: ({ docPath }) =>
-              `https://github.com/iotaledger/tips/edit/main/${docPath}`,
-            remarkPlugins: [require('remark-import-partial')],
-            include: ['tips/**/*.md', 'README.md'],
-
-            // Create own sidebar to flatten hierarchy and use own labeling
-            async sidebarItemsGenerator({
-              defaultSidebarItemsGenerator,
-              ...args
-            }) {
-              const items = await defaultSidebarItemsGenerator(args);
-
-              const result = items[1].items.map((item) => {
-                if (item.type === 'category') {
-                  if (item.link.type === 'doc') {
-                    // Get TIP number and append TIP name
-                    item.label = item.link.id.slice(-4) + '-' + item.label;
-                  }
-                }
-                return item;
-              });
-
-              return [items[0]].concat(result);
-            },
-          },
-        ],
-        [
-          'docusaurus-plugin-openapi-docs',
-          {
-            id: 'openapi',
-            docsPluginId: 'apis', // e.g. "classic" or the plugin-content-docs id
-            config: {
-              coreApiChrysalis: {
-                specPath:
-                  'https://raw.githubusercontent.com/iotaledger/tips/main/tips/TIP-0013/rest-api.yaml',
-                outputDir: path.resolve(
-                  __dirname,
-                  'docs/build/apis/docs/core/v1',
-                ),
-                sidebarOptions: {
-                  groupPathsBy: 'tag',
-                },
-              },
-              coreApiShimmer: {
-                specPath:
-                  'https://raw.githubusercontent.com/iotaledger/tips/main/tips/TIP-0025/core-rest-api.yaml',
-                outputDir: path.resolve(
-                  __dirname,
-                  'docs/build/apis/docs/core/v2',
-                ),
-                sidebarOptions: {
-                  groupPathsBy: 'tag',
-                },
-              },
-              waspApi: {
-                specPath:
-                  'https://raw.githubusercontent.com/iotaledger/wasp/develop/clients/apiclient/api/openapi.yaml',
-                outputDir: path.resolve(__dirname, 'docs/build/apis/docs/wasp'),
-                sidebarOptions: {
-                  groupPathsBy: 'tag',
-                },
-              },
-              indexerApi: {
-                specPath:
-                  'https://raw.githubusercontent.com/iotaledger/tips/main/tips/TIP-0026/indexer-rest-api.yaml',
-                outputDir: path.resolve(
-                  __dirname,
-                  'docs/build/apis/docs/indexer',
-                ),
-                sidebarOptions: {
-                  groupPathsBy: 'tag',
-                },
-              },
-              poiApi: {
-                specPath:
-                  'https://raw.githubusercontent.com/iotaledger/inx-poi/develop/rest-api.yaml',
-                outputDir: path.resolve(__dirname, 'docs/build/apis/docs/poi'),
-                sidebarOptions: {
-                  groupPathsBy: 'tag',
-                },
-              },
-              explorerApi: {
-                specPath:
-                  'https://raw.githubusercontent.com/iotaledger/inx-chronicle/main/documentation/api/api-explorer.yml',
-                outputDir: path.resolve(
-                  __dirname,
-                  'docs/build/apis/docs/explorer',
-                ),
-                sidebarOptions: {
-                  groupPathsBy: 'tag',
-                },
-              },
-              ircMetadata: {
-                specPath:
-                  'https://raw.githubusercontent.com/iotaledger/inx-irc-metadata/develop/rest-api.yaml',
-                outputDir: path.resolve(
-                  __dirname,
-                  'docs/build/apis/docs/irc-metadata',
-                ),
-                sidebarOptions: {
-                  groupPathsBy: 'tag',
-                },
-              },
-            },
-          },
-        ],
-        [
-          '@docusaurus/plugin-client-redirects',
-          {
-            redirects: articleRedirectsFile.articleRedirects,
-            // directory redirects - only added for directories that didn't have a direct match
-            createRedirects(existingPath) {
-              const redirects = [
-                // Version redirects are only used to asign paths with the actual version to the "current" version
-                ...buildMainVersionRedirects,
-                ...maintainMainVersionRedirects,
-                {
-                  from: '/develop/nodes/rest-api',
-                  to: '/apis/core/v1',
-                },
-                {
-                  from: '/shimmer/chronicle',
-                  to: '/chronicle/1.0-rc.1',
-                },
-                {
-                  from: '/shimmer/cli-wallet',
-                  to: '/cli-wallet',
-                },
-                {
-                  from: '/shimmer/community',
-                  to: '/community',
-                },
-                {
-                  from: '/shimmer/develop/nodes/core-rest-api',
-                  to: '/apis/core/v2',
-                },
-                {
-                  from: '/shimmer/goshimmer',
-                  to: '/goshimmer',
-                },
-                {
-                  from: '/shimmer/hornet',
-                  to: '/hornet',
-                },
-                {
-                  from: '/shimmer/identity.rs',
-                  to: '/identity.rs/0.7',
-                },
-                {
-                  from: '/shimmer/introduction',
-                  to: '/introduction/stardust',
-                },
-                {
-                  from: '/shimmer/iota-sdk',
-                  to: '/iota-sdk',
-                },
-                {
-                  from: '/shimmer/iota.js',
-                  to: '/iota.js',
-                },
-                {
-                  from: '/shimmer/iota.rs',
-                  to: '/iota.rs/2.0-rc.7',
-                },
-                {
-                  from: '/shimmer/smart-contracts/guide/chains_and_nodes',
-                  to: '/smart-contracts/guide/chains_and_nodes',
-                },
-                {
-                  from: '/shimmer/smart-contracts/guide/core_concepts',
-                  to: '/learn/smart-contracts/core_concepts',
-                },
-                {
-                  from: '/shimmer/smart-contracts/guide/evm/compatibility',
-                  to: '/smart-contracts/guide/evm/compatibility',
-                },
-                {
-                  from: '/shimmer/smart-contracts/guide/evm',
-                  to: '/smart-contracts/guide/evm',
-                },
-                {
-                  from: '/shimmer/smart-contracts/guide/solo',
-                  to: '/smart-contracts/guide/solo',
-                },
-                {
-                  from: '/shimmer/smart-contracts/guide/wasm_vm',
-                  to: '/smart-contracts/guide/wasm_vm',
-                },
-                {
-                  from: '/shimmer/stronghold.rs',
-                  to: '/stronghold.rs',
-                },
-                {
-                  from: '/shimmer/team',
-                  to: '/team',
-                },
-                {
-                  from: '/shimmer/tutorials',
-                  to: '/tutorials',
-                },
-                {
-                  from: '/shimmer/wallet.rs',
-                  to: '/wallet.rs/1.0-rc.6',
-                },
-                {
-                  from: '/shimmer/learn/governance/',
-                  to: '/learn/governance/',
-                },
-              ];
-
-              let paths = [];
-              for (const redirect of redirects) {
-                if (existingPath.startsWith(redirect.to)) {
-                  paths.push(existingPath.replace(redirect.to, redirect.from));
-                }
-              }
-
-              return paths.length > 0 ? paths : undefined;
-            },
-          },
-        ],
-        'plugin-image-zoom',
-      ],
-      stylesheets: [
-        {
-          href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-          type: 'text/css',
-          integrity:
-            'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-          crossorigin: 'anonymous',
-        },
-      ],
-      themes: [
-        'docusaurus-theme-openapi-docs',
-        '@saucelabs/theme-github-codeblock',
-        '@iota-wiki/theme',
-      ],
-      staticDirectories: [path.resolve(__dirname, 'static')],
-    },
-    themeConfig,
-    isProduction ? production : {},
-    ...additionalPlugins,
-  );
+  },
+  domain,
+  githubOrgUrl,
+  githubUrl: `${githubOrgUrl}/agile`,
+  githubDocsUrl: `${githubOrgUrl}/documentation`,
+  npmCoreUrl: `${npmOrgUrl}/core`,
+  discordUrl: `https://discord.gg/T9GzreAwPH`,
+  stackoverflowUrl: 'https://stackoverflow.com/questions/tagged/agile-ts',
+  twitterUrl: 'https://twitter.com/AgileFramework',
+  redditUrl: 'https://www.reddit.com/r/AgileTs/',
+  version: '0.0.1',
+  announcementBar: {
+    id: 'announcement',
+    content: [
+      `❓ If you have any questions, don't hesitate to join our <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/T9GzreAwPH">Community Discord</a> ️`,
+      `🎉 If you like AgileTs, give us a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/agile-ts/agile">GitHub</a>`,
+      `⏰ If you want to stay update to date, follow use on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/AgileTypescript">Twitter</a>`,
+    ],
+    random: false,
+    interval: 100000,
+  },
+  liveCodeScope: {
+    Agile,
+    createState,
+    createCollection,
+    createComputed,
+    useAgile,
+    useProxy,
+    useEvent,
+    useWatcher,
+    useSelector,
+    useValue,
+    AgileHOC,
+    generateId,
+    Event,
+    toast,
+  },
 };
+
+const config = {
+  title: 'AgileTs',
+  tagline: 'AgileTs is a global, flexible, spacy State and Logic Library',
+  url: customFields.domain,
+  baseUrlIssueBanner: false,
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  favicon: 'img/favicon.ico',
+  organizationName: 'AgileTs',
+  projectName: 'https://github.com/agile-ts/agile/',
+  themes: ['@docusaurus/theme-live-codeblock'],
+  scripts: [{ src: 'https://snack.expo.io/embed.js', async: true }], // https://github.com/expo/snack/blob/main/docs/embedding-snacks.md
+  plugins: [
+    'docusaurus-plugin-sass',
+    // @docusaurus/plugin-google-analytics (Not necessary because it automatically gets added)
+  ],
+  customFields: { ...customFields },
+  themeConfig: {
+    hideableSidebar: false,
+    // https://docusaurus.io/docs/search#using-algolia-docsearch
+    algolia: {
+      appId: '64P3EOD5L9',
+      apiKey: '461e97fe74b935316bf63af4a6a93345',
+      indexName: 'agile-ts',
+    },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+    // image: '/img/meta.png', // Gets used in Head as Meta Image (og:image)
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
+      defaultLanguage: 'javascript',
+    },
+    navbar: {
+      title: ' ',
+      hideOnScroll: true,
+      logo: {
+        alt: 'My Site Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        // left
+        {
+          label: 'Get Started',
+          position: 'left',
+          items: [
+            {
+              label: 'Installation',
+              to: '/docs/installation/',
+            },
+            {
+              label: 'React',
+              to: '/docs/quick-start/react/',
+            },
+            {
+              label: 'Style Guide',
+              to: '/docs/style-guide/',
+            },
+            {
+              label: 'Examples',
+              to: '/docs/examples/',
+            },
+          ],
+        },
+        {
+          label: 'Community',
+          position: 'left',
+          items: [
+            {
+              label: 'GitHub',
+              href: customFields.githubUrl,
+            },
+            {
+              label: 'Discord',
+              href: customFields.discordUrl,
+            },
+            {
+              label: 'Stack Overflow',
+              href: customFields.stackoverflowUrl,
+            },
+            {
+              label: 'Twitter',
+              href: customFields.twitterUrl,
+            },
+            {
+              label: 'Reddit',
+              href: customFields.redditUrl,
+            },
+          ],
+        },
+        {
+          label: 'Documentation',
+          position: 'left',
+          to: 'docs/introduction',
+        },
+      ],
+    },
+    footer: {
+      copyright: customFields.copyright,
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Get Started',
+              to: 'docs/introduction',
+            },
+            {
+              label: 'Examples',
+              to: 'docs/examples',
+            },
+            {
+              label: 'React',
+              to: 'docs/quick-start/react',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'GitHub',
+              href: customFields.githubUrl,
+            },
+            {
+              label: 'Stack Overflow',
+              href: customFields.stackoverflowUrl,
+            },
+            {
+              label: 'Discord',
+              href: customFields.discordUrl,
+            },
+            {
+              label: 'Twitter',
+              href: customFields.twitterUrl,
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Privacy Policy',
+              to: '/legal/privacy-notice',
+            },
+            {
+              label: 'Cookie Policy',
+              to: '/legal/cookie-notice',
+            },
+            {
+              label: 'Blog',
+              to: '/blog/',
+            },
+          ],
+        },
+      ],
+    },
+  },
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          path: 'docs',
+          admonitions: {
+            icons: 'emoji',
+          },
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: `${customFields.githubDocsUrl}/tree/develop`,
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: true,
+          remarkPlugins: [
+            [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+          ],
+        },
+        blog: {
+          showReadingTime: true,
+          editUrl: `${customFields.githubDocsUrl}/tree/develop`,
+        },
+        theme: {
+          customCss: [require.resolve('./src/css/custom.scss')],
+        },
+        googleAnalytics: {
+          trackingID: 'UA-189394644-1',
+          anonymizeIP: true, // Should IPs be anonymized?
+        },
+      },
+    ],
+  ],
+};
+
+module.exports = { ...config };
