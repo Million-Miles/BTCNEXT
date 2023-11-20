@@ -72,12 +72,10 @@
     - 在branch `new-site` 里编辑文件
 3. 在**btcnext_docs**里build & deploy
     - 进入 `btcnext_docs` 文件夹
-    - 运行 `yarn` 安装所需的packages
-    - `yarn prepare`准备环境变量（只需运行一次）
+    - 运行 `yarn install` 安装所需的packages
     - `yarn start`，来实时查看改动后的网页效果
-    - `yarn checkout:remote`更新yarn至最新
-    - `set MODE=production && yarn build`, 产生更新的 `build` 文件夹
-    - `yarn serve` to test the build locally at http://localhost:3000/
+    - `yarn build`, 产生更新的 `build` 文件夹
+    - `npm run serve` to test the build locally at http://localhost:3000/
     - 确保测试网站在localhost上运行无误
 4. Git
     - 新的代码测试无误后，往上一级回到根目录
@@ -122,10 +120,7 @@
 
 ## 网站赞助者
 
-[btcnext.org](https://btcnext.xyz) 是一个100%部署在ICP区块链上的网站，除了域名受到[ICANN](https://www.icann.org/)管控以外，不依赖任何中心化的服务器或者CDN服务。网站数据存在于容器 `bp6lc-ziaaa-aaaag-abqyq-cai` 的内存里。这个容器需要持续的算力和存储空间才能保持工作，在ICP的世界里，这就需要用到ICP原生的稳定币**cycles**。如果你觉得这个网站有帮助，不妨用[Tip Jar](https://tipjar.rocks)这个[Paul](https://github.com/ninegua)开发的开源程序来给 btcnext.org 的容器充值，保证容器`bp6lc`的cycles始终充盈。
-
-https://k25co-pqaaa-aaaab-aaakq-cai.ic0.app/
-
+[btcnext.org](https://btcnext.xyz) 是一个100%部署在ICP区块链上的网站，除了域名受到[ICANN](https://www.icann.org/)管控以外，不依赖任何中心化的服务器或者CDN服务。如果你觉得这个网站有帮助，不妨用[Tip Jar](https://tipjar.rocks)这个[Paul](https://github.com/ninegua)开发的开源程序来给 btcnext.org 的容器充值，以确保网站能够正常运行。
 
 ## 网站贡献者
 
