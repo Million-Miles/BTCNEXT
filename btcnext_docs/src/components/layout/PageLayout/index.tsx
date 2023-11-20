@@ -117,8 +117,8 @@ const PageLayout: React.FC<Props> = (props) => {
         <link rel={'sitemap'} type={'application/xml'} href={'/sitemap.xml'} />
       </Head>
 
-      <ToastContainer />
-      <AnnouncementBar />
+      {/* <ToastContainer /> */}
+      {/* <AnnouncementBar /> */}
       <Navbar />
 
       <div className={clsx(styles.Wrapper, wrapperClassName)}>{children}</div>

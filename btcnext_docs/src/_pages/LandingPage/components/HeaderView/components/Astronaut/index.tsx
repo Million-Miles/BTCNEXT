@@ -66,7 +66,7 @@ const Astronaut: React.FC<Props> = (props) => {
           <AstronautLight onMouseEnter={onMouseEnter} />
         )}
       </animated.div>
-      <p className={styles.Text}>Poke me 👆 to mutate my color State.</p>
+      {/* <p className={styles.Text}>Poke me 👆 to mutate my color State.</p>–– */}
     </div>
   );
 };

@@ -30,7 +30,6 @@
 }
 
 .DescriptionText {
-  color: var(--ifm-color-primary-lightest);
   font-size: var(--ifm-font-size-24);
   max-width: 400px;
   margin: 0;
@@ -45,11 +44,27 @@
 
 .GithubButton {
   width: 200px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #141F39;
+  color: #111;
+}
+
+.GithubButton:hover {
+  border: 1px solid #FFDF3A;
+  color: #FFDF3A;
 }
 
 .GetStartedButton {
   width: 200px;
   margin-right: 20px;
+  background: #FFDF3A;
+  border-radius: 10px;
+  color: #111;
+}
+
+.GetStartedButton:hover {
+  background-color: #FFE55C;
 }
 
 @media (max-width: 996px) {

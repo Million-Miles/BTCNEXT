@@ -10,6 +10,7 @@ import React from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
+import Logo from '@theme/Logo';
 import GithubButton from '../../components/buttons/GithubButton';
 import FooterLink from './components/FooterLink';
 
@@ -28,7 +29,12 @@ const Footer: React.FC = () => {
         <div className={styles.ContentContainer}>
           {/*Footer Left */}
           <div className={styles.FooterLeft}>
-            <div className={styles.BrandContainer}>
+          <Logo
+            className="navbar__brand"
+            imageClassName="navbar__logo"
+            titleClassName="navbar__title"
+          />
+            {/* <div className={styles.BrandContainer}>
               <img
                 className={styles.BrandImage}
                 alt="AgileTs Logo"
@@ -38,8 +44,8 @@ const Footer: React.FC = () => {
                 title={siteConfig.tagline}
               />
               <div className={styles.BrandText}>AgileTs</div>
-            </div>
-            <div className={styles.Tagline}>{siteConfig.tagline}</div>
+            </div> */}
+            <div className={styles.Tagline}>BTCNEXT is the open source hub of BTC ecosystem.</div>
             <GithubButton
               className={styles.GithubButton}
               to={siteConfig.customFields.githubUrl}

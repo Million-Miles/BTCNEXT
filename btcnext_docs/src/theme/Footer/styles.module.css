@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  background: var(--ifm-color-background-2);
+  background: var(--ifm-code-background);
 }
 
 .InnerContainer {
@@ -66,6 +66,7 @@
 .GithubButton {
   justify-self: start !important;
   font-size: var(--ifm-font-size-12) !important;
+  background-color: #fbf3ca !important;
 }
 
 .SectionContainer {
@@ -102,7 +103,6 @@
   width: 100%;
   margin: 0;
   padding: 0 1rem;
-  background-color: var(--ifm-color-background-2);
   max-width: var(--ifm-container-width);
 }
 

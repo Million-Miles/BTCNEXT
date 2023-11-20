@@ -13,7 +13,7 @@
 }
 
 .Cursor {
-  background-color: var(--ifm-navbar-link-active-color);
+  background-color: var(--ifm-navbar-link-color);
   margin-left: 10px;
   margin-top: 10px;
 
@@ -31,7 +31,7 @@
     background: transparent;
   }
   50% {
-    background: var(--ifm-navbar-link-active-color);
+    background: var(--ifm-navbar-link-color);
   }
   100% {
     background: transparent;
@@ -43,7 +43,7 @@
     background: transparent;
   }
   50% {
-    background: var(--ifm-navbar-link-active-color);
+    background: var(--ifm-navbar-link-color);
   }
   100% {
     background: transparent;
