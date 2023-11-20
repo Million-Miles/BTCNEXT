@@ -54,7 +54,6 @@ const HeaderView: React.FC = () => {
         </div>
       </div>
       <Astronaut className={styles.AstronautImage} />
-      {/* {windowHeight > 900 && windowHeight < 1200 && <MouseScroller />} */}
     </div>
   );
 };
