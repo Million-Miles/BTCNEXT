@@ -21,7 +21,7 @@ const domain = 'https://agile-ts.org';
 const npmOrgUrl = 'https://www.npmjs.com/package/@agile-ts';
 
 const customFields = {
-  copyright: `Made with  💜 by <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/DevBenno">BennoDev</a> and <a target="_blank" rel="noopener noreferrer" href="https://github.com/agile-ts/agile/graphs/contributors">these awesome people</a>`,
+  copyright: `Made with  💜 by <a target="_blank" rel="noopener noreferrer" href="https://linekong.com">LK Venture</a> and <a target="_blank" rel="noopener noreferrer" href="https://github.com/Million-Miles/btcnext/graphs/contributors">these awesome people</a>`,
   meta: {
     title: 'An atom based state manager for JavaScript apps.',
     image: '/img/meta.png',
@@ -131,12 +131,17 @@ const config = {
       hideOnScroll: true,
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/newlogo.svg',
       },
       items: [
         // left
         {
-          label: 'Get Started',
+          label: 'Navigator',
+          position: 'left',
+          to: '/navigation',
+        },
+        {
+          label: 'Documentation',
           position: 'left',
           items: [
             {
@@ -184,7 +189,7 @@ const config = {
           ],
         },
         {
-          label: 'Documentation',
+          label: 'Support',
           position: 'left',
           to: 'docs/introduction',
         },
@@ -202,11 +207,11 @@ const config = {
               to: 'docs/introduction',
             },
             {
-              label: 'Examples',
+              label: 'How to Join',
               to: 'docs/examples',
             },
             {
-              label: 'React',
+              label: 'Navigator',
               to: 'docs/quick-start/react',
             },
           ],
@@ -219,17 +224,9 @@ const config = {
               href: customFields.githubUrl,
             },
             {
-              label: 'Stack Overflow',
-              href: customFields.stackoverflowUrl,
-            },
-            {
-              label: 'Discord',
-              href: customFields.discordUrl,
-            },
-            {
               label: 'Twitter',
-              href: customFields.twitterUrl,
-            },
+              href: customFields.stackoverflowUrl,
+            }
           ],
         },
         {
@@ -261,7 +258,7 @@ const config = {
           admonitions: {
             icons: 'emoji',
           },
-          sidebarPath: require.resolve('./sidebars.js'),
+          // sidebarPath: require.resolve('./sidebars.js'),
           editUrl: `${customFields.githubDocsUrl}/tree/develop`,
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,

@@ -59,11 +59,11 @@ const Navbar: React.FC = () => {
             imageClassName="navbar__logo"
             titleClassName="navbar__title"
           />
-          <a
+          {/* <a
             className={clsx('navbar__brand', styles.BrandText)}
             onClick={() => history.push('/')}>
             {siteConfig.title}
-          </a>
+          </a> */}
           {leftItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
           ))}

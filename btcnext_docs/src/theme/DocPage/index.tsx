@@ -72,6 +72,8 @@ const DocPageContent = (props: DocPageContentProps) => {
     [hiddenSidebarContainer, setHiddenSidebar]
   );
 
+  console.log(sidebar)
+
   return (
     <Layout
       wrapperClassName="main-docs-wrapper"
@@ -144,6 +146,7 @@ const DocPageContent = (props: DocPageContentProps) => {
                 [styles.docItemWrapperEnhanced]: hiddenSidebarContainer,
               }
             )}>
+            {/* 我要新建页面 */}
             <MDXProvider components={MDXComponents}>{children}</MDXProvider>
           </div>
         </main>
