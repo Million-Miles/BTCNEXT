@@ -6,7 +6,11 @@ import DocSidebar from '@theme/DocSidebar';
 import styles from './styles.module.css';
 import { navpageinfolist } from '../../../navgatinfo.js';
 
-export default () => {
+export default (props) => {
+  const {
+    location
+  } = props;
+  console.log(props)
   const exterlinklist = [
     {
       name: 'internet',
@@ -30,54 +34,51 @@ export default () => {
     },
   ];
 
-//   const [itempath, setItempath] = useState('')
-
-// const alllink = window.location.href
-//   const linklist = alllink.split('#')
-//   if (linklist.length > 1) {
-//     setItempath(linklist[1])
-//     // itempath = linklist[1]
-//   }
-//   console.log(itempath)
-
   const getExterInfo = (itemexterlink) => {
-    let newlinklist = []
-    for(let a = 0; a < exterlinklist.length; a++) {
-      for(let b = 0; b < itemexterlink.length; b++) {
+    let newlinklist = [];
+    for (let a = 0; a < exterlinklist.length; a++) {
+      for (let b = 0; b < itemexterlink.length; b++) {
         if (exterlinklist[a].name === itemexterlink[b].name) {
-            itemexterlink[b].imgpath = exterlinklist[a].imgpath
-            newlinklist.push(itemexterlink[b])
+          itemexterlink[b].imgpath = exterlinklist[a].imgpath;
+          newlinklist.push(itemexterlink[b]);
         }
       }
     }
-    return newlinklist
+    return newlinklist;
+  };
+
+  const handleLink = (info) => {
+    if (info.href && info.href !== '') {
+      window.location.href = info.href
+    }
+  }
+
+  const handleExter = (info) => {
+    window.open(info.link)
   }
 
   const ItemCard = useCallback((sitem, sindex) => {
     return (
-      <div className={styles.navListBoxItem} key={sindex}>
+      <div className={styles.navListBoxItem} key={sindex}  onClick={() => {handleLink(sitem)}}>
         <div className={styles.navListBoxItemTop}>
-          <img
-            className={styles.imgAvatornav}
-            src={sitem.avator}
-            alt=""
-          />
+          <img className={styles.imgAvatornav} src={sitem.avator} alt="" />
           <div className={styles.navitemName}>{sitem.title}</div>
         </div>
-        <div className={styles.navItemdesc}>
-          {sitem.desc}
-        </div>
+        <div className={styles.navItemdesc}>{sitem.desc}</div>
         <div className={styles.navItemTag}>
           {sitem.tags.map((tagitem, tagindex) => (
-            <div className={styles.navItemTagItem}>{tagitem}</div>
+            <div className={styles.navItemTagItem} key={tagindex}>{tagitem}</div>
           ))}
         </div>
         <div className={styles.navItemlinklist}>
           {getExterInfo(sitem.exterlink)?.map((exitem, exindex) => {
             return (
-              <a href={exitem.link} key={exindex}>
+              <div onClick={(event) => {
+                handleExter(exitem)
+                event.stopPropagation()
+              }} key={exindex}>
                 <img src={exitem.imgpath} alt={exitem.altdesc} />
-              </a>
+              </div>
             );
           })}
         </div>
@@ -99,7 +100,7 @@ export default () => {
               'defaultSidebar'
             }
             sidebar={navpageinfolist}
-            // path={itempath}
+            path={location.hash}
             // sidebarCollapsible={true}
             // isHidden={false}
           />
@@ -108,19 +109,22 @@ export default () => {
           {navpageinfolist.map((item, index) => {
             return (
               <div className={styles.navigatorCenterRightItem} key={index}>
-                <div className={styles.navItemfirstTitle}>
-                  {item?.label}
-                </div>
+                <div className={styles.navItemfirstTitle}>{item?.label}</div>
                 {item.items.map((fitem, findex) => {
-                  return <div key={findex} key={findex}>
-                  <div id={fitem?.docId}/>
-                  <div className={styles.navItemsecondTitle}>{fitem?.label}</div>
-                  <div className={styles.navListBox}>
-                    {fitem?.nextitems.map((sitem, sindex) => ItemCard(sitem, sindex))}
-                  </div>
-                </div>
+                  return (
+                    <div key={findex}>
+                      <div id={fitem?.docId} />
+                      <div className={styles.navItemsecondTitle}>
+                        {fitem?.label}
+                      </div>
+                      <div className={styles.navListBox}>
+                        {fitem?.nextitems.map((sitem, sindex) =>
+                          ItemCard(sitem, sindex)
+                        )}
+                      </div>
+                    </div>
+                  );
                 })}
-                
               </div>
             );
           })}

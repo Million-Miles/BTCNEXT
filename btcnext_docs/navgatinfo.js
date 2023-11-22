@@ -14,6 +14,7 @@ export const navpageinfolist = [
           {
             avator:
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+            href: '/docs/installation',
             title: 'Join us for a #GasHero',
             desc:
               "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
@@ -21,7 +22,7 @@ export const navpageinfolist = [
             exterlink: [
               {
                 name: 'internet',
-                link: '',
+                link: 'https://btcnext.org',
               },
               {
                 name: 'twitter',
@@ -35,6 +36,62 @@ export const navpageinfolist = [
                 name: 'discord',
                 link: '',
               },
+            ],
+          },
+          {
+            avator:
+              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+            title: 'Join us for a #GasHero',
+            desc:
+              "📆 Event Time:11/20—11/23 🎁 Reward: 30 MetaCene Alpha 2 Whitelist",
+            tags: ['NFT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: '',
+              }
+            ],
+          },
+          {
+            avator:
+              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+            title: 'Join us for a #GasHero',
+            desc:
+              "📆 Event Time:11/20—11/23 🎁 Reward: 30 MetaCene Alpha 2 Whitelist",
+            tags: ['NFT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: '',
+              }
+            ],
+          },
+          {
+            avator:
+              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+            title: 'Join us for a #GasHero',
+            desc:
+              "📆 Event Time:11/20—11/23 🎁 Reward: 30 MetaCene Alpha 2 Whitelist",
+            tags: ['NFT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: '',
+              }
+            ],
+          },
+          {
+            avator:
+              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+            title: 'Join us for a #GasHero',
+            desc:
+              "📆 Event Time:11/20—11/23 🎁 Reward: 30 MetaCene Alpha 2 Whitelist",
+            tags: ['NFT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: '',
+              }
             ],
           },
           {

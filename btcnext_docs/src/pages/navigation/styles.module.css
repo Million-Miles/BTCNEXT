@@ -94,6 +94,18 @@
   gap: 0 8px;
 }
 
+@media (max-width: 1540px) {
+  .navListBoxItem {
+    width: 31%;
+  }
+}
+
+@media (max-width: 1424px) {
+  .navListBoxItem {
+    width: 47%;
+  }
+}
+
 @media (max-width: 997px) {
   .docSidebarContainer {
     display: none;
