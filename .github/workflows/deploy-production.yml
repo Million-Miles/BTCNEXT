@@ -1,0 +1,38 @@
+name: Deploy to Production
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Prepare
+      run: |
+        DFX_VERSION=0.14.3 sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
+        echo "${{secrets.BTCNEXT}}" > identity.pem
+        chmod 400 identity.pem
+        mkdir -p ~/.config/dfx/identity/default
+        mv identity.pem ~/.config/dfx/identity/default/identity.pem
+        dfx identity list
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+    - name: Build
+      run: |
+        cd btcnext_docs
+        yarn install
+        yarn build
+        cd ..
+    - name: Deploy
+      run: |
+        rm canister_ids.json
+        echo '{ "btcnext_frontend": { "ic": "${{ vars.VARIABLE }}" } }' > canister_ids.json
+        dfx start --background --clean
+        dfx deploy --network=ic
+    - name: Summarize
+      run: echo 'https://${{ vars.VARIABLE }}.icp0.io' >> $GITHUB_STEP_SUMMARY
