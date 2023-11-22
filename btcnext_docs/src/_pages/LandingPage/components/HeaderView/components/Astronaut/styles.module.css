@@ -14,3 +14,9 @@
   width: 100%;
   max-width: 800px;
 }
+
+@media (max-width: 768px) {
+  .Container {
+    display: none;
+  }
+}

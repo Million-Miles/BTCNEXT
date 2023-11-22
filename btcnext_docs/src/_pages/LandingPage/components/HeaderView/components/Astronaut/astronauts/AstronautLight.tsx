@@ -15,7 +15,7 @@ const AstronautLight: React.FC<Props> = (props) => {
       viewBox="0 0 790 457"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
-      <g id="1 1" clip-path="url(#clip0_83_524)" onMouseEnter={onMouseEnter}
+      <g id="1 1" clipPath="url(#clip0_83_524)" onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}>
         <g id="Clip path group">
           <mask
@@ -36,9 +36,9 @@ const AstronautLight: React.FC<Props> = (props) => {
                 id="Vector_2"
                 d="M358.014 248.355C401.27 219.89 489.702 335.603 526.435 391.078C577.363 448.658 618.221 430.929 666.332 386.453C719.605 331.124 720.35 317.756 793.656 309.699"
                 stroke="#CBD0D5"
-                stroke-width="4.22919"
-                stroke-miterlimit="3"
-                stroke-linecap="square"
+                strokeWidth="4.22919"
+                strokeMiterlimit="3"
+                strokeLinecap="square"
               />
               <path
                 id="Vector_3"

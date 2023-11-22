@@ -54,12 +54,12 @@ const customFields = {
   },
   domain,
   githubOrgUrl,
-  githubUrl: `${githubOrgUrl}/agile`,
-  githubDocsUrl: `${githubOrgUrl}/documentation`,
+  githubUrl: `https://github.com/Million-Miles/btcnext`,
+  githubDocsUrl: `https://github.com/Million-Miles/btcnext`,
   npmCoreUrl: `${npmOrgUrl}/core`,
   discordUrl: `https://discord.gg/T9GzreAwPH`,
   stackoverflowUrl: 'https://stackoverflow.com/questions/tagged/agile-ts',
-  twitterUrl: 'https://twitter.com/AgileFramework',
+  twitterUrl: 'https://twitter.com/BTC_NEXT',
   redditUrl: 'https://www.reddit.com/r/AgileTs/',
   version: '0.0.1',
   announcementBar: {
@@ -91,15 +91,15 @@ const customFields = {
 };
 
 const config = {
-  title: 'AgileTs',
-  tagline: 'AgileTs is a global, flexible, spacy State and Logic Library',
+  title: 'BTCNEXT',
+  tagline: 'BTCNEXT - The first open source hub of BTC ecosystem',
   url: customFields.domain,
   baseUrlIssueBanner: false,
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/newlogo.svg',
   organizationName: 'AgileTs',
-  projectName: 'https://github.com/agile-ts/agile/',
+  projectName: 'https://github.com/Million-Miles/btcnext',
   themes: ['@docusaurus/theme-live-codeblock'],
   scripts: [{ src: 'https://snack.expo.io/embed.js', async: true }], // https://github.com/expo/snack/blob/main/docs/embedding-snacks.md
   plugins: [
@@ -225,7 +225,7 @@ const config = {
             },
             {
               label: 'Twitter',
-              href: customFields.stackoverflowUrl,
+              href: customFields.twitterUrl,
             }
           ],
         },

@@ -27,13 +27,13 @@ const Layout: React.FC<Props> = (props) => {
 
   return (
     <LayoutProviders>
-      <ToastContainer />
+      {/* <ToastContainer /> */}
 
       <LayoutHead {...props} />
 
-      <SkipToContent />
+      {/* <SkipToContent /> */}
 
-      <AnnouncementBar />
+      {/* <AnnouncementBar /> */}
 
       <Navbar />
 
