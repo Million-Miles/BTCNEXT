@@ -72,8 +72,6 @@ const DocPageContent = (props: DocPageContentProps) => {
     [hiddenSidebarContainer, setHiddenSidebar]
   );
 
-  console.log(sidebar)
-
   return (
     <Layout
       wrapperClassName="main-docs-wrapper"
