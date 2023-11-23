@@ -10,8 +10,7 @@ const AstronautLight: React.FC<Props> = (props) => {
   const { onMouseEnter, onMouseLeave, className } = props;
   return (
     <svg
-      width="790"
-      height="457"
+      width="100%"
       viewBox="0 0 790 457"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
