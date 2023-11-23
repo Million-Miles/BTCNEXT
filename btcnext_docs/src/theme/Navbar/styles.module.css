@@ -23,6 +23,11 @@
   font-weight: normal;
 }
 
+:global(.dropdown__link):hover {
+  color: #D6BA26;
+  background: none;
+}
+
 :global(.navbar__link--active) {
   color: #D6BA26;
 }

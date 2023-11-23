@@ -32,18 +32,18 @@
   font-size: 18px;
   font-weight: 500;
   margin-top: -50px;
-  padding-top: 87px;
+  padding-top: 67px;
 }
 
 .navListBox {
   display: flex;
-  gap: 20px;
+  gap: 15px 1.3%;
   margin-top: 15px;
   flex-wrap: wrap;
 }
 
 .navListBoxItem {
-  width: 23%;
+  width: 24%;
   box-shadow: 0px 13px 16px 0px rgba(111,121,145,0.06);
   border-radius: 10px;
   border: 1px solid #e8edf8;
@@ -96,13 +96,13 @@
 
 @media (max-width: 1540px) {
   .navListBoxItem {
-    width: 31%;
+    width: 32.4%;
   }
 }
 
 @media (max-width: 1424px) {
   .navListBoxItem {
-    width: 47%;
+    width: 49.3%;
   }
 }
 
