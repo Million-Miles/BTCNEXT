@@ -26,6 +26,7 @@ import QuickSocialLinksView from './components/QuickSocialLinksView';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import Progressbar from './components/Progressbar';
 import NavbarMobileSidebar from './components/NavbarMobileSidebar';
+import NewLog from '../../components/newlog'
 
 const Navbar: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -36,7 +37,6 @@ const Navbar: React.FC = () => {
   const mobileSidebar = useMobileSidebar();
 
   // const [colortype, setColortype] = useState()
-
 
   // useEffect(() => {
   //   let themecolor = window.localStorage.getItem('theme')
@@ -65,11 +65,13 @@ const Navbar: React.FC = () => {
       {/* Navbar */}
       <div className={clsx('navbar__inner', styles.InnerContainer)}>
         <div className="navbar__items">
-          <Logo
+          {/* <Logo
             className="navbar__brand"
             imageClassName="navbar__logo"
             titleClassName="navbar__title"
-          />
+          /> */}
+          <NewLog/>
+
           {/* <a
             className={clsx('navbar__brand', styles.BrandText)}
             onClick={() => history.push('/')}>

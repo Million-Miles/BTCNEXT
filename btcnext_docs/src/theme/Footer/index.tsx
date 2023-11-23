@@ -13,6 +13,7 @@ import styles from './styles.module.css';
 import Logo from '@theme/Logo';
 import GithubButton from '../../components/buttons/GithubButton';
 import FooterLink from './components/FooterLink';
+import NewLog from '../../components/newlog'
 
 const Footer: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -29,11 +30,12 @@ const Footer: React.FC = () => {
         <div className={styles.ContentContainer}>
           {/*Footer Left */}
           <div className={styles.FooterLeft}>
-          <Logo
+           <NewLog/>
+          {/* <Logo
             className="navbar__brand"
             imageClassName="navbar__logo"
             titleClassName="navbar__title"
-          />
+          /> */}
             {/* <div className={styles.BrandContainer}>
               <img
                 className={styles.BrandImage}
