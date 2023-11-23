@@ -6,7 +6,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import clsx from 'clsx';
 import SearchBar from '@theme/SearchBar';
 import Toggle from '@theme/Toggle';
@@ -35,9 +35,12 @@ const Navbar: React.FC = () => {
   const history = useHistory();
   const mobileSidebar = useMobileSidebar();
 
-  let themecolor = window.localStorage.getItem('theme')
+  const [colortype, setColortype] = useState()
 
-  useMemo(() => {
+
+  useEffect(() => {
+    let themecolor = window.localStorage.getItem('theme')
+    setColortype(themecolor)
     if (!themecolor) {
       setLightTheme()
     }
@@ -83,7 +86,7 @@ const Navbar: React.FC = () => {
           <QuickSocialLinksView className={styles.displayOnlyInLargeViewport} />
           <Toggle
             aria-label="Dark mode toggle"
-            checked={themecolor ? isDarkTheme : false}
+            checked={colortype ? isDarkTheme : false}
             onChange={onThemeToggleChange}
           />
           <SearchBar />

@@ -6,5 +6,4 @@ slug: /navigation/navinfo
 ---
 
 ## 🤠 测试
-- [First State](./vue/first-state)
-- [First Collection](./vue/first-collection)
+nexport NODE_OPTIONS=--openssl-legacy-provide
