@@ -28,6 +28,11 @@
   background: none;
 }
 
+:global(.dropdown__link--active) {
+  color: #D6BA26;
+  background: none;
+}
+
 :global(.navbar__link--active) {
   color: #D6BA26;
 }
