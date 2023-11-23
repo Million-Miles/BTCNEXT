@@ -23,8 +23,17 @@
   font-weight: normal;
 }
 
+:global(.navbar__link--active) {
+  color: #D6BA26;
+}
+
+:global(.navbar__link):hover {
+  color: #D6BA26;
+}
+
 :global(.dropdown__menu) {
   opacity: 1;
+  background: var(--docsearch-searchbox-focus-background);
 }
 
 :global(.navbar-sidebar__brand) {

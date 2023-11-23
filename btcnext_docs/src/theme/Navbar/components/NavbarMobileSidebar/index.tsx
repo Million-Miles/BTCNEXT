@@ -12,6 +12,7 @@ import Translate from '@docusaurus/Translate';
 import Toggle from '@theme/Toggle';
 import Logo from '@theme/Logo';
 import IconClose from '@theme/IconClose';
+import NewLog from '../../../../components/newlog'
 
 export type NavbarMobileSidebarProps = {
   sidebarShown: boolean;
@@ -33,11 +34,12 @@ const NavbarMobileSidebar: React.FC<NavbarMobileSidebarProps> = (props) => {
   return (
     <div className="navbar-sidebar">
       <div className="navbar-sidebar__brand">
-        <Logo
+        {/* <Logo
           className="navbar__brand"
           imageClassName="navbar__logo"
           titleClassName="navbar__title"
-        />
+        /> */}
+        <NewLog/>
         {!colorModeToggle.disabled && (
           <Toggle
             className={styles.navbarSidebarToggle}

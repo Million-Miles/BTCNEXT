@@ -97,7 +97,7 @@ const config = {
   baseUrlIssueBanner: false,
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'img/newlogo.svg',
+  favicon: 'img/favicons.jpg',
   organizationName: 'AgileTs',
   projectName: 'https://github.com/Million-Miles/btcnext',
   themes: ['@docusaurus/theme-live-codeblock'],
@@ -120,6 +120,8 @@ const config = {
       disableSwitch: false,
       respectPrefersColorScheme: false,
     },
+    whiterlog: '/img/btcnext.svg',
+    blacklog: '/img/whiterlog.svg',
     // image: '/img/meta.png', // Gets used in Head as Meta Image (og:image)
     prism: {
       theme: require('prism-react-renderer/themes/dracula'),
@@ -131,7 +133,7 @@ const config = {
       hideOnScroll: true,
       logo: {
         alt: 'My Site Logo',
-        src: 'img/newlogo.svg',
+        src: 'img/btcnext.svg',
       },
       items: [
         // left
