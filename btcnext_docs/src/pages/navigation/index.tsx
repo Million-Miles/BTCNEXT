@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import PageLayout from '../../components/layout/PageLayout';
 import DocSidebar from '@theme/DocSidebar';
 import styles from './styles.module.css';
-import { navpageinfolist } from './navgatinfo.js';
+import { navpageinfolist } from '../../components/navgatinfo.js';
 
 export default (props) => {
   const {
