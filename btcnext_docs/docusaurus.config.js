@@ -23,13 +23,9 @@ const npmOrgUrl = 'https://www.npmjs.com/package/@agile-ts';
 const customFields = {
   copyright: `Made with  💜 by <a target="_blank" rel="noopener noreferrer" href="https://linekong.com">LK Venture</a> and <a target="_blank" rel="noopener noreferrer" href="https://github.com/Million-Miles/btcnext/graphs/contributors">these awesome people</a>`,
   meta: {
-    title: 'An atom based state manager for JavaScript apps.',
+    title: 'BTCNEXT is the open source hub of BTC ecosystem.',
     image: '/img/meta.png',
-    description:
-      'An atom based global State and Logic Library implemented in Typescript, ' +
-      'offering a reimagined API that focuses on developer experience. ' +
-      'AgileTs is a more straightforward alternative to Redux ' +
-      'and allows you to easily manage your application States in React, Vue and plain Javascript.',
+    description:'',
     color: '#6c69a0',
     keywords: [
       'state management',
@@ -173,20 +169,8 @@ const config = {
               href: customFields.githubUrl,
             },
             {
-              label: 'Discord',
-              href: customFields.discordUrl,
-            },
-            {
-              label: 'Stack Overflow',
-              href: customFields.stackoverflowUrl,
-            },
-            {
               label: 'Twitter',
               href: customFields.twitterUrl,
-            },
-            {
-              label: 'Reddit',
-              href: customFields.redditUrl,
             },
           ],
         },
