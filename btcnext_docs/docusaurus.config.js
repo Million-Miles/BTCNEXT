@@ -116,14 +116,14 @@ const config = {
       indexName: 'agile-ts',
     },
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: 'light',
       disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     // image: '/img/meta.png', // Gets used in Head as Meta Image (og:image)
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
+      theme: require('prism-react-renderer/themes/dracula'),
+      darkTheme: require('prism-react-renderer/themes/github'),
       defaultLanguage: 'javascript',
     },
     navbar: {
