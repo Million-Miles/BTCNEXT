@@ -72,7 +72,9 @@
     - 在branch `new-site` 里编辑文件
 3. 在**btcnext_docs**里build & deploy
     - 进入 `btcnext_docs` 文件夹
+    - 运行 `yarn set version 1.22.21` 切换yarn版本
     - 运行 `yarn install` 安装所需的packages
+    - 运行 `export NODE_OPTIONS=--openssl-legacy-provider` 命令
     - `yarn start`，来实时查看改动后的网页效果
     - `yarn build`, 产生更新的 `build` 文件夹
     - `npm run serve` to test the build locally at http://localhost:3000/
