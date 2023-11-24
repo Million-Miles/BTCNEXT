@@ -2,7 +2,7 @@
 id: md-playground 
 title: Playground 
 sidebar_label: Playground 
-slug: /md/playground
+slug: /other/playground
 ---
 
 :::note

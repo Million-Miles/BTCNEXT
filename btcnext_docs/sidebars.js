@@ -5,7 +5,7 @@ module.exports = {
       label: '从这开始',
       collapsed: false,
       items: [
-        'main/introduction',
+        'quick_start/introduction',
       ],
     },
     {
@@ -13,7 +13,7 @@ module.exports = {
       label: 'BTC技术演进',
       collapsed: false,
       items: [
-        'quick_start/react',
+        'btcfork/btcfork',
       ],
     },
     {
@@ -21,214 +21,63 @@ module.exports = {
       label: 'Ordinals',
       collapsed: false,
       items: [
-        {
-          type: 'category',
-          label: 'core',
-          collapsed: false,
-          items: [
-            'packages/core/introduction',
-            'packages/core/installation',
-            {
-              type: 'category',
-              label: 'Guides',
-              items: [
-                'packages/core/guides/typescript',
-                'packages/core/guides/debugging',
-                'packages/core/guides/testing',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'API',
-              items: [
-                {
-                  type: 'category',
-                  label: 'Agile Instance',
-                  items: [
-                    'packages/core/api/agile-instance/introduction',
-                    'packages/core/api/agile-instance/properties',
-                    'packages/core/api/agile-instance/methods',
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'State',
-                  items: [
-                    'packages/core/api/state/introduction',
-                    'packages/core/api/state/properties',
-                    'packages/core/api/state/methods',
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Collection',
-                  items: [
-                    'packages/core/api/collection/introduction',
-                    'packages/core/api/collection/methods',
-                    'packages/core/api/collection/properties',
-                    {
-                      type: 'category',
-                      label: 'Group',
-                      items: [
-                        'packages/core/api/collection/group/introduction',
-                        'packages/core/api/collection/group/methods',
-                        'packages/core/api/collection/group/properties',
-                      ],
-                    },
-                    {
-                      type: 'category',
-                      label: 'Selector',
-                      items: [
-                        'packages/core/api/collection/selector/introduction',
-                        'packages/core/api/collection/selector/methods',
-                        'packages/core/api/collection/selector/properties',
-                      ],
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Computed',
-                  items: [
-                    'packages/core/api/computed/introduction',
-                    'packages/core/api/computed/methods',
-                    'packages/core/api/computed/properties',
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Storage',
-                  items: [
-                    'packages/core/api/storage/introduction',
-                    'packages/core/api/storage/persisting-data',
-                  ],
-                },
-                'packages/core/api/integration/introduction',
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'react',
-          items: [
-            'packages/react/introduction',
-            'packages/react/installation',
-            {
-              type: 'category',
-              label: 'API',
-              items: [
-                'packages/react/api/hooks',
-                'packages/react/api/agileHOC',
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'vue',
-          items: ['packages/vue/introduction', 'packages/vue/installation'],
-        },
-        {
-          type: 'category',
-          label: 'logger',
-          items: [
-            'packages/logger/introduction',
-            'packages/logger/installation',
-          ],
-        },
-        {
-          type: 'category',
-          label: '⚠️ WIP',
-          items: [
-            {
-              type: 'category',
-              label: '⚠️ api',
-              items: ['packages/api/introduction', 'packages/api/installation'],
-            },
-            {
-              type: 'category',
-              label: '⚠️ event',
-              items: [
-                'packages/event/introduction',
-                'packages/event/installation',
-                {
-                  type: 'category',
-                  label: 'API',
-                  items: ['packages/event/api/hooks'],
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: '⚠️ multieditor',
-              items: [
-                'packages/multieditor/introduction',
-                'packages/multieditor/installation',
-              ],
-            },
-          ],
-        },
+          'ordinals/ordinals',
       ],
     },
     {
       type: 'category',
       label: 'Atomicals',
+      collapsed: false,
       items: [
-        'examples/introduction',
-        'examples/react/introduction',
-        'examples/react-native/introduction',
-        'examples/vue/introduction',
+          'atomicals/atomicals',
       ],
     },
     {
       type: 'category',
       label: '闪电网络',
+      collapsed: false,
       items: [
-        'examples/introduction',
-        'examples/react/introduction',
-        'examples/react-native/introduction',
-        'examples/vue/introduction',
+           'lighting/lighting',
+      ],
+    },
+    {
+      type: 'category',
+      label: '图灵完备扩展',
+      collapsed: false,
+      items: [
+           'turing/turing',
       ],
     },
     {
       type: 'category',
       label: 'STAMPS',
+      collapsed: false,
       items: [
-        'examples/introduction',
-        'examples/react/introduction',
-        'examples/react-native/introduction',
-        'examples/vue/introduction',
+           'stamps/stamps',
       ],
     },
     {
       type: 'category',
-      label: 'chainsL2',
+      label: 'chainsl2',
+      collapsed: false,
       items: [
-        'examples/introduction',
-        'examples/react/introduction',
-        'examples/react-native/introduction',
-        'examples/vue/introduction',
+           'chainsl2/chainsl2',
       ],
     },
     {
       type: 'category',
       label: '其他协议',
+      collapsed: false,
       items: [
-        'examples/introduction',
-        'examples/react/introduction',
-        'examples/react-native/introduction',
-        'examples/vue/introduction',
+           'other/docsearch',
       ],
     },
     {
       type: 'category',
       label: '相关生态',
+      collapsed: false,
       items: [
-        'examples/introduction',
-        'examples/react/introduction',
-        'examples/react-native/introduction',
-        'examples/vue/introduction',
+           'related/related',
       ],
     },
   ],

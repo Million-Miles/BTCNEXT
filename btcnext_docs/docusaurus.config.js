@@ -143,40 +143,44 @@ const config = {
           position: 'left',
           items: [
             {
+              "label": "从这开始",
+              "to": "/docs/quick-start/introduction"
+            },
+            {
               "label": "BTC技术演进",
-              "to": "/docs/installation/"
+              "to": "/docs/btcfork/btcfork"
             },
             {
               "label": "Ordinals",
-              "to": "/docs/quick-start/react/"
+              "to": "/docs/ordinals/ordinals/"
             },
             {
               "label": "Atomicals",
-              "to": "/docs/style-guide/"
+              "to": "/docs/atomicals/atomicals/"
             },
             {
               "label": "闪电网络",
-              "to": "/docs/examples/"
+              "to": "/docs/lighting/lighting/"
             },
             {
               "label": "图灵完备扩展",
-              "to": "/docs/style-guide/"
+              "to": "/docs/turing/turing/"
             },
             {
               "label": "STAMPS",
-              "to": "/docs/style-guide/"
+              "to": "/docs/stamps/stamps/"
             },
             {
               "label": "chainsL2",
-              "to": "/docs/style-guide/"
+              "to": "/docs/chainsl2/chainsl2/"
             },
             {
               "label": "其他协议",
-              "to": "/docs/style-guide/"
+              "to": "/docs/other/docsearch/"
             },
             {
               "label": "相关生态",
-              "to": "/docs/style-guide/"
+              "to": "/docs/related/related/"
             }
           ],
         },

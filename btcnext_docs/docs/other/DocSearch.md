@@ -2,7 +2,7 @@
 id: docsearch
 title: DocSearch
 sidebar_label: DocSearch
-slug: /docsearch
+slug: /other/docsearch
 ---
 
 Hello `docsearch` Team,
