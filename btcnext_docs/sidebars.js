@@ -2,25 +2,23 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'AGILETS',
+      label: '从这开始',
       collapsed: false,
       items: [
         'main/introduction',
-        'main/installation',
-        'main/style-guide',
-        'main/frameworks',
-        'main/contributing',
       ],
     },
     {
       type: 'category',
-      label: 'QUICK START',
+      label: 'BTC技术演进',
       collapsed: false,
-      items: ['quick_start/react', 'quick_start/vue'],
+      items: [
+        'quick_start/react',
+      ],
     },
     {
       type: 'category',
-      label: 'PACKAGES',
+      label: 'Ordinals',
       collapsed: false,
       items: [
         {
@@ -175,7 +173,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'EXAMPLES',
+      label: 'Atomicals',
       items: [
         'examples/introduction',
         'examples/react/introduction',
@@ -183,6 +181,55 @@ module.exports = {
         'examples/vue/introduction',
       ],
     },
-    'interfaces',
+    {
+      type: 'category',
+      label: '闪电网络',
+      items: [
+        'examples/introduction',
+        'examples/react/introduction',
+        'examples/react-native/introduction',
+        'examples/vue/introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'STAMPS',
+      items: [
+        'examples/introduction',
+        'examples/react/introduction',
+        'examples/react-native/introduction',
+        'examples/vue/introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'chainsL2',
+      items: [
+        'examples/introduction',
+        'examples/react/introduction',
+        'examples/react-native/introduction',
+        'examples/vue/introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: '其他协议',
+      items: [
+        'examples/introduction',
+        'examples/react/introduction',
+        'examples/react-native/introduction',
+        'examples/vue/introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: '相关生态',
+      items: [
+        'examples/introduction',
+        'examples/react/introduction',
+        'examples/react-native/introduction',
+        'examples/vue/introduction',
+      ],
+    },
   ],
 };
