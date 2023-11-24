@@ -198,7 +198,7 @@ const config = {
             },
             {
               label: 'Navigator',
-              to: 'docs/quick-start/react',
+              to: 'docs/navigation',
             },
           ],
         },
@@ -244,7 +244,7 @@ const config = {
           admonitions: {
             icons: 'emoji',
           },
-          // sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.js'),
           editUrl: `${customFields.githubDocsUrl}/tree/develop`,
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
