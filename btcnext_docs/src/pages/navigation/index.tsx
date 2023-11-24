@@ -31,6 +31,11 @@ export default (props) => {
       imgpath: 'img/discordicon.svg',
       altdesc: 'discord',
     },
+    {
+      name: 'telegram',
+      imgpath: 'img/telegramicon.svg',
+      altdesc: 'telegram',
+    },
   ];
 
   const getExterInfo = (itemexterlink) => {
