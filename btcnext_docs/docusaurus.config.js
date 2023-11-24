@@ -218,7 +218,7 @@ const config = {
             },
             {
               label: 'How to Join',
-              to: 'docs/examples',
+              to: 'docs/navigation',
             },
             {
               label: 'Navigator',
