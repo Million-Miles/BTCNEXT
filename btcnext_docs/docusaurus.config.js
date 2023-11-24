@@ -143,21 +143,41 @@ const config = {
           position: 'left',
           items: [
             {
-              label: 'Installation',
-              to: '/docs/installation/',
+              "label": "BTC技术演进",
+              "to": "/docs/installation/"
             },
             {
-              label: 'React',
-              to: '/docs/quick-start/react/',
+              "label": "Ordinals",
+              "to": "/docs/quick-start/react/"
             },
             {
-              label: 'Style Guide',
-              to: '/docs/style-guide/',
+              "label": "Atomicals",
+              "to": "/docs/style-guide/"
             },
             {
-              label: 'Examples',
-              to: '/docs/examples/',
+              "label": "闪电网络",
+              "to": "/docs/examples/"
             },
+            {
+              "label": "图灵完备扩展",
+              "to": "/docs/style-guide/"
+            },
+            {
+              "label": "STAMPS",
+              "to": "/docs/style-guide/"
+            },
+            {
+              "label": "chainsL2",
+              "to": "/docs/style-guide/"
+            },
+            {
+              "label": "其他协议",
+              "to": "/docs/style-guide/"
+            },
+            {
+              "label": "相关生态",
+              "to": "/docs/style-guide/"
+            }
           ],
         },
         {
@@ -177,7 +197,7 @@ const config = {
         {
           label: 'Support',
           position: 'left',
-          to: 'docs/introduction',
+          to: 'https://github.com/Million-Miles/BTCNEXT/wiki/BTCNEXT-Wiki',
         },
       ],
     },
