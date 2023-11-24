@@ -36,6 +36,10 @@ export const navpageinfolist = [
                 name: 'discord',
                 link: '',
               },
+              {
+                name: 'telegram',
+                link: '',
+              },
             ],
           },
           {
@@ -214,6 +218,10 @@ export const navpageinfolist = [
               },
               {
                 name: 'discord',
+                link: '',
+              },
+              {
+                name: 'telegram',
                 link: '',
               },
             ],

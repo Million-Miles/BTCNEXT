@@ -166,6 +166,19 @@ body {
   flex-direction: column;
 }
 
+a {
+  color: #D6BA26;
+}
+
+a:hover {
+  color: #D6BA26;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.pagination-nav__link:hover {
+  border: 1px solid #D6BA26;
+}
+
 // ==============================================================================
 // Scrollbar
 // ==============================================================================
