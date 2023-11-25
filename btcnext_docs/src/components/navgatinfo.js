@@ -53,6 +53,10 @@ export const navpageinfolist = [
                 name: 'twitter',
                 link: 'https://twitter.com/viamirror',
               },
+              {
+                name: 'telegram',
+                link: '',
+              },
             ],
           },
           {
@@ -762,6 +766,10 @@ export const navpageinfolist = [
               },
               {
                 name: 'discord',
+                link: '',
+              },
+              {
+                name: 'telegram',
                 link: '',
               },
             ],

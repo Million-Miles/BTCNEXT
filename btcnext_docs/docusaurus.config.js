@@ -143,21 +143,45 @@ const config = {
           position: 'left',
           items: [
             {
-              label: 'Installation',
-              to: '/docs/installation/',
+              "label": "从这开始",
+              "to": "/docs/quick-start/introduction"
             },
             {
-              label: 'React',
-              to: '/docs/quick-start/react/',
+              "label": "BTC技术演进",
+              "to": "/docs/btcfork/btcfork"
             },
             {
-              label: 'Style Guide',
-              to: '/docs/style-guide/',
+              "label": "Ordinals",
+              "to": "/docs/ordinals/ordinals/"
             },
             {
-              label: 'Examples',
-              to: '/docs/examples/',
+              "label": "Atomicals",
+              "to": "/docs/atomicals/atomicals/"
             },
+            {
+              "label": "闪电网络",
+              "to": "/docs/lighting/lighting/"
+            },
+            {
+              "label": "图灵完备扩展",
+              "to": "/docs/turing/turing/"
+            },
+            {
+              "label": "STAMPS",
+              "to": "/docs/stamps/stamps/"
+            },
+            {
+              "label": "chainsL2",
+              "to": "/docs/chainsl2/chainsl2/"
+            },
+            {
+              "label": "其他协议",
+              "to": "/docs/other/docsearch/"
+            },
+            {
+              "label": "相关生态",
+              "to": "/docs/related/related/"
+            }
           ],
         },
         {
@@ -177,7 +201,7 @@ const config = {
         {
           label: 'Support',
           position: 'left',
-          to: 'docs/introduction',
+          to: 'https://github.com/Million-Miles/BTCNEXT/wiki/BTCNEXT-Wiki',
         },
       ],
     },
@@ -194,11 +218,11 @@ const config = {
             },
             {
               label: 'How to Join',
-              to: 'docs/examples',
+              to: 'docs/navigation',
             },
             {
               label: 'Navigator',
-              to: 'docs/quick-start/react',
+              to: 'docs/navigation',
             },
           ],
         },
@@ -244,7 +268,7 @@ const config = {
           admonitions: {
             icons: 'emoji',
           },
-          // sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.js'),
           editUrl: `${customFields.githubDocsUrl}/tree/develop`,
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,

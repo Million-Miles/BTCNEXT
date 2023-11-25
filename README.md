@@ -24,34 +24,8 @@
 3. make changes
 4. submit a pull request for merging into `main` branch
 
-## 文档库结构 + 路线图
-
-```bash
-├── 新手上路
-│   ├── 介绍
-│   ├── 如何加入
-│   ├── 更多内容....
-├── BTC技术演进
-│   ├── BTC简介
-│   ├── 关键技术
-│   ├── 更多内容....
-├── Ordinals
-│   ├── Ordinals简介
-│   ├── Ordinals创始人
-│   ├── 更多内容....
-├── Atomicals
-│   ├── Atomicals简介
-│   ├── Atomicals创始人
-│   ├── 更多内容....
-├── 闪电网络
-│   ├── 闪电网络简介
-│   ├── 闪电网络创始人
-│   ├── 更多内容....
-├── RGB
-│   ├── RGB简介
-│   ├── RGB创始人
-│   ├── 更多内容....
-```
+## 文档路线图及联系支持
+参看[路线图](https://github.com/Million-Miles/BTCNEXT/wiki/BTCNEXT-Wiki)
 
 ## 部署工作流
 
@@ -115,7 +89,7 @@
 
 ## 网站架构
 
-为了追求数据的开放透明，我们将[btcnext.org](https://btcnext.org)网站100%部署在ICP区块链上以便永久保存。
+为了追求数据的开放透明，我们将[btcnext.org](https://btcnext.org)网站100%部署在ICP区块链上以便永久保存，容器智能合约地址`e5tkq-fqaaa-aaaam-abywq-cai`
 
 `BTCNEXT`采用了[Docusaurus](https://docusaurus.io/docs)的前端架构，来搭建这个以技术文档为主的网站。大部分的内容文章都以Markdown的格式存在于`btcnext_docs/docs/` 文件夹里。
 
