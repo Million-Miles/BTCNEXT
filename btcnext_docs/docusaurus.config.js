@@ -160,7 +160,7 @@ const config = {
             },
             {
               "label": "闪电网络",
-              "to": "/docs/lighting/lighting/"
+              "to": "/docs/lightning/LightningLabs/"
             },
             {
               "label": "图灵完备扩展",
@@ -176,7 +176,7 @@ const config = {
             },
             {
               "label": "其他协议",
-              "to": "/docs/other/docsearch/"
+              "to": "/docs/other/ColoredCoins/"
             },
             {
               "label": "相关生态",
