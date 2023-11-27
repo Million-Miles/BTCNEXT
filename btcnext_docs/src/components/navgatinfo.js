@@ -13,7 +13,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              '',
+              'img/navigator/earni.png',
             href: '/docs/installation',
             title: 'earni',
             desc:
@@ -40,7 +40,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/AdsPower.png',
             title: 'AdsPower指纹浏览器',
             desc:
               "是一款专注跨境电商账号矩阵安全管理的指纹浏览器",
@@ -61,7 +61,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/DFarm.jpg',
             title: 'DFarm',
             desc:
               "薅羊毛基础分享",
@@ -69,7 +69,7 @@ export const navpageinfolist = [
             exterlink: [
               {
                 name: 'internet',
-                link: 'https://mirror.xyz/',
+                link: 'https://mirror.xyz/dfarm.eth',
               },{
                 name: 'Telegram',
                 link: 'https://t.me/adspowercn',
@@ -82,7 +82,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/gopluslabs.png',
             title: '代币合约安全检测',
             desc:
               "Token 安全检测开放的、无需许可的、用户驱动的代币安全检测平台",
@@ -113,7 +113,7 @@ export const navpageinfolist = [
 
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/crunchbase.png',
             title: '项目融资情况查看',
             desc:
               "web3项目融资情况查询网站",
@@ -135,7 +135,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/chaindrop.png',
             title: 'ChainDrop测试网水龙头',
             desc:
               "ChainDrop Web3 Faucet Network",
@@ -149,7 +149,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/Faucet.png',
             title: '水龙头-Faucet',
             desc:
               "适合所有人的多链式水龙头。各个链的水都有,很全,但是领取的额度很小,可以救急用",
@@ -167,7 +167,7 @@ export const navpageinfolist = [
           },          
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/danny.jpeg',
             title: '测试网水龙头汇总',
             desc:
               "包括以太坊歌尔力测试网,BSC链测试网,多边形主网,比特币测试网等各种测试网。By:danny",
@@ -181,7 +181,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/analytics.svg',
             title: 'Analytics',
             desc:
               "区块链最近的所有募资筹款活动",
@@ -195,7 +195,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/mirrorbeats.png',
             title: 'MirrorBeats',
             desc:
               "基于 Web3.0 内容平台 Mirror 的搜索引擎",
@@ -209,7 +209,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/SMS-Man.png',
             title: 'SMS-MAN全球短信接码',
             desc:
               "SMS-Man 是一个提供在线短信接收的国际平台,让你有机会在网上以最优惠的价格购买一个虚拟号码用于注册流行服务。",
@@ -223,7 +223,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/Bress.png',
             title: 'Bress',
             desc:
               "Bress.xyz是基于Mirror开发的去中心化社交网络,在这里你可以找到 Mirror 生态上的高质量文章和优秀作者。",
@@ -232,12 +232,21 @@ export const navpageinfolist = [
               {
                 name: 'internet',
                 link: 'https://bress.xyz/',
-              }
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/0xHaole',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/Qw2ZPteQqQ',
+              },
+              
             ],
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/yescap.png',
             title: '识别谷歌图形验证码插件',
             desc:
               "自动识别点击谷歌图像验证码",
@@ -251,7 +260,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/airdr.png',
             title: '空投交互教程',
             desc:
               "每日更新",
@@ -269,7 +278,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/lumao.png',
             title: 'L0/L1/L2各个链信息简介',
             desc:
               "撸毛人必存,L0/L1/L2各个链信息",
@@ -283,7 +292,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/Coinowo.jpg',
             title: 'Coinowo空投派发现',
             desc:
               "Coinowo发现分享最新空投和加密货币新闻,学习网格量化交易,研究流动性挖矿和各种Defi项目",
@@ -292,12 +301,21 @@ export const navpageinfolist = [
               {
                 name: 'internet',
                 link: 'https://coinowo.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/Coinowodrop',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/coinowonewalpha',
               }
+            
             ],
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/baozao.png',
             title: '暴躁兔',
             desc:
               "暴躁兔是一个搞技术,数据为导向的社区",
@@ -319,8 +337,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
-            title: 'hzkj99airdrop的撸猫教程',
+              'img/navigator/Bress.png',
             desc:
               "撸猫教程",
             tags: ['AirDrop', 'Web3'],
@@ -333,7 +350,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/RabbitHole.png',
             title: 'RabbitHole兔子洞',
             desc:
               "web3任务平台,做任务给奖励",
@@ -355,7 +372,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/galxe.png',
             title: 'Galxe: 银河',
             desc:
               "Web3 任务奖励平台",
@@ -369,7 +386,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/Layer3.png',
             title: 'Layer3 任务平台',
             desc:
               "L3 任务平台",
@@ -391,7 +408,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/btcstudy.png',
             title: 'btcstudy',
             desc:
               "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
@@ -422,7 +439,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/wtf.png',
             title: 'wtf',
             desc:
               "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
@@ -453,7 +470,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/btcstudy.png',
             title: 'bitcointalk',
             desc:
               "🚀 这是一个论坛,汇集了比特币社区的成员,包括开发者、矿工和爱好者。这里有关于比特币开发的深入讨论和资源分享。",
@@ -501,7 +518,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/okx.png',
             href: '/docs/installation',
             title: 'OKX - Ordinals',
             desc:
@@ -528,7 +545,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/bian.png',
             title: 'Binance',
             desc:
               "全球最大中心化交易所",
@@ -554,7 +571,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/unisat.png',
             title: 'Unisat',
             desc:
               "交易、Inscribe BRC-20 和 BTC NFT",
@@ -580,7 +597,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/kucoin.png',
             title: 'KUCOIN',
             desc:
               "交易各链加密货币、以及BRC20 火爆代币的中心化交易所",
@@ -607,7 +624,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/gate.io.png',
             title: 'Gate.io',
             desc:
               "芝麻开门中心化交易所。",
@@ -633,7 +650,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/ordinals wallet.png',
             title: 'Ordinals wallet',
             desc:
               "集BTC和DogeChain两者的Market。BTC 模块支持Inscribe功能。支持原生 Ordinals Wallet和Unisat、Xverse、Leather钱包。",
@@ -659,7 +676,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/nxhub.svg',
             title: 'Nxhub',
             desc:
               "通过 NxHub 轻松捕获和管理多家交易平台的 Brc-20 订单。聚合多家交易平台（UniSat、OKX、MagicEden、OrdinalsWallet等）数据,实现多平台挂单。【暂未上线】",
@@ -685,7 +702,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/megic.png',
             title: 'magiceden',
             desc:
               "集合多链NFT 交易、Inscribe BRC20 于一体的综合平台。",
@@ -711,7 +728,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/idclub.png',
             title: 'idclub',
             desc:
               "idclub是铭文代打,btc域名交易,铭文交易最活跃平台之一",
@@ -746,7 +763,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/satsx.svg',
             title: 'SatsX',
             desc:
               "🚀 pipe protocol、Atomicals、等铭文综合查询、铸造、交易平台",
@@ -776,7 +793,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/atomicalMarket.svg',
             title: 'Atomical Market',
             desc:
               "🚀 Atomicals等铭文综合查询、铸造、交易平台",
@@ -814,7 +831,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/stampscan.png',
             title: 'StampScan',
             desc:
               "铸造、部署、交易STAMP资产的平台。",
@@ -852,7 +869,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/lnmarkets.png',
             title: 'lnmarkets',
             desc:
               "🚀 LNmarkets是一个基于比特币的闪电网络(Lightning Network)的金融交易平台。它特别针对比特币衍生品交易,如期货和期权交易.",
@@ -882,7 +899,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/uxuy.png',
             title: 'UXUY Exchange',
             desc:
               "UXUY以MPC为基础,为用户提供了无助记词和安全导向的去中心化交易所应用,UXUY 基于 Taproot Assets 协议正式上线 $TAPROOT,并开放LN节点.",
@@ -980,7 +997,7 @@ export const navpageinfolist = [
           },
 		  {
 			avator:
-			  'https://getalby.com/assets/alby-logo-head-da6c4355b69a3baac3fc306d47741c9394a825e54905ef67c5dd029146b89edf.svg',
+			  'img/navigator/alby.png',
 			title: 'Alby',
 			desc:
 			  "Your Bitcoin & Nostr companion for the web.",
@@ -1066,7 +1083,7 @@ export const navpageinfolist = [
 		  },	
       {
         avator:
-          'https://avatars.githubusercontent.com/u/124768502?s=200&v=4',
+          'img/navigator/tp Wallet.png',
         title: 'TokenPocket',
         desc:
           "同时开发了冷钱包、多签钱包等,多链钱包,支持BTC、ETH、BSC、TRON、Aptos、Polygon、Solana、Cosmos、Polkadot、EOS、IOST等",
@@ -1112,7 +1129,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/ord.io.png',
             title: 'Ord.io',
             desc:
               "Ordinal Inscriptions/collections 浏览器,界面友好,快速检索",
@@ -1138,7 +1155,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/ordiscan.png',
             title: 'Ordiscan',
             desc:
               "搜索比特币生态铭文详情、查看Inscriptions及Collections。",
@@ -1164,7 +1181,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/mempool.png',
             title: 'mempool',
             desc:
               "体验完整比特币生态查询（包括闪电网络）底层区块查询。",
@@ -1190,7 +1207,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/btccom.png',
             title: 'BTC.com',
             desc:
               "BTC链浏览器",
@@ -1216,7 +1233,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/1ml.png',
             title: '1ML',
             desc:
               "闪电网络搜索和分析引擎",
@@ -1242,7 +1259,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/oklink.png',
             title: 'OKLINK',
             desc:
               "全球领先的 Web3 数据分析平台.区块链浏览器、链上数据分析及服务",
@@ -1272,7 +1289,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'mg/navigator/oklink.png',
             title: 'GeniiData',
             desc:
               "实时铭文内存池统计",
@@ -1298,7 +1315,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/inbrc.png',
             title: 'InBRC|BRC-100 Indexer',
             desc:
               "BRC100铭刻、查询",
@@ -1324,7 +1341,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/btctool.png',
             title: 'BTCTOOL',
             desc:
               "BRC20代币行情实时查看",
@@ -1363,7 +1380,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/coinmarketcap.png',
             title: 'CoinMarketCarp',
             desc:
               "实时全链货币数据",
@@ -1394,7 +1411,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/coincarp.png',
             title: 'CoinCarp',
             desc:
               "各币种行情查询统计网站",
@@ -1420,7 +1437,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/bnbproject.png',
             title: 'BNBProject',
             desc:
               "BSC链所有项目数据",
@@ -1467,7 +1484,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/bitcoinfrogs.jpeg',
             title: 'Bitcoin Frogs',
             desc:
               "🚀 比特币上最火NFT项目之一,使用Ordinals协议在比特币Bitcoin区块链网络上创造的NFT 项目,",
@@ -1475,7 +1492,7 @@ export const navpageinfolist = [
             exterlink: [
               {
                 name: 'internet',
-                link: '',
+                link: 'https://bitcoinfrogs.com/',
               },
               {
                 name: 'twitter',
@@ -1501,7 +1518,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/element.webp',
             title: 'Element Market',
             desc:
               "🔥第一个社区驱动的聚合市场,NFT交易市场,支持多个公链,多种钱包。用户可以获得最好的流动性、最低的交易成本和最高效的交易功能。",
@@ -1527,7 +1544,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/opensea.svg',
             title: 'OpenSea:',
             desc:
               "🚀知名的区块链市场和数字资产交易平台,专门用于购买、出售和交易非同质化代币(NFTs)。用户可以在OpenSea上创建个人资料,关注其他用户,评论和喜欢他们喜欢的NFTs",
@@ -1553,7 +1570,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/ordzaar.png',
             title: 'ordzaar',
             desc:
               "🚀Ordinals 上线第一个带有版税的 launchpad,可以交易并具有创建和mint功能。",
@@ -1579,7 +1596,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+              'img/navigator/megic.png',
             title: 'magiceden',
             desc:
               "集合多链NFT 交易、Inscribe BRC20 于一体的综合平台。",
@@ -1605,7 +1622,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/ordinals market.png',
             title: 'Ordinals Market',
             desc:
               "支持导入用户所链接的钱包在其他市场所挂单资产的清单。聚合挂单功能比较实用。",
@@ -1649,7 +1666,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              '',
+              'img/navigator/btcpixelwar.png',
             title: 'PIXE WAR',
             desc:
               "比特币生态Ordinals上首个递归铭文游戏。",
@@ -1683,7 +1700,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://www.naga.io/images/bigimg/logonew.png',
+              'img/navigator/naga.png',
             title: 'NAGA',
             desc:
               "Discover The Best Web3 Gaming.",
@@ -1811,7 +1828,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/damus.png',
             title: 'Damus(达摩)',
             desc:
               "🚀 Damus(达摩)是一个基于开源协议Nostr的社交媒体应用程序。Nostr是一个新兴的分散式社交网络协议,旨在提供一个开放、无审查的平台。 Nostr, Jack Dorsey’s Favorite Decentralized Social Network。",
@@ -1837,7 +1854,7 @@ export const navpageinfolist = [
           }, 
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/sphinx.jpeg',
             title: 'Sphinx Chat ',
             desc:
               "🚀 这是一个利用比特币的闪电网络的通讯应用程序。Sphinx Chat允许用户通过微支付来发送消息和内容,同时也支持加密通信",
@@ -1863,7 +1880,7 @@ export const navpageinfolist = [
           }, 
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/taprootassets.webp',
             title: 'TaprootAssets(Taro)',
             desc:
               "🔥 闪电实验室(ightning Labs)推出的协议,旨在在比特币的闪电网络上创建、发送和接收任何类型的资产。尽管Taro本身不是一个社交媒体平台,但它为未来可能出现的基于比特币的SocialFi应用提供了基础设施。",
@@ -1897,7 +1914,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/nostr.jpeg',
             title: 'NostrAssets',
             desc:
               "🔥 通过 NostrAsset 网页客户端传输 Taproot Assets和其他资产,无 Gas 费。",
@@ -1971,7 +1988,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/sovrynb.png',
             title: 'Sovryn',
             desc:
               "Sovryn是一个在RSK上运行的去中心化交易和借贷平台,允许用户利用比特币进行各种金融交易,包括借贷、保证金交易和交换.",
@@ -2010,7 +2027,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/rootstock.jpeg',
             title: 'Rootstock (RSK)',
             desc:
               "RSK是一个侧链平台,它使比特币区块链能够支持智能合约,类似于以太坊。RSK通过二元锚定机制与比特币区块链相连,使用户可以在比特币和RSK平台之间转移资产.",
@@ -2041,7 +2058,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/badger.svg',
             title: 'Badger DAO',
             desc:
               "Badger DAO 专注于将比特币带入DeFi,通过一系列产品和服务将比特币作为抵押品来提供各种去中心化金融服务.",
@@ -2115,19 +2132,19 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2022/01/464f5-www.huoxing24.com.png"',
+              'img/navigator/marsbit.svg',
             title: '火星财经',
             desc:
               "火星财经是中国领先的区块链产业信息服务平台,由资深区块链团队倾力打造,为中国区块链爱好者提供全球最新的区块链新闻资讯。",
-            tags: ['BTCNEXT', 'Web3'],
+            tags: ['BTCNEXT', 'Web3','News'],
             exterlink: [
               {
                 name: 'internet',
-                link: 'https://www.coinvoice.cn/',
+                link: 'https://www.marsbit.co/',
               },
               {
                 name: 'twitter',
-                link: 'https://twitter.com/coin_voice',
+                link: 'https://twitter.com/Marsbit2022',
               },
               // {
                 // name: 'github',
@@ -2175,7 +2192,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://sihuo-1309822528.file.myqcloud.com/2022/02/49565-nulltx.com.png',
+              'img/navigator/nulltx.png',
             title: 'NullTX',
             desc:
               "Null TX（前身为The Merkle）提供加密的最新消息以及有关比特币,以太坊和其他加密货币的教育文章",
@@ -2205,40 +2222,11 @@ export const navpageinfolist = [
           },
           
           {
+
             avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2021/12/c98a0-www.8btc.com.png"',
+              'img/navigator/AINewWorld.png',
             title: 'AI新智界',
             desc:              "AI新智界始建于2011年,是国内最早的区块链（blockchain）资讯社区门户,为区块链创业者、投资者提供信息、交流与投融资服务。开放是我们的广度,中立是我们的态度,敏锐是我们的深度,欢迎一切区块链技术的探讨争鸣。目前有200多位区块链意见领袖、研究者入驻平台。如果您是我们的同类,欢迎加入我们！",
-            tags: ['BTCNEXT', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://www.feixiaohaozh.info/',
-              },
-              // {
-                // name: 'twitter',
-                // link: 'https://twitter.com/coin_voice',
-              // },
-              // {
-                // name: 'github',
-                // link: '',
-              // },
-              // {
-                // name: 'discord',
-                // link: '',
-              // },
-              // {
-                // name: 'Telegram',
-                // link: 'https://t.me/jinse2017',
-              // },			  
-            ],
-          },
-          {
-            avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2022/03/aul0a-ehtil.png"',
-            title: '非小号',
-            desc:              
-			"区块链数据资料大全！",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2265,7 +2253,37 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/91de1-cointelegraph.com.png"',
+              'img/navigator/feixiaohao.png',
+            title: '非小号',
+            desc:              
+			"区块链数据资料大全！",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.feixiaohaozh.info/',
+              },
+              // {
+                // name: 'twitter',
+                // link: 'https://twitter.com/coin_voice',
+              // },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              // {
+                // name: 'Telegram',
+                // link: 'https://t.me/jinse2017',
+              // },			  
+            ],
+          },
+          {
+            avator:
+              'img/navigator/cointelegraph.png',
             title: 'CoinTelegraph',
             desc:              
 			"CoinTelegraph提供有关比特币,以太坊和其他加密货币的新内容,以及有关区块链技术和加密市场的分析和评论",
@@ -2295,7 +2313,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/4a63f-www.ccn.com.png"',
+              'img/navigator/ccn.png',
             title: 'CCN',
             desc:              
 			"CCN是在挪威注册的媒体公司的一部分。 CCN的网站提供有关加密货币的新闻和文章,如比特币,以太坊,以及区块链领域的工业新闻",
@@ -2325,7 +2343,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/95972-www.newsbtc.com.png"',
+              'img/navigator/newsbtc.png',
             title: 'NewsBTC',
             desc:              
 			"NewsBTC是区块链和加密的新闻和资源平台,自2013年开始运营。NewsBTC向区块链和加密货币社区提供新闻,评论,技术分析和其他信息。",
@@ -2355,7 +2373,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/apple-icon-57x57-1.png"',
+              'img/navigator/cryptoslate.png',
             title: 'CryptoSlate',
             desc:              
 			"CryptoSlate是一家区块链媒体,其使命是“提供关于加密货币和区块链的透明、准确的报道”。这家媒体成立于2017年,总部设在西雅图。 CryptoSlate的网站提供与区块链和加密货币相关的定期更新的新闻和文章。它还提供ICO,加密货币排名等内容。",
@@ -2385,7 +2403,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/d2b9b-bitcoinist.com.png"',
+              'img/navigator/bitcoinist.png',
             title: 'Bitcoinist',
             desc:              
 			"Bitcoinist成立于2013年。Bitcoinist不仅涵盖比特币,还提供有关其他加密货币和区块链技术的新闻和消息来源。Bitcoinist每天发布几篇文章和新闻,涵盖加密和区块链中的一系列主题。",
@@ -2415,7 +2433,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/d2b9b-bitcoinist.com.png"',
+              'img/navigator/magazine.svg',
             title: 'Bitcoin Magazine',
             desc:              
 			"Bitcoin Magazine是第一本专门用于比特币的出版物。它的创始人包括V神Vitalik Buterin,以太坊的创造者。现在Bitcoin Magazine不仅涵盖比特币,还涵盖其他加密货币和区块链技术。比特币杂志在金融和技术的交叉点提供分析,研究,教育和思想领导力。",
@@ -2445,7 +2463,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/e458f-www.odaily.news.png"',
+              'img/navigator/odaily.png',
             title: 'ODAILY星球日报',
             desc:              
 			"ODAILY是36氪独家战略合作的区块链媒体,通过全面、深度的信息资讯服务为区块链爱好者与项目决策者提供每日必备的前沿区块链技术资讯、区块链游戏、元宇宙、Web3.0行业动态。",
@@ -2475,7 +2493,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'src="src="https://sihuo-1309822528.file.myqcloud.com/2023/01/53cfb-www.bi123.co.png""',
+              'img/navigator/bi123.png',
             title: 'Bi123',
             desc:              
 			"Bi123的目标是成为最有价值的区块链信息和数据平台,为数字货币行业用户提供包括比特币、以太坊、币安币等相关行情、信息和数据服务、量化资管、问答社区以及投资教育等内容和服务。",
@@ -2505,7 +2523,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'src="src="https://piccdn.0daily.com/202210/21062812/91usnyy52hogh1gt.png"',
+              'img/navigator/odatainfo.png',
             title: 'Odata',
             desc:              
 			"一站式web3项目库。",
@@ -2551,7 +2569,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/wangfeng.png',
             title: '小隐新十年（王峰）',
             desc:
               "🚀 加密公民｜NFT|@element_market|媒体|Marsbit2022|投资@Lkventure|Web3游戏门户|@gamefinaga｜蓝港在线CEO、香港IPO｜前金山软件高级副总裁",
@@ -2577,7 +2595,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/elonmusk.png',
             title: 'Elon Musk',
             desc:
               "SpaceX创始人、Twitter CEO",
@@ -2585,11 +2603,11 @@ export const navpageinfolist = [
             exterlink: [
               {
                 name: 'internet',
-                link: 'https://twitter.com/cryptocishanjia',
+                link: 'https://twitter.com/elonmusk',
               },
               {
                 name: 'twitter',
-                link: 'https://twitter.com/cryptocishanjia',
+                link: 'https://twitter.com/elonmusk',
               },
               // {
               //   name: 'github',
@@ -2603,7 +2621,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/cishanjia.png',
             title: '币圈慈善家',
             desc:
               "话痨博主,土狗冲击者,傻逼韭菜,不构成投资建议。若想有所改变,应真诚面对自己和他人。投资核心：玩得早,买的多,拿得住。",
@@ -2629,7 +2647,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/Jademont.png',
             title: 'Jademont',
             desc:
               "CEO @waterdripfund|Managing partner of Pacific Waterdrip Digital Assets Fund|Evangelist of #Bitcoin|Ph.D in EE,  Prev. chip design engineer",
@@ -2655,7 +2673,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/jack孔.png',
             title: 'Jack孔@iPollo',
             desc:
               "关注Web3、元宇宙。Twitter 仅代表个人观点,不代表公司立场,不构成投资建议。",
@@ -2681,7 +2699,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/williamcasarin.png',
             title: 'William Casarin',
             desc:
               "#bitcoin core,⚡️& #nostr dev. Building @damusapp|I don’t post much here. find me on nostr 🔎 nostr:jb55@jb55.com",
@@ -2707,7 +2725,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/jack.png',
             title: 'jack',
             desc:
               "推特创始人,前CEO",
@@ -2751,7 +2769,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/btcnext.png',
             title: 'BTC NEXT 学习小组',
             desc:
               "🚀 （比特币网络生态第一社群）",
@@ -2777,7 +2795,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/bqtjdyjt.png',
             title: '币圈淘金第一军团',
             desc:
               "🚀 Web3领域各路大神",
@@ -2803,7 +2821,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/okx.png',
             title: '欧易社区',
             desc:
               "🚀 欧易社区",
@@ -2829,7 +2847,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/bian.png',
             title: '币安社区',
             desc:
               "🚀 币安社区",
@@ -2855,7 +2873,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/kucoin.png',
             title: 'KUCOIN社区',
             desc:
               "🚀 KUCOIN社区",
@@ -2881,7 +2899,7 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              'img/navigator/gate.io.png',
             title: 'Gate.io社区',
             desc:
               "🚀 Gate.io社区",

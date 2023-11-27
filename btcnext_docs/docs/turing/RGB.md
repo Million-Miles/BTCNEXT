@@ -7,6 +7,7 @@ slug: /turing/RGB
 
 - [介绍](https://mirror.xyz/dapangdun.eth/SUZguS8yb8TE_MxOUwak56iw9J9axyvy-n58Rmd8No4)
 
+- 视频讲解[Video](https://deschool.app/u/2EKMaiHSP)
 	- RGB 是由LNP/BP标准协会开发的可扩展且保密的比特币和闪电网络智能合约系统,将以太坊等智能合约平台的复杂可编程性和灵活性引入比特币生态。它采用了私有和共同所有权的概念,是一种图灵完备的、无信任的分布式计算形式,不需要引入代币的非区块的去中心化协议。
 
 		- LNP/BP Standards Association 是一个专注于为比特币和闪电网络协议（Lightning Network Protocol,LNP）及比特币协议（Bitcoin Protocol,BP）开发标准和提案的组织。
