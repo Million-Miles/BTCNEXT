@@ -79,9 +79,14 @@
 }
 
 .navItemdesc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   margin-top: 14px;
   line-height: 22px;
   color: var(--docsearch-muted-color);
+  height: 66px;
+  overflow: hidden;
 }
 
 .navItemTag {
