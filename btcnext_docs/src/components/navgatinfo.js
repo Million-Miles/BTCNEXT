@@ -7,7 +7,7 @@ export const navpageinfolist = [
     items: [
       {
         type: 'link',
-        label: '空投必备',
+        label: '🪂 空投必备',
         href: '#AirDrop',
         docId: 'AirDrop',
         nextitems: [
@@ -385,36 +385,104 @@ export const navpageinfolist = [
       },
       {
         type: 'link',
-        label: '深度学习',
+        label: '🏫 深度学习',
         href: '#learn',
         docId: 'learn',
         nextitems: [
           {
             avator:
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
-            title: 'Join us for a #GasHero',
+            title: 'btcstudy',
             desc:
-              "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
-            tags: ['NFT', 'Web3'],
+              "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
+            tags: ['BTC', 'LN','Payjoin'],
             exterlink: [
               {
                 name: 'internet',
-                link: '',
+                link: 'https://www.btcstudy.org/',
               },
               {
                 name: 'twitter',
-                link: '',
+                link: 'https://twitter.com/btcstudy',
+              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: '',
+              // },
+              {
+                name: 'telegram',
+                link: 'https://t.me/btcstudyorg',
+              },
+              
+            ],
+          },
+          {
+            avator:
+              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+            title: 'wtf',
+            desc:
+              "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
+            tags: ['BTC', 'LN','Payjoin'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.wtf.academy/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/0xAA_Science',
               },
               {
                 name: 'github',
-                link: '',
+                link: 'https://github.com/WTFAcademy',
               },
               {
                 name: 'discord',
-                link: '',
+                link: 'https://discord.com/invite/5akcruXrsk',
               },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/btcstudyorg',
+              // },
+              
             ],
-          }
+          },
+          {
+            avator:
+              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+            title: 'bitcointalk',
+            desc:
+              "🚀 这是一个论坛，汇集了比特币社区的成员，包括开发者、矿工和爱好者。这里有关于比特币开发的深入讨论和资源分享。",
+            tags: ['BTC', 'talk'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://bitcointalk.org/',
+              },
+              // {
+              //   name: 'twitter',
+              //   link: 'https://twitter.com/0xAA_Science',
+              // },
+              // {
+              //   name: 'github',
+              //   link: 'https://github.com/WTFAcademy',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/5akcruXrsk',
+              // },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/btcstudyorg',
+              // },
+              
+            ],
+          },
+          
         ]
       },
     ],
@@ -427,7 +495,7 @@ export const navpageinfolist = [
     items: [
       {
         type: 'link',
-        label: 'Ordinals',
+        label: '📖 Ordinals',
         href: '#Ordinals',
         docId: 'Ordinals',
         nextitems: [
@@ -672,7 +740,7 @@ export const navpageinfolist = [
       },
       {
         type: 'link',
-        label: 'Atomicals',
+        label: '⚛ Atomicals',
         href: '#Atomicals',
         docId: 'Atomicals',
         nextitems: [
@@ -740,37 +808,37 @@ export const navpageinfolist = [
       },
       {
         type: 'link',
-        label: 'STAMPS',
+        label: '🎫 STAMPS',
         href: '#STAMPS',
         docId: 'STAMPS',
         nextitems: [
           {
             avator:
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
-            title: 'Join us for a #GasHero',
+            title: 'StampScan',
             desc:
-              "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
+              "铸造、部署、交易STAMP资产的平台。",
             tags: ['NFT', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
-                link: '',
+                link: 'https://www.stampscan.xyz/zh/trade',
               },
               {
                 name: 'twitter',
-                link: '',
+                link: 'https://twitter.com/thestampwallet',
               },
-              {
-                name: 'github',
-                link: '',
-              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
               {
                 name: 'discord',
-                link: '',
+                link: 'https://discord.com/invite/DhnJW2fAtg',
               },
               {
                 name: 'telegram',
-                link: '',
+                link: 'https://t.me/stampscan',
               },
             ],
           }
@@ -778,7 +846,7 @@ export const navpageinfolist = [
       },
       {
         type: 'link',
-        label: 'LightningNetwork',
+        label: '⚡️ LightningNetwork',
         href: '#LN',
         docId: 'LN',
         nextitems: [
@@ -864,7 +932,7 @@ export const navpageinfolist = [
             title: 'Unisat Wallet',
             desc:
               "The first open-source browser extension wallet for Bitcoin NFTs!",
-            tags: ['BTCNEXT', 'Web3', 'NFT', 'Wallet', 'BRC-20'],
+            tags: ['NFT', 'Wallet', 'BRC20'],
             exterlink: [
               {
                 name: 'internet',
@@ -890,7 +958,7 @@ export const navpageinfolist = [
             title: 'ATOM Wallet',
             desc:
               "The first Atomicals wallet that can safeguard your ARC-20, Realms and NFTs.",
-            tags: ['BTCNEXT', 'Web3', 'NFT', 'Wallet', 'ARC-20'],
+            tags: ['NFT', 'Wallet', 'ARC20'],
             exterlink: [
               {
                 name: 'internet',
@@ -916,7 +984,7 @@ export const navpageinfolist = [
 			title: 'Alby',
 			desc:
 			  "Your Bitcoin & Nostr companion for the web.",
-			tags: ['BTCNEXT', 'Web3', 'Wallet', 'Bitcoin', 'Nostr', 'lightning'],
+			tags: [ 'Wallet', 'Bitcoin', 'Nostr', 'LN'],
 			exterlink: [
 			  {
 				name: 'internet',
@@ -946,7 +1014,7 @@ export const navpageinfolist = [
             title: 'Xverse',
             desc:
               "The Bitcoin Wallet for everyone.",
-            tags: ['BTCNEXT', 'Web3', 'BRC20', 'Wallet', 'Lightning', 'Ordinals', 'Stacks'],
+            tags: ['BRC20', 'Wallet', 'LN', 'Ordinals', 'Stacks'],
             exterlink: [
               {
                 name: 'internet',
@@ -965,14 +1033,14 @@ export const navpageinfolist = [
                 // link: 'https://discord.com/invite/atomicalsxyz',
               // },			  
             ],
-          },
+      },
 		  {
 			avator:
 			  'https://avatars.githubusercontent.com/u/124768502?s=200&v=4',
 			title: 'uxuy Wallet',
 			desc:
 			  "UXUY是一个安全的非托管钱包，采用多方计算（MPC）技术，通过无需密钥签名和无需种子恢复，提供极致的安全性和便捷性。",
-			tags: ['BTCNEXT', 'Web3', 'Wallet', 'ERC-20', 'BEP-20', 'TRX-20', 'UXUY'],
+			tags: ['Wallet', 'ERC', 'BEP20', 'TRX20', 'LN'],
 			exterlink: [
 			  {
 				name: 'internet',
@@ -995,7 +1063,37 @@ export const navpageinfolist = [
 				link: 'https://t.me/uxuycom',
 			  },
 			],
-		  },		  
+		  },	
+      {
+        avator:
+          'https://avatars.githubusercontent.com/u/124768502?s=200&v=4',
+        title: 'TokenPocket',
+        desc:
+          "同时开发了冷钱包、多签钱包等,多链钱包,支持BTC、ETH、BSC、TRON、Aptos、Polygon、Solana、Cosmos、Polkadot、EOS、IOST等",
+        tags: ['Wallet', 'BTC','LN'],
+        exterlink: [
+          {
+          name: 'internet',
+          link: 'https://www.tokenpocket.pro/',
+          },
+          {
+          name: 'twitter',
+          link: 'https://twitter.com/TokenPocket_TP',
+          },
+          {
+          name: 'github',
+          link: 'https://github.com/TP-Lab',
+          },
+          {
+          name: 'discord',
+          link: 'https://discord.com/invite/NKPM8TXFQk',
+          },
+          {
+          name: 'Telegram',
+          link: 'https://t.me/tokenPocket_cn',
+          },
+        ],
+        },	  
         ]
       },
     ],
@@ -1008,7 +1106,7 @@ export const navpageinfolist = [
     items: [
       {
         type: 'link',
-        label: '链上数据分析',
+        label: '🔎 链上数据分析',
         href: '#ChainTool',
         docId: 'ChainTool',
         nextitems: [
@@ -1018,16 +1116,16 @@ export const navpageinfolist = [
             title: 'Ord.io',
             desc:
               "Ordinal Inscriptions/collections 浏览器,界面友好,快速检索",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
                 link: 'https://www.ord.io/',
               },
-              //{
-              //  name: 'twitter',
-              //  link: '',
-              //},
+              {
+               name: 'twitter',
+               link: 'https://twitter.com/ord_io',
+              },
               //{
               //  name: 'github',
               //  link: '',
@@ -1044,24 +1142,24 @@ export const navpageinfolist = [
             title: 'Ordiscan',
             desc:
               "搜索比特币生态铭文详情、查看Inscriptions及Collections。",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
                 link: 'https://ordiscan.com/',
               },
               {
-                name: '作者twitter',
+                name: 'twitter',
                 link: 'https://twitter.com/t4t5',
               },
               {
-                name: '作者github',
+                name: 'github',
                 link: 'https://github.com/t4t5',
               },
-              {
-                name: '作者作品主页',
-                link: 'https://t4t5.com/',
-              },
+              // {
+              //   name: '作者作品主页',
+              //   link: 'https://t4t5.com/',
+              // },
             ],
           },
           {
@@ -1070,7 +1168,7 @@ export const navpageinfolist = [
             title: 'mempool',
             desc:
               "体验完整比特币生态查询（包括闪电网络）底层区块查询。",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
@@ -1096,7 +1194,7 @@ export const navpageinfolist = [
             title: 'BTC.com',
             desc:
               "BTC链浏览器",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
@@ -1122,7 +1220,7 @@ export const navpageinfolist = [
             title: '1ML',
             desc:
               "闪电网络搜索和分析引擎",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
@@ -1148,24 +1246,28 @@ export const navpageinfolist = [
             title: 'OKLINK',
             desc:
               "全球领先的 Web3 数据分析平台.区块链浏览器、链上数据分析及服务",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
                 link: 'https://www.oklink.com/cn/',
               },
-              //{
-              //  name: 'twitter',
-              //  link: '',
-              //},
+              {
+               name: 'twitter',
+               link: 'https://twitter.com/OKLink',
+              },
               //{
               //  name: 'github',
               //  link: '',
               //},
-              //{
-              //  name: 'discord',
-              //  link: '',
-              //},
+              {
+               name: 'discord',
+               link: 'https://discord.com/invite/QcywHPgk4S',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/oukeyunlianoklink',
+               },
             ],
           },
           {
@@ -1174,7 +1276,7 @@ export const navpageinfolist = [
             title: 'GeniiData',
             desc:
               "实时铭文内存池统计",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
@@ -1200,7 +1302,7 @@ export const navpageinfolist = [
             title: 'InBRC|BRC-100 Indexer',
             desc:
               "BRC100铭刻、查询",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
@@ -1226,16 +1328,16 @@ export const navpageinfolist = [
             title: 'BTCTOOL',
             desc:
               "BRC20代币行情实时查看",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
                 link: 'https://www.btctool.pro/',
               },
-              //{
-              //  name: 'twitter',
-              //  link: 'https://twitter.com/in_BRC',
-              //},
+              {
+               name: 'twitter',
+               link: 'https://twitter.com/btctoolpro',
+              },
               //{
               //  name: 'github',
               //  link: '',
@@ -1243,14 +1345,19 @@ export const navpageinfolist = [
               //{
               //  name: 'discord',
               //  link: '',
-              //},                            
+              //}, 
+              {
+               name: 'telegram',
+               link: 'https://t.me/btctoolgroup',
+              }, 
+                                        
             ],
           },
         ]
       },
       {
         type: 'link',
-        label: '行情分析',
+        label: '📉 行情分析',
         href: '#MarketAnalysis',
         docId: 'MarketAnalysis',
         nextitems: [
@@ -1260,16 +1367,16 @@ export const navpageinfolist = [
             title: 'CoinMarketCarp',
             desc:
               "实时全链货币数据",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
                 link: 'https://coinmarketcap.com/',
               },
-              //{
-              //  name: 'twitter',
-              //  link: '',
-              //},
+              {
+               name: 'twitter',
+               link: 'https://twitter.com/CoinMarketCap ',
+              },
               //{
               //  name: 'github',
               //  link: '',
@@ -1278,6 +1385,11 @@ export const navpageinfolist = [
               //  name: 'discord',
               //  link: '',
               //},
+              {
+               name: 'telegram',
+               link: 'https://t.me/CoinMarketCapAnnouncements',
+              },
+  
             ],
           },
           {
@@ -1286,7 +1398,7 @@ export const navpageinfolist = [
             title: 'CoinCarp',
             desc:
               "各币种行情查询统计网站",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
@@ -1312,7 +1424,7 @@ export const navpageinfolist = [
             title: 'BNBProject',
             desc:
               "BSC链所有项目数据",
-            tags: ['NFT', 'Web3'],
+            tags: ['Tool', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
@@ -1356,10 +1468,10 @@ export const navpageinfolist = [
           {
             avator:
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
-            title: 'Join us for a #GasHero',
+            title: 'Bitcoin Frogs',
             desc:
-              "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
-            tags: ['NFT', 'Web3'],
+              "🚀 比特币上最火NFT项目之一,使用Ordinals协议在比特币Bitcoin区块链网络上创造的NFT 项目，",
+            tags: ['NFT', 'Frogs'],
             exterlink: [
               {
                 name: 'internet',
@@ -1367,7 +1479,7 @@ export const navpageinfolist = [
               },
               {
                 name: 'twitter',
-                link: '',
+                link: 'https://twitter.com/BitcoinFrogs',
               },
               {
                 name: 'github',
@@ -1383,7 +1495,7 @@ export const navpageinfolist = [
       },
       {
         type: 'link',
-        label: '交易所',
+        label: '平台',
         href: '#NFTExchange',
         docId: 'NFTExchange',
         nextitems: [
@@ -1462,6 +1574,32 @@ export const navpageinfolist = [
               {
                 name: 'discord',
                 link: 'https://discord.com/invite/ordzaar',
+              },
+            ],
+          },
+          {
+            avator:
+              'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
+            title: 'magiceden',
+            desc:
+              "集合多链NFT 交易、Inscribe BRC20 于一体的综合平台。",
+            tags: ['Markets', 'BTC','BRC20'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://magiceden.io/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/MagicEden',
+              },
+              // {
+              //   name: 'github',
+              //   link: 'https://ordinals-wallet.gitbook.io/api/',
+              // },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/magiceden',
               },
             ],
           },
@@ -1753,7 +1891,7 @@ export const navpageinfolist = [
       },
       {
         type: 'link',
-        label: '交易所',
+        label: '平台',
         href: '#SocialFiExchange',
         docId: 'SocialFiExchange',
         nextitems: [
@@ -1860,7 +1998,7 @@ export const navpageinfolist = [
       },
       {
         type: 'link',
-        label: '交易所',
+        label: '平台',
         href: '#DeFiExchange',
         docId: 'DeFiExchange',
         nextitems: [
@@ -1935,30 +2073,424 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
-            title: '小隐',
+              'src="https://sihuo-1309822528.file.myqcloud.com/2022/01/464f5-www.huoxing24.com.png"',
+            title: '火星财经',
             desc:
-              "🚀 BTCNEXT Founder",
+              "火星财经是中国领先的区块链产业信息服务平台，由资深区块链团队倾力打造，为中国区块链爱好者提供全球最新的区块链新闻资讯。",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
-                link: '',
+                link: 'https://www.coinvoice.cn/',
               },
               {
                 name: 'twitter',
-                link: '',
+                link: 'https://twitter.com/coin_voice',
+              },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              // {
+                // name: 'Telegram',
+                // link: 'https://t.me/jinse2017',
+              // },			  
+            ],
+          },
+          {
+            avator:
+              'https://sihuo-1309822528.file.myqcloud.com/2021/12/WX20211217-154049@2x-e1639726894612.png',
+            title: '金色财经',
+            desc:
+              "金色财经是集行业新闻、资讯、行情、数据等一站式区块链产业服务平台，我们追求及时、全面、专业、准确的资讯与数据，致力于为区块链创业者以及数字货币投资者提供最好的产品和服务。",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.jinse.com/',
+              },
+              // {
+                // name: 'twitter',
+                // link: '',
+              // },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              {
+                name: 'Telegram',
+                link: 'https://t.me/jinse2017',
+              },			  
+            ],
+          },
+          {
+            avator:
+              'https://sihuo-1309822528.file.myqcloud.com/2022/02/49565-nulltx.com.png',
+            title: 'NullTX',
+            desc:
+              "Null TX（前身为The Merkle）提供加密的最新消息以及有关比特币，以太坊和其他加密货币的教育文章",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://nulltx.com/',
               },
               {
-                name: 'github',
-                link: '',
+                name: 'twitter',
+                link: 'https://twitter.com/nulltxnews',
               },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              // {
+                // name: 'Telegram',
+                // link: 'https://t.me/jinse2017',
+              // },			  
+            ],
+          },
+          
+          {
+            avator:
+              'src="https://sihuo-1309822528.file.myqcloud.com/2021/12/c98a0-www.8btc.com.png"',
+            title: 'AI新智界',
+            desc:              "AI新智界始建于2011年，是国内最早的区块链（blockchain）资讯社区门户，为区块链创业者、投资者提供信息、交流与投融资服务。开放是我们的广度，中立是我们的态度，敏锐是我们的深度，欢迎一切区块链技术的探讨争鸣。目前有200多位区块链意见领袖、研究者入驻平台。如果您是我们的同类，欢迎加入我们！",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.feixiaohaozh.info/',
+              },
+              // {
+                // name: 'twitter',
+                // link: 'https://twitter.com/coin_voice',
+              // },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              // {
+                // name: 'Telegram',
+                // link: 'https://t.me/jinse2017',
+              // },			  
+            ],
+          },
+          {
+            avator:
+              'src="https://sihuo-1309822528.file.myqcloud.com/2022/03/aul0a-ehtil.png"',
+            title: '非小号',
+            desc:              
+			"区块链数据资料大全！",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.aixinzhijie.com/',
+              },
+              // {
+                // name: 'twitter',
+                // link: 'https://twitter.com/coin_voice',
+              // },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              // {
+                // name: 'Telegram',
+                // link: 'https://t.me/jinse2017',
+              // },			  
+            ],
+          },
+          {
+            avator:
+              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/91de1-cointelegraph.com.png"',
+            title: 'CoinTelegraph',
+            desc:              
+			"CoinTelegraph提供有关比特币，以太坊和其他加密货币的新内容，以及有关区块链技术和加密市场的分析和评论",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://cointelegraph.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/cointelegraph',
+              },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              {
+                name: 'Telegram',
+                link: 'https://telegram.me/cointelegraph',
+              },			  
+            ],
+          },
+          {
+            avator:
+              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/4a63f-www.ccn.com.png"',
+            title: 'CCN',
+            desc:              
+			"CCN是在挪威注册的媒体公司的一部分。 CCN的网站提供有关加密货币的新闻和文章,如比特币,以太坊，以及区块链领域的工业新闻",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.ccn.com/',
+              },
+              // {
+                // name: 'twitter',
+                // link: 'https://twitter.com/cointelegraph',
+              // },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              // {
+                // name: 'Telegram',
+                // link: 'https://telegram.me/cointelegraph',
+              // },			  
+            ],
+          },
+          {
+            avator:
+              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/95972-www.newsbtc.com.png"',
+            title: 'NewsBTC',
+            desc:              
+			"NewsBTC是区块链和加密的新闻和资源平台,自2013年开始运营。NewsBTC向区块链和加密货币社区提供新闻，评论，技术分析和其他信息。",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.newsbtc.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/newsbtc',
+              },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              {
+                name: 'Telegram',
+                link: 'https://t.me/s/newsbtcofficial',
+              },			  
+            ],
+          },
+          {
+            avator:
+              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/apple-icon-57x57-1.png"',
+            title: 'CryptoSlate',
+            desc:              
+			"CryptoSlate是一家区块链媒体,其使命是“提供关于加密货币和区块链的透明、准确的报道”。这家媒体成立于2017年，总部设在西雅图。 CryptoSlate的网站提供与区块链和加密货币相关的定期更新的新闻和文章。它还提供ICO，加密货币排名等内容。",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://cryptoslate.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/CryptoSlate',
+              },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              {
+                name: 'Telegram',
+                link: 'https://t.me/cryptoslatenews',
+              },			  
+            ],
+          },
+          {
+            avator:
+              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/d2b9b-bitcoinist.com.png"',
+            title: 'Bitcoinist',
+            desc:              
+			"Bitcoinist成立于2013年。Bitcoinist不仅涵盖比特币，还提供有关其他加密货币和区块链技术的新闻和消息来源。Bitcoinist每天发布几篇文章和新闻，涵盖加密和区块链中的一系列主题。",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://bitcoinist.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/bitcoinist',
+              },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              {
+                name: 'Telegram',
+                link: 'https://t.me/bitcoinistnews',
+              },			  
+            ],
+          },
+          {
+            avator:
+              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/d2b9b-bitcoinist.com.png"',
+            title: 'Bitcoin Magazine',
+            desc:              
+			"Bitcoin Magazine是第一本专门用于比特币的出版物。它的创始人包括V神Vitalik Buterin，以太坊的创造者。现在Bitcoin Magazine不仅涵盖比特币，还涵盖其他加密货币和区块链技术。比特币杂志在金融和技术的交叉点提供分析，研究，教育和思想领导力。",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://bitcoinmagazine.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/bitcoinmagazine',
+              },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: '',
+              // },
+              // {
+                // name: 'Telegram',
+                // link: 'https://t.me/bitcoinistnews',
+              // },			  
+            ],
+          },
+          {
+            avator:
+              'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/e458f-www.odaily.news.png"',
+            title: 'ODAILY星球日报',
+            desc:              
+			"ODAILY是36氪独家战略合作的区块链媒体,通过全面、深度的信息资讯服务为区块链爱好者与项目决策者提供每日必备的前沿区块链技术资讯、区块链游戏、元宇宙、Web3.0行业动态。",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.odaily.news/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/OdailyChina',
+              },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
               {
                 name: 'discord',
-                link: '',
+                link: 'https://discord.com/invite/nQrCTu9Ekd',
               },
+              {
+                name: 'Telegram',
+                link: 'https://t.me/Odaily_CryptoPunk',
+              },			  
             ],
-          }
+          },
+          {
+            avator:
+              'src="src="https://sihuo-1309822528.file.myqcloud.com/2023/01/53cfb-www.bi123.co.png""',
+            title: 'Bi123',
+            desc:              
+			"Bi123的目标是成为最有价值的区块链信息和数据平台,为数字货币行业用户提供包括比特币、以太坊、币安币等相关行情、信息和数据服务、量化资管、问答社区以及投资教育等内容和服务。",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.bi123.co/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/Bi123pro',
+              },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: 'https://discord.com/invite/nQrCTu9Ekd',
+              // },
+              {
+                name: 'Telegram',
+                link: 'https://t.me/bi123_official',
+              },			  
+            ],
+          },
+          {
+            avator:
+              'src="src="https://piccdn.0daily.com/202210/21062812/91usnyy52hogh1gt.png"',
+            title: 'Odata',
+            desc:              
+			"一站式web3项目库。",
+            tags: ['BTCNEXT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.odata.info/',
+              },
+              // {
+                // name: 'twitter',
+                // link: 'https://twitter.com/Bi123pro',
+              // },
+              // {
+                // name: 'github',
+                // link: '',
+              // },
+              // {
+                // name: 'discord',
+                // link: 'https://discord.com/invite/nQrCTu9Ekd',
+              // },
+              // {
+                // name: 'Telegram',
+                // link: 'https://t.me/bi123_official',
+              // },			  
+            ],
+          }		  
         ]
       },
     ],

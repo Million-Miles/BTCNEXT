@@ -1,9 +1,32 @@
 ---
 id: related
-title: related
-sidebar_label: related
+title: ICP
+sidebar_label: ICP
 slug: /related/related
 ---
 
-## 🤠 测试
-nexport NODE_OPTIONS=--openssl-legacy-provide
+### [ICP（ Internet Computer）](https://www.theblockbeats.info/news/42568)
+
+- 介绍
+
+	- [DFINITY基金会创建了一个名为internet Computer（ICP）的去中心化互联网替代方案，以实现免费、用户控制互联网的梦想，并将用户信息从亚马逊、谷歌云、阿里巴巴等提供大型云服务的公司手中夺走。](https://www.panewslab.com/zh/articledetails/riwadyx1.html)
+
+	-  ICP 很有可能会是区块链 3.0 的创新驱动者，但不可否认的是 ICP 的 Tokenomics 设计上确实存在一些问题，生态也暂时没有爆发。
+
+- 2016年起就一直在开发中，于2021年5月正式上线。
+
+- 特点
+
+	- 去中心化的网络： ICP旨在建立一个无需传统云服务提供商的去中心化互联网，这将通过独特的协议和去中心化的基础设施实现。
+
+	- 节点结构： 网络由多个独立的数据中心组成，它们提供物理计算资源，将这些资源转化为可供所有参与者使用的计算能力。
+
+	- 链上治理： ICP的治理由网络参与者控制，通过一种叫做“神经元”的机制，代币持有者可以锁定他们的ICP代币来参与治理决策，并因此获得奖励。
+
+	- 可扩展性： ICP致力于解决传统区块链面临的扩展性问题，采用了一种叫做“链键技术”的方法，理论上可以处理无限的智能合约操作。
+
+	- 兼容性： ICP声称可以运行任何传统互联网应用，同时提供原生的前端用户体验，且性能与传统的中心化服务相媲美。
+
+	- 直接集成到互联网中： ICP的目标是成为互联网的扩展部分，它允许在没有第三方API和服务的情况下，直接在网络上构建和托管软件。
+
+	- ICP代币： 网络的本地代币用于参与网络治理、奖励数据中心、支付交易费用等。
