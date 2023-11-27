@@ -63,6 +63,16 @@
   margin-right: 10px;
 }
 
+.notimgAvatornav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
 .navitemName {
   font-size: 20px;
   font-weight: bold;

@@ -13,7 +13,7 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+              '',
             href: '/docs/installation',
             title: 'earni',
             desc:
