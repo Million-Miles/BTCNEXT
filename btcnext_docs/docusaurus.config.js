@@ -214,15 +214,15 @@ const config = {
           items: [
             {
               label: 'Get Started',
-              to: 'docs/introduction',
+              to: 'docs/quick-start/introduction',
             },
             {
               label: 'How to Join',
-              to: 'docs/navigation',
+              to: 'https://github.com/Million-Miles/BTCNEXT/wiki/BTCNEXT-Wiki',
             },
             {
               label: 'Navigator',
-              to: 'docs/navigation',
+              to: '/navigation',
             },
           ],
         },
