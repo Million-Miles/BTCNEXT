@@ -3,7 +3,7 @@ id: cookie-policy
 hide_table_of_contents: true
 ---
 
-# AgileTs Open Source - Cookie Policy
+# BTCNEXT Open Source - Cookie Policy
 
 **Last updated March 15, 2021**
 
@@ -90,7 +90,7 @@ and review any changes since the last version.
 
 ## Where can I get further information?
 
-If you have any questions about our use of cookies or other technologies, please email us at agiletypescript@gmail.com
+If you have any questions about our use of cookies or other technologies, please email us at btcnext@linekong.com
 
 
 <br/>
