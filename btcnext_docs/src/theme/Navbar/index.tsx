@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
             checked={isDarkTheme}
             onChange={onThemeToggleChange}
           />
-          <SearchBar />
+          {/* <SearchBar /> */}
         </div>
         <BrowserOnly>{() => <Progressbar />}</BrowserOnly>
       </div>
