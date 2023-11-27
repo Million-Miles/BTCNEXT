@@ -507,7 +507,7 @@ export const navpageinfolist = [
   {
     type: 'category', // category有二级目录 link只有一级
     label: '交易所',
-    collapsed: false, // 是否折叠
+    collapsed: true, // 是否折叠
     collapsible: true, // 是否显示折叠图标
     items: [
       {
