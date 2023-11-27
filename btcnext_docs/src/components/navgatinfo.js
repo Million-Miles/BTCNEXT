@@ -152,7 +152,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
             title: '水龙头-Faucet',
             desc:
-              "适合所有人的多链式水龙头。各个链的水都有，很全，但是领取的额度很小，可以救急用",
+              "适合所有人的多链式水龙头。各个链的水都有,很全,但是领取的额度很小,可以救急用",
             tags: ['Faucet', 'Web3'],
             exterlink: [
               {
@@ -170,7 +170,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
             title: '测试网水龙头汇总',
             desc:
-              "包括以太坊歌尔力测试网，BSC链测试网，多边形主网，比特币测试网等各种测试网。By:danny",
+              "包括以太坊歌尔力测试网,BSC链测试网,多边形主网,比特币测试网等各种测试网。By:danny",
             tags: ['Faucet', 'Web3'],
             exterlink: [
               {
@@ -212,7 +212,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
             title: 'SMS-MAN全球短信接码',
             desc:
-              "SMS-Man 是一个提供在线短信接收的国际平台，让你有机会在网上以最优惠的价格购买一个虚拟号码用于注册流行服务。",
+              "SMS-Man 是一个提供在线短信接收的国际平台,让你有机会在网上以最优惠的价格购买一个虚拟号码用于注册流行服务。",
             tags: ['NFT', 'Web3'],
             exterlink: [
               {
@@ -226,7 +226,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
             title: 'Bress',
             desc:
-              "Bress.xyz是基于Mirror开发的去中心化社交网络，在这里你可以找到 Mirror 生态上的高质量文章和优秀作者。",
+              "Bress.xyz是基于Mirror开发的去中心化社交网络,在这里你可以找到 Mirror 生态上的高质量文章和优秀作者。",
             tags: ['NFT', 'Web3'],
             exterlink: [
               {
@@ -272,7 +272,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
             title: 'L0/L1/L2各个链信息简介',
             desc:
-              "撸毛人必存，L0/L1/L2各个链信息",
+              "撸毛人必存,L0/L1/L2各个链信息",
             tags: ['AirDrop', 'Web3'],
             exterlink: [
               {
@@ -286,7 +286,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
             title: 'Coinowo空投派发现',
             desc:
-              "Coinowo发现分享最新空投和加密货币新闻，学习网格量化交易，研究流动性挖矿和各种Defi项目",
+              "Coinowo发现分享最新空投和加密货币新闻,学习网格量化交易,研究流动性挖矿和各种Defi项目",
             tags: ['AirDrop', 'Web3'],
             exterlink: [
               {
@@ -300,7 +300,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
             title: '暴躁兔',
             desc:
-              "暴躁兔是一个搞技术，数据为导向的社区",
+              "暴躁兔是一个搞技术,数据为导向的社区",
             tags: ['AirDrop', 'Web3'],
             exterlink: [
               {
@@ -336,7 +336,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
             title: 'RabbitHole兔子洞',
             desc:
-              "web3任务平台，做任务给奖励",
+              "web3任务平台,做任务给奖励",
             tags: ['AirDrop', 'Web3'],
             exterlink: [
               {
@@ -456,7 +456,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
             title: 'bitcointalk',
             desc:
-              "🚀 这是一个论坛，汇集了比特币社区的成员，包括开发者、矿工和爱好者。这里有关于比特币开发的深入讨论和资源分享。",
+              "🚀 这是一个论坛,汇集了比特币社区的成员,包括开发者、矿工和爱好者。这里有关于比特币开发的深入讨论和资源分享。",
             tags: ['BTC', 'talk'],
             exterlink: [
               {
@@ -505,7 +505,7 @@ export const navpageinfolist = [
             href: '/docs/installation',
             title: 'OKX - Ordinals',
             desc:
-              "🚀 欧易官方一站式交易、铭刻 BRC-20 和 BTC NFT 在欧易 Web3 市场探索 Ordinals 生态，交易市场，中心化交易所。",
+              "🚀 欧易官方一站式交易、铭刻 BRC-20 和 BTC NFT 在欧易 Web3 市场探索 Ordinals 生态,交易市场,中心化交易所。",
             tags: ['Market', 'BRC20'],
             exterlink: [
               {
@@ -662,7 +662,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/image/2023/04/1682618596296511.jpg',
             title: 'Nxhub',
             desc:
-              "通过 NxHub 轻松捕获和管理多家交易平台的 Brc-20 订单。聚合多家交易平台（UniSat、OKX、MagicEden、OrdinalsWallet等）数据，实现多平台挂单。【暂未上线】",
+              "通过 NxHub 轻松捕获和管理多家交易平台的 Brc-20 订单。聚合多家交易平台（UniSat、OKX、MagicEden、OrdinalsWallet等）数据,实现多平台挂单。【暂未上线】",
             tags: ['Markets', 'BTC','BRC20'],
             exterlink: [
               {
@@ -855,7 +855,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
             title: 'lnmarkets',
             desc:
-              "🚀 LNmarkets是一个基于比特币的闪电网络(Lightning Network)的金融交易平台。它特别针对比特币衍生品交易，如期货和期权交易.",
+              "🚀 LNmarkets是一个基于比特币的闪电网络(Lightning Network)的金融交易平台。它特别针对比特币衍生品交易,如期货和期权交易.",
             tags: ['LN', 'BitCoin','Market'],
             exterlink: [
               {
@@ -1039,7 +1039,7 @@ export const navpageinfolist = [
 			  'https://avatars.githubusercontent.com/u/124768502?s=200&v=4',
 			title: 'uxuy Wallet',
 			desc:
-			  "UXUY是一个安全的非托管钱包，采用多方计算（MPC）技术，通过无需密钥签名和无需种子恢复，提供极致的安全性和便捷性。",
+			  "UXUY是一个安全的非托管钱包,采用多方计算（MPC）技术,通过无需密钥签名和无需种子恢复,提供极致的安全性和便捷性。",
 			tags: ['Wallet', 'ERC', 'BEP20', 'TRX20', 'LN'],
 			exterlink: [
 			  {
@@ -1470,7 +1470,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
             title: 'Bitcoin Frogs',
             desc:
-              "🚀 比特币上最火NFT项目之一,使用Ordinals协议在比特币Bitcoin区块链网络上创造的NFT 项目，",
+              "🚀 比特币上最火NFT项目之一,使用Ordinals协议在比特币Bitcoin区块链网络上创造的NFT 项目,",
             tags: ['NFT', 'Frogs'],
             exterlink: [
               {
@@ -2076,7 +2076,7 @@ export const navpageinfolist = [
               'src="https://sihuo-1309822528.file.myqcloud.com/2022/01/464f5-www.huoxing24.com.png"',
             title: '火星财经',
             desc:
-              "火星财经是中国领先的区块链产业信息服务平台，由资深区块链团队倾力打造，为中国区块链爱好者提供全球最新的区块链新闻资讯。",
+              "火星财经是中国领先的区块链产业信息服务平台,由资深区块链团队倾力打造,为中国区块链爱好者提供全球最新的区块链新闻资讯。",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2106,7 +2106,7 @@ export const navpageinfolist = [
               'https://sihuo-1309822528.file.myqcloud.com/2021/12/WX20211217-154049@2x-e1639726894612.png',
             title: '金色财经',
             desc:
-              "金色财经是集行业新闻、资讯、行情、数据等一站式区块链产业服务平台，我们追求及时、全面、专业、准确的资讯与数据，致力于为区块链创业者以及数字货币投资者提供最好的产品和服务。",
+              "金色财经是集行业新闻、资讯、行情、数据等一站式区块链产业服务平台,我们追求及时、全面、专业、准确的资讯与数据,致力于为区块链创业者以及数字货币投资者提供最好的产品和服务。",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2136,7 +2136,7 @@ export const navpageinfolist = [
               'https://sihuo-1309822528.file.myqcloud.com/2022/02/49565-nulltx.com.png',
             title: 'NullTX',
             desc:
-              "Null TX（前身为The Merkle）提供加密的最新消息以及有关比特币，以太坊和其他加密货币的教育文章",
+              "Null TX（前身为The Merkle）提供加密的最新消息以及有关比特币,以太坊和其他加密货币的教育文章",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2166,7 +2166,7 @@ export const navpageinfolist = [
             avator:
               'src="https://sihuo-1309822528.file.myqcloud.com/2021/12/c98a0-www.8btc.com.png"',
             title: 'AI新智界',
-            desc:              "AI新智界始建于2011年，是国内最早的区块链（blockchain）资讯社区门户，为区块链创业者、投资者提供信息、交流与投融资服务。开放是我们的广度，中立是我们的态度，敏锐是我们的深度，欢迎一切区块链技术的探讨争鸣。目前有200多位区块链意见领袖、研究者入驻平台。如果您是我们的同类，欢迎加入我们！",
+            desc:              "AI新智界始建于2011年,是国内最早的区块链（blockchain）资讯社区门户,为区块链创业者、投资者提供信息、交流与投融资服务。开放是我们的广度,中立是我们的态度,敏锐是我们的深度,欢迎一切区块链技术的探讨争鸣。目前有200多位区块链意见领袖、研究者入驻平台。如果您是我们的同类,欢迎加入我们！",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2226,7 +2226,7 @@ export const navpageinfolist = [
               'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/91de1-cointelegraph.com.png"',
             title: 'CoinTelegraph',
             desc:              
-			"CoinTelegraph提供有关比特币，以太坊和其他加密货币的新内容，以及有关区块链技术和加密市场的分析和评论",
+			"CoinTelegraph提供有关比特币,以太坊和其他加密货币的新内容,以及有关区块链技术和加密市场的分析和评论",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2256,7 +2256,7 @@ export const navpageinfolist = [
               'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/4a63f-www.ccn.com.png"',
             title: 'CCN',
             desc:              
-			"CCN是在挪威注册的媒体公司的一部分。 CCN的网站提供有关加密货币的新闻和文章,如比特币,以太坊，以及区块链领域的工业新闻",
+			"CCN是在挪威注册的媒体公司的一部分。 CCN的网站提供有关加密货币的新闻和文章,如比特币,以太坊,以及区块链领域的工业新闻",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2286,7 +2286,7 @@ export const navpageinfolist = [
               'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/95972-www.newsbtc.com.png"',
             title: 'NewsBTC',
             desc:              
-			"NewsBTC是区块链和加密的新闻和资源平台,自2013年开始运营。NewsBTC向区块链和加密货币社区提供新闻，评论，技术分析和其他信息。",
+			"NewsBTC是区块链和加密的新闻和资源平台,自2013年开始运营。NewsBTC向区块链和加密货币社区提供新闻,评论,技术分析和其他信息。",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2316,7 +2316,7 @@ export const navpageinfolist = [
               'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/apple-icon-57x57-1.png"',
             title: 'CryptoSlate',
             desc:              
-			"CryptoSlate是一家区块链媒体,其使命是“提供关于加密货币和区块链的透明、准确的报道”。这家媒体成立于2017年，总部设在西雅图。 CryptoSlate的网站提供与区块链和加密货币相关的定期更新的新闻和文章。它还提供ICO，加密货币排名等内容。",
+			"CryptoSlate是一家区块链媒体,其使命是“提供关于加密货币和区块链的透明、准确的报道”。这家媒体成立于2017年,总部设在西雅图。 CryptoSlate的网站提供与区块链和加密货币相关的定期更新的新闻和文章。它还提供ICO,加密货币排名等内容。",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2346,7 +2346,7 @@ export const navpageinfolist = [
               'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/d2b9b-bitcoinist.com.png"',
             title: 'Bitcoinist',
             desc:              
-			"Bitcoinist成立于2013年。Bitcoinist不仅涵盖比特币，还提供有关其他加密货币和区块链技术的新闻和消息来源。Bitcoinist每天发布几篇文章和新闻，涵盖加密和区块链中的一系列主题。",
+			"Bitcoinist成立于2013年。Bitcoinist不仅涵盖比特币,还提供有关其他加密货币和区块链技术的新闻和消息来源。Bitcoinist每天发布几篇文章和新闻,涵盖加密和区块链中的一系列主题。",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2376,7 +2376,7 @@ export const navpageinfolist = [
               'src="https://sihuo-1309822528.file.myqcloud.com/2022/02/d2b9b-bitcoinist.com.png"',
             title: 'Bitcoin Magazine',
             desc:              
-			"Bitcoin Magazine是第一本专门用于比特币的出版物。它的创始人包括V神Vitalik Buterin，以太坊的创造者。现在Bitcoin Magazine不仅涵盖比特币，还涵盖其他加密货币和区块链技术。比特币杂志在金融和技术的交叉点提供分析，研究，教育和思想领导力。",
+			"Bitcoin Magazine是第一本专门用于比特币的出版物。它的创始人包括V神Vitalik Buterin,以太坊的创造者。现在Bitcoin Magazine不仅涵盖比特币,还涵盖其他加密货币和区块链技术。比特币杂志在金融和技术的交叉点提供分析,研究,教育和思想领导力。",
             tags: ['BTCNEXT', 'Web3'],
             exterlink: [
               {
@@ -2564,7 +2564,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
             title: '币圈慈善家',
             desc:
-              "话痨博主，土狗冲击者，傻逼韭菜，不构成投资建议。若想有所改变，应真诚面对自己和他人。投资核心：玩得早，买的多，拿得住。",
+              "话痨博主,土狗冲击者,傻逼韭菜,不构成投资建议。若想有所改变,应真诚面对自己和他人。投资核心：玩得早,买的多,拿得住。",
             tags: ['话痨博主', 'KOL'],
             exterlink: [
               {
@@ -2616,7 +2616,7 @@ export const navpageinfolist = [
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
             title: 'Jack孔@iPollo',
             desc:
-              "关注Web3、元宇宙。Twitter 仅代表个人观点，不代表公司立场，不构成投资建议。",
+              "关注Web3、元宇宙。Twitter 仅代表个人观点,不代表公司立场,不构成投资建议。",
             tags: ['@Jack孔@iPollo', 'KOL'],
             exterlink: [
               {
