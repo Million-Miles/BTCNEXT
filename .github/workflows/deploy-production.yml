@@ -26,7 +26,6 @@ jobs:
       run: |
         cd btcnext_docs
         yarn install
-        export NODE_OPTIONS=--openssl-legacy-provider
         yarn build
         cd ..
     - name: Deploy
