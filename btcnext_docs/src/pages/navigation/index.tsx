@@ -7,9 +7,7 @@ import styles from './styles.module.css';
 import { navpageinfolist } from '../../components/navgatinfo.js';
 
 export default (props) => {
-  const {
-    location
-  } = props;
+  const { location } = props;
   const exterlinklist = [
     {
       name: 'internet',
@@ -53,34 +51,63 @@ export default (props) => {
 
   const handleLink = (info) => {
     if (info.href && info.href !== '') {
-      window.location.href = info.href
+      window.location.href = info.href;
     }
-  }
+  };
 
   const handleExter = (info) => {
-    window.open(info.link)
+    window.open(info.link);
+  };
+
+  function getRandomNumber(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
   }
 
   const ItemCard = useCallback((sitem, sindex) => {
+    const bgcolor = [
+      '#D6BA26',
+      'beige',
+      'skyblue',
+      'yellowgreen',
+      'tan',
+      'lightslategrey',
+    ];
     return (
-      <div className={styles.navListBoxItem} key={sindex}  onClick={() => {handleLink(sitem)}}>
+      <div
+        className={styles.navListBoxItem}
+        key={sindex}
+        onClick={() => {
+          handleLink(sitem);
+        }}>
         <div className={styles.navListBoxItemTop}>
-          <img className={styles.imgAvatornav} src={sitem.avator} alt="" />
+          {sitem.avator && sitem.avator !== '' ? (
+            <img className={styles.imgAvatornav} src={sitem.avator} alt="" />
+          ) : (
+            <div
+              className={styles.notimgAvatornav}
+              style={{ backgroundColor: `${getRandomNumber(bgcolor)}` }}>
+              {sitem.title?.charAt(0)?.toUpperCase()}
+            </div>
+          )}
           <div className={styles.navitemName}>{sitem.title}</div>
         </div>
         <div className={styles.navItemdesc}>{sitem.desc}</div>
         <div className={styles.navItemTag}>
           {sitem.tags.map((tagitem, tagindex) => (
-            <div className={styles.navItemTagItem} key={tagindex}>{tagitem}</div>
+            <div className={styles.navItemTagItem} key={tagindex}>
+              {tagitem}
+            </div>
           ))}
         </div>
         <div className={styles.navItemlinklist}>
           {getExterInfo(sitem.exterlink)?.map((exitem, exindex) => {
             return (
-              <div onClick={(event) => {
-                handleExter(exitem)
-                event.stopPropagation()
-              }} key={exindex}>
+              <div
+                onClick={(event) => {
+                  handleExter(exitem);
+                  event.stopPropagation();
+                }}
+                key={exindex}>
                 <img src={exitem.imgpath} alt={exitem.altdesc} />
               </div>
             );
