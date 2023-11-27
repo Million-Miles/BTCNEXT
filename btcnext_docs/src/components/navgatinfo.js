@@ -1925,32 +1925,32 @@ export const navpageinfolist = [
               },
             ],
           },
-          {
-            avator:
-              'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
-            title: 'Join us for a #GasHero',
-            desc:
-              "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
-            tags: ['NFT', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: '',
-              },
-              {
-                name: 'twitter',
-                link: '',
-              },
-              {
-                name: 'github',
-                link: '',
-              },
-              {
-                name: 'discord',
-                link: '',
-              },
-            ],
-          }
+          // {
+          //   avator:
+          //     'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+          //   title: 'Join us for a #GasHero',
+          //   desc:
+          //     "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
+          //   tags: ['NFT', 'Web3'],
+          //   exterlink: [
+          //     {
+          //       name: 'internet',
+          //       link: '',
+          //     },
+          //     {
+          //       name: 'twitter',
+          //       link: '',
+          //     },
+          //     {
+          //       name: 'github',
+          //       link: '',
+          //     },
+          //     {
+          //       name: 'discord',
+          //       link: '',
+          //     },
+          //   ],
+          // }
         ]
       },
     ],
@@ -1967,31 +1967,37 @@ export const navpageinfolist = [
         label: '项目方',
         href: '#DeFiProject',
         docId: 'DeFiProject',
+        // Sovryn
         nextitems: [
           {
             avator:
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
-            title: 'Join us for a #GasHero',
+            title: 'Sovryn',
             desc:
-              "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
+              "Sovryn是一个在RSK上运行的去中心化交易和借贷平台,允许用户利用比特币进行各种金融交易,包括借贷、保证金交易和交换.",
             tags: ['NFT', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
-                link: '',
+                link: 'https://sovryn.app/',
               },
               {
                 name: 'twitter',
-                link: '',
+                link: 'https://twitter.com/SovrynBTC',
               },
               {
                 name: 'github',
-                link: '',
+                link: 'https://github.com/DistributedCollective',
               },
               {
                 name: 'discord',
-                link: '',
+                link: 'https://discord.com/invite/sovryn',
               },
+              {
+                name: 'telegram',
+                link: 'https://t.me/SovrynBitcoin',
+              },
+              
             ],
           }
         ]
@@ -2005,55 +2011,91 @@ export const navpageinfolist = [
           {
             avator:
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
-            title: 'Join us for a #GasHero',
+            title: 'Rootstock (RSK)',
             desc:
-              "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
+              "RSK是一个侧链平台,它使比特币区块链能够支持智能合约,类似于以太坊。RSK通过二元锚定机制与比特币区块链相连,使用户可以在比特币和RSK平台之间转移资产.",
             tags: ['NFT', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
-                link: '',
+                link: 'https://rootstock.io/',
               },
               {
                 name: 'twitter',
-                link: '',
+                link: 'https://twitter.com/rootstock_io',
               },
-              {
-                name: 'github',
-                link: '',
-              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
               {
                 name: 'discord',
-                link: '',
+                link: 'https://discord.com/invite/fPerbqcWGE',
               },
+              {
+                name: 'telegram',
+                link: 'https://t.me/rskofficialcommunity',
+              },
+              
             ],
           },
           {
             avator:
               'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
-            title: 'Join us for a #GasHero',
+            title: 'Badger DAO',
             desc:
-              "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
+              "Badger DAO 专注于将比特币带入DeFi,通过一系列产品和服务将比特币作为抵押品来提供各种去中心化金融服务.",
             tags: ['NFT', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
-                link: '',
+                link: 'https://legacy.badger.com/',
               },
               {
                 name: 'twitter',
-                link: '',
+                link: 'https://twitter.com/BadgerDAO',
               },
-              {
-                name: 'github',
-                link: '',
-              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
               {
                 name: 'discord',
-                link: '',
+                link: 'https://discord.com/invite/badgerdao',
               },
+              {
+                name: 'telegram',
+                link: 'https://t.me/badger_dao',
+              },
+              
             ],
-          }
+          },
+          // {
+          //   avator:
+          //     'https://naga-prod.mars-block.com/gamefi/image/2023/07/1689139901366488.jpg',
+          //   title: 'Join us for a #GasHero',
+          //   desc:
+          //     "🚀 We'll be discussing and sharing tips about the game and upcoming community test.",
+          //   tags: ['NFT', 'Web3'],
+          //   exterlink: [
+          //     {
+          //       name: 'internet',
+          //       link: '',
+          //     },
+          //     {
+          //       name: 'twitter',
+          //       link: '',
+          //     },
+          //     {
+          //       name: 'github',
+          //       link: '',
+          //     },
+          //     {
+          //       name: 'discord',
+          //       link: '',
+          //     },
+          //   ],
+          // }
         ]
       },
     ],
