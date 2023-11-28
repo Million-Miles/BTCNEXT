@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+.navigatorSelectlistItem:hover {
+  background-color: var(--ifm-color-primary-contrast-background);
+}
+
 .navigatorSelectItemtitle {
   color: var(--ifm-menu-color);
 }
@@ -79,11 +83,14 @@
 
 .navListBoxItem {
   width: 24%;
-  box-shadow: 0px 13px 16px 0px rgba(111,121,145,0.06);
   border-radius: 10px;
   border: 1px solid #e8edf8;
   padding: 20px;
   cursor: pointer;
+}
+
+.navListBoxItem:hover {
+  box-shadow: 10px 13px 16px 10px rgba(111,121,145,0.06);
 }
 
 .navListBoxItemTop {
@@ -136,6 +143,10 @@
   border-radius: 5px;
   background: var(--ifm-code-background);
   margin-right: 6px;
+}
+
+.navItemTagItem:hover {
+  background: var(--ifm-color-primary-contrast-background);
 }
 
 .navItemlinklist {

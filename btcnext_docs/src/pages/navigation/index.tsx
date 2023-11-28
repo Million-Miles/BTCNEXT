@@ -16,31 +16,40 @@ export default (props) => {
   const [selecttype, setSelecttype] = useState('all');
   const [allnavList, setAllnavList] = useState([]);
   const [newnavList, setNewnavList] = useState([]);
+  const [fxstatus, setFxstatus] = useState({
+    anum: -1,
+    bnum: -1
+  })
   // console.log(location)
   const exterlinklist = [
     {
       name: 'internet',
       imgpath: 'img/internet.svg',
+      hoverpath: 'img/internethover.svg',
       altdesc: 'internet',
     },
     {
       name: 'twitter',
       imgpath: 'img/twitter.svg',
+      hoverpath: 'img/twitterhover.svg',
       altdesc: 'twitter',
     },
     {
       name: 'github',
       imgpath: 'img/githubicon.svg',
+      hoverpath: 'img/githubhover.svg',
       altdesc: 'github',
     },
     {
       name: 'discord',
       imgpath: 'img/discordicon.svg',
+      hoverpath: 'img/discordhover.svg',
       altdesc: 'discord',
     },
     {
       name: 'telegram',
       imgpath: 'img/telegramicon.svg',
+      hoverpath: 'img/telegramhover.svg',
       altdesc: 'telegram',
     },
   ];
@@ -63,6 +72,7 @@ export default (props) => {
       for (let b = 0; b < itemexterlink.length; b++) {
         if (exterlinklist[a].name === itemexterlink[b].name) {
           itemexterlink[b].imgpath = exterlinklist[a].imgpath;
+          itemexterlink[b].hoverpath = exterlinklist[a].hoverpath;
           newlinklist.push(itemexterlink[b]);
         }
       }
@@ -169,15 +179,27 @@ export default (props) => {
                   handleExter(exitem);
                   event.stopPropagation();
                 }}
+                onMouseEnter={() => {
+                  setFxstatus({
+                    anum: sindex,
+                    bnum: exindex
+                  })
+                }}
+                onMouseLeave={() => {
+                  setFxstatus({
+                    anum: -1,
+                    bnum: -1
+                  })
+                }}
                 key={exindex}>
-                <img src={exitem.imgpath} alt={exitem.altdesc} />
+                <img src={(fxstatus.bnum === exindex && fxstatus.anum === sindex) ? exitem.hoverpath : exitem.imgpath} alt={exitem.altdesc} />
               </div>
             );
           })}
         </div>
       </div>
     );
-  }, []);
+  }, [fxstatus]);
 
   const fullNavDom = useMemo(
     () =>
@@ -203,7 +225,7 @@ export default (props) => {
           </div>
         );
       }),
-    []
+    [ItemCard]
   );
 
   const selectNavDom = useMemo(
