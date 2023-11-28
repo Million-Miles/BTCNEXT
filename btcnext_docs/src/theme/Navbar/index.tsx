@@ -6,7 +6,8 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import clsx from 'clsx';
 import SearchBar from '@theme/SearchBar';
 import Toggle from '@theme/Toggle';
@@ -29,6 +30,7 @@ import NavbarMobileSidebar from './components/NavbarMobileSidebar';
 import NewLog from '../../components/newlog'
 
 const Navbar: React.FC = () => {
+  const location = useLocation()
   const { siteConfig } = useDocusaurusContext();
   const items = useNavbarItems();
   const { leftItems, rightItems } = splitNavItemsByPosition(items);
@@ -36,15 +38,12 @@ const Navbar: React.FC = () => {
   const history = useHistory();
   const mobileSidebar = useMobileSidebar();
 
-  // const [colortype, setColortype] = useState()
-
-  // useEffect(() => {
-  //   let themecolor = window.localStorage.getItem('theme')
-  //   setColortype(themecolor)
-  //   if (!themecolor) {
-  //     setLightTheme()
-  //   }
-  // }, [])
+  useEffect(() => {
+    let itemdom = document.getElementById('/0')
+    if (location.pathname !== '/') {
+      itemdom.style.color = 'var(--ifm-navbar-link-color)'
+    }
+  }, [])
 
   const onThemeToggleChange = useCallback(
     (e) => {
@@ -77,9 +76,9 @@ const Navbar: React.FC = () => {
             onClick={() => history.push('/')}>
             {siteConfig.title}
           </a> */}
-          {leftItems.map((item, i) => (
-            <NavbarItem {...item} key={i} />
-          ))}
+          {leftItems.map((item, i) => {
+            return <NavbarItem {...item} id={(item.to + i).toString()} key={i} />
+          })}
         </div>
         <div className="navbar__items navbar__items--right">
           {rightItems.map((item, i) => (

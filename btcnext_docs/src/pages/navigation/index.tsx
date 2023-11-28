@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import clsx from 'clsx';
+import { useLocation } from 'react-router-dom';
 
 import PageLayout from '../../components/layout/PageLayout';
 import DocSidebar from '@theme/DocSidebar';
@@ -7,7 +8,9 @@ import styles from './styles.module.css';
 import { navpageinfolist } from '../../components/navgatinfo.js';
 
 export default (props) => {
-  const { location } = props;
+  // const { location } = props;
+  const location = useLocation()
+  // console.log(location)
   const exterlinklist = [
     {
       name: 'internet',
@@ -131,7 +134,7 @@ export default (props) => {
               'defaultSidebar'
             }
             sidebar={navpageinfolist}
-            path={location.hash}
+            path={location?.hash}
             // sidebarCollapsible={true}
             // isHidden={false}
           />
