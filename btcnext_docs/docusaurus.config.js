@@ -134,12 +134,12 @@ const config = {
       items: [
         // left
         {
-          label: 'Navigator',
+          label: '导航图',
           position: 'left',
           to: '/navigation',
         },
         {
-          label: 'Documentation',
+          label: '资料库',
           position: 'left',
           items: [
             {
@@ -185,7 +185,7 @@ const config = {
           ],
         },
         {
-          label: 'Community',
+          label: '关于我们',
           position: 'left',
           items: [
             {
@@ -199,7 +199,7 @@ const config = {
           ],
         },
         {
-          label: 'Support',
+          label: '基金合作',
           position: 'left',
           to: 'https://github.com/Million-Miles/BTCNEXT/wiki/BTCNEXT-Wiki',
         },
