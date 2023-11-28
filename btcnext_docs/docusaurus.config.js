@@ -136,7 +136,7 @@ const config = {
         {
           label: '导航图',
           position: 'left',
-          to: '/navigation',
+          to: '/',
         },
         {
           label: '资料库',
@@ -188,6 +188,10 @@ const config = {
           label: '关于我们',
           position: 'left',
           items: [
+            {
+              label: 'BTCNEXT',
+              href: '/btcnext',
+            },
             {
               label: 'GitHub',
               href: customFields.githubUrl,

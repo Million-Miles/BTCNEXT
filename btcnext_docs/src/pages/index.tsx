@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
-import LandingPage from '../_pages/LandingPage';
+// import LandingPage from '../_pages/LandingPage';
+import NavigationPage from './navigation'
 import core from '../core';
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
     core.stats.getGithubStats();
   }, []);
 
-  return <LandingPage />;
+  return <NavigationPage />;
 };
 
 export default Home;

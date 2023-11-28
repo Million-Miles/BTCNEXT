@@ -8,12 +8,14 @@ import HeaderView from './components/HeaderView';
 // import StartCodingView from './components/StartCodingView';
 // import StatsView from './components/StatsView';
 import PageLayout from '../../components/layout/PageLayout';
+import NavigationPage from '../../pages/navigation'
 // import OtherFeaturesView from './components/OtherFeaturesView';
 
 const LandingPage: React.FC = () => {
   return (
     <PageLayout>
       <main className={styles.Container}>
+        {/* <NavigationPage/> */}
         <HeaderView />
         {/* <StraightforwardView />
         <OtherFeaturesView />
