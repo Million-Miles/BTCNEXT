@@ -2,6 +2,40 @@
   display: flex;
 }
 
+.navigatorSelectlist {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 10px;
+}
+
+.navigatorSelectlistItem {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 16px;
+  border-radius: 20px;
+  background-color: var(--ifm-menu-color-background-active);
+  cursor: pointer;
+}
+
+.navigatorSelectItemtitle {
+  color: var(--ifm-menu-color);
+}
+
+.navigatorSelectItemtitle:hover {
+  text-decoration: none;
+  color: var(--ifm-menu-color);
+}
+
+.navigatorSelectlistItemactive {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 16px;
+  border-radius: 20px;
+  background-color: #FFDF3A;
+  cursor: pointer;
+}
+
 .docSidebarContainer {
   width: var(--doc-sidebar-width);
   margin-top: calc(-1 * var(--ifm-navbar-height));
@@ -20,6 +54,7 @@
   padding: 20px;
   padding-top: 0;
   flex: 1;
+  overflow: hidden;
 }
 
 .navItemfirstTitle {
