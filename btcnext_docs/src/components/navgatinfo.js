@@ -1,3 +1,34 @@
+export const selectTypeList = [
+  {
+    name: 'All',
+    type: 'all'
+  },
+  {
+    name: 'Release',
+    type: 'release'
+  },
+  {
+    name: 'AMA',
+    type: 'ama'
+  },
+    {
+    name: 'Airdrop',
+    type: 'airdrop'
+  },
+  {
+    name: 'Tokenomics',
+    type: 'tokenomics'
+  },
+  {
+    name: 'Community',
+    type: 'community'
+  },
+    {
+    name: 'Other',
+    type: 'other'
+  }
+]
+
 export const navpageinfolist = [
   {
     type: 'category', // category有二级目录 link只有一级
@@ -16,6 +47,7 @@ export const navpageinfolist = [
               'img/navigator/earni.png',
             href: '/docs/installation',
             title: 'earni',
+            type: 'release',
             desc:
               "遗漏空投查询工具",
             tags: ['AirDrop', 'Web3'],
@@ -262,6 +294,7 @@ export const navpageinfolist = [
             avator:
               'img/navigator/airdr.png',
             title: '空投交互教程',
+            type: 'ama',
             desc:
               "每日更新",
             tags: ['AirDrop', 'Web3'],
@@ -294,6 +327,7 @@ export const navpageinfolist = [
             avator:
               'img/navigator/Coinowo.jpg',
             title: 'Coinowo空投派发现',
+            type: 'ama',
             desc:
               "Coinowo发现分享最新空投和加密货币新闻,学习网格量化交易,研究流动性挖矿和各种Defi项目",
             tags: ['AirDrop', 'Web3'],
@@ -410,6 +444,7 @@ export const navpageinfolist = [
             avator:
               'img/navigator/btcstudy.png',
             title: 'btcstudy',
+            type: 'ama',
             desc:
               "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
             tags: ['BTC', 'LN','Payjoin'],

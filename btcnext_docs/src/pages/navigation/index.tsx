@@ -1,15 +1,21 @@
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import clsx from 'clsx';
 import { useLocation } from 'react-router-dom';
 
 import PageLayout from '../../components/layout/PageLayout';
 import DocSidebar from '@theme/DocSidebar';
 import styles from './styles.module.css';
-import { navpageinfolist } from '../../components/navgatinfo.js';
+import {
+  navpageinfolist,
+  selectTypeList,
+} from '../../components/navgatinfo.js';
 
 export default (props) => {
   // const { location } = props;
-  const location = useLocation()
+  const location = useLocation();
+  const [selecttype, setSelecttype] = useState('all');
+  const [allnavList, setAllnavList] = useState([]);
+  const [newnavList, setNewnavList] = useState([]);
   // console.log(location)
   const exterlinklist = [
     {
@@ -39,6 +45,18 @@ export default (props) => {
     },
   ];
 
+  useEffect(() => {
+    let navselectlist = [];
+    navpageinfolist?.map((aitem) => {
+      aitem?.items.map((bitem) => {
+        bitem?.nextitems.map((citem) => {
+          navselectlist.push(citem);
+        });
+      });
+    });
+    setAllnavList(navselectlist);
+  }, []);
+
   const getExterInfo = (itemexterlink) => {
     let newlinklist = [];
     for (let a = 0; a < exterlinklist.length; a++) {
@@ -65,6 +83,47 @@ export default (props) => {
   function getRandomNumber(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
+
+  const handleSelect = useCallback(
+    (info) => {
+      setSelecttype(info.type);
+      const newnavilist = [];
+      allnavList.map((item) => {
+        if (item.type === info.type) {
+          newnavilist.push(item);
+        }
+      });
+      setNewnavList(newnavilist);
+      // console.log(newnavilist);
+    },
+    [allnavList]
+  );
+
+  const selectDom = useMemo(() => {
+    return (
+      <div className={styles.navigatorSelectlist}>
+        {selectTypeList.map((item, index) => {
+          return (
+            <div
+              className={
+                selecttype === item.type
+                  ? styles.navigatorSelectlistItemactive
+                  : styles.navigatorSelectlistItem
+              }
+              // className={clsx(styles.navigatorSelectlistItem, {
+              //   'select-item-active': selecttype === item.type
+              // })}
+              key={index}
+              onClick={() => {
+                handleSelect(item);
+              }}>
+              <a href={`#${item.type}`} className={styles.navigatorSelectItemtitle}>{item.name}</a>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }, [selecttype, handleSelect]);
 
   const ItemCard = useCallback((sitem, sindex) => {
     const bgcolor = [
@@ -120,6 +179,42 @@ export default (props) => {
     );
   }, []);
 
+  const fullNavDom = useMemo(
+    () =>
+      navpageinfolist.map((item, index) => {
+        return (
+          <div className={styles.navigatorCenterRightItem} key={index}>
+            <div className={styles.navItemfirstTitle}>{item?.label}</div>
+            {item.items.map((fitem, findex) => {
+              return (
+                <div key={findex}>
+                  <div id={fitem?.docId} />
+                  <div className={styles.navItemsecondTitle}>
+                    {fitem?.label}
+                  </div>
+                  <div className={styles.navListBox}>
+                    {fitem?.nextitems.map((sitem, sindex) =>
+                      ItemCard(sitem, sindex)
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        );
+      }),
+    []
+  );
+
+  const selectNavDom = useMemo(
+    () => (
+      <div className={styles.navListBox}>
+        {newnavList.map((sitem, sindex) => ItemCard(sitem, sindex))}
+      </div>
+    ),
+    [newnavList]
+  );
+
   return (
     <PageLayout>
       <div className={styles.navigatorCenter}>
@@ -140,28 +235,8 @@ export default (props) => {
           />
         </aside>
         <div className={styles.navigatorCenterRight}>
-          {navpageinfolist.map((item, index) => {
-            return (
-              <div className={styles.navigatorCenterRightItem} key={index}>
-                <div className={styles.navItemfirstTitle}>{item?.label}</div>
-                {item.items.map((fitem, findex) => {
-                  return (
-                    <div key={findex}>
-                      <div id={fitem?.docId} />
-                      <div className={styles.navItemsecondTitle}>
-                        {fitem?.label}
-                      </div>
-                      <div className={styles.navListBox}>
-                        {fitem?.nextitems.map((sitem, sindex) =>
-                          ItemCard(sitem, sindex)
-                        )}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            );
-          })}
+          {selectDom}
+          {selecttype === 'all' ? fullNavDom : selectNavDom}
         </div>
       </div>
     </PageLayout>
