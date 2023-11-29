@@ -205,7 +205,7 @@ const config = {
         {
           label: '基金合作',
           position: 'left',
-          to: 'https://github.com/Million-Miles/BTCNEXT/wiki/BTCNEXT-Wiki',
+          to: 'https://github.com/Million-Miles/BTCNEXT/wiki/BTC-NEXT',
         },
       ],
     },
@@ -222,7 +222,7 @@ const config = {
             },
             {
               label: 'How to Join',
-              to: 'https://github.com/Million-Miles/BTCNEXT/wiki/BTCNEXT-Wiki',
+              to: 'https://github.com/Million-Miles/BTCNEXT/wiki/BTC-NEXT',
             },
             {
               label: 'Navigator',
