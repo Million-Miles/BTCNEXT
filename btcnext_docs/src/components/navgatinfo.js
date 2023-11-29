@@ -1,40 +1,40 @@
 export const selectTypeList = [
-//   {
-//     name: 'All',
-//     type: 'all'
-//   },
-//   {
-//     name: 'BRC20',
-//     type: 'BRC20'
-//   },
-//   {
-//     name: 'PIPE',
-//     type: 'PIPE'
-//   },
-//     {
-//     name: 'DRC',
-//     type: 'DRC'
-//   },
-//   {
-//     name: '闪电网络',
-//     type: 'LN'
-//   },
-//   {
-//     name: 'RGB',
-//     type: 'RGB'
-//   },
-//     {
-//     name: '钱包',
-//     type: 'Wallet'
-//   },
-//   {
-//   name: '数据统计',
-//   type: 'analyze'
-// },
-// {
-// name: 'AirDrop',
-// type: 'AirDrop'
-// }
+   {
+     name: 'All',
+     type: 'all'
+   },
+   {
+     name: 'BRC20',
+     type: 'BRC20'
+   },
+   {
+     name: 'PIPE',
+     type: 'PIPE'
+   },
+     {
+     name: 'DRC',
+     type: 'DRC'
+   },
+   {
+     name: '闪电网络',
+     type: 'LN'
+   },
+   {
+     name: 'RGB',
+     type: 'RGB'
+   },
+     {
+     name: '钱包',
+     type: 'Wallet'
+   },
+   {
+   name: '数据统计',
+   type: 'analyze'
+ },
+ {
+ name: 'AirDrop',
+ type: 'AirDrop'
+ }
 
 ]
 
@@ -833,6 +833,80 @@ export const navpageinfolist = [
       //     },
       //   ]
       // },
+    ],
+  },
+  {
+    type: 'category', // category有二级目录 link只有一级
+    label: '热门项目',
+    collapsed: false, // 是否折叠
+    collapsible: true, // 是否显示折叠图标
+    items: [
+      {
+        type: 'link',
+        label: 'BRC20',
+        href: '#BRC20Asset',
+        docId: 'BRC20Asset',
+        nextitems: [
+        {
+            avator:
+              'img/navigator/roup.jpeg',
+            title: 'Roup',
+            desc:
+              "Rolluper是BRC20资产上卷到比特币Layer2交易的关键通道，由社区发起，收益反馈给社区",
+            tags: ['Map', 'BRC20','Roup'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.rolluper.xyz/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/brc20roup',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/brc20maporoup',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/mapprotocol.jpeg',
+            title: 'Mapprotocol',
+            desc:
+              "Bitcoin layer-2 and peer-to-peer omnichain infrastructure built upon light clients and ZK technology, focusing on cross-chain interoperability.",
+            tags: ['Mapprotocol', 'BRC20','Mapo'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.mapprotocol.io/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/mapprotocol',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/MAPprotocol/',
+              },
+              {
+                 name: 'discord',
+                 link: 'https://discord.com/invite/kt4beeTVnw'
+              }
+            ],
+          },
+        ]
+      },
+      {
+        type: 'link',
+        label: 'ARC20',
+        href: '#ARC20Asset',
+        docId: 'ARC20Asset',
+        nextitems: [
+        ]
+      },
     ],
   },
   {

@@ -24,8 +24,8 @@
 3. make changes
 4. submit a pull request for merging into `main` branch
 
-## BTCNEXT Wiki及合作共建路线图
-参看[Wiki及合作共建路线图](https://github.com/Million-Miles/BTCNEXT/wiki/BTC-NEXT)
+## 关于我们及合作共建
+参看[关于我们及合作共建](https://github.com/Million-Miles/BTCNEXT/wiki/BTC-NEXT)
 
 ## 部署工作流
 

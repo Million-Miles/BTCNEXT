@@ -31,8 +31,8 @@ slug: /quick-start/introduction
 3. make changes
 4. submit a pull request for merging into `main` branch
 
-## 文档路线图及联系支持
-参看[路线图](https://github.com/Million-Miles/BTCNEXT/wiki/BTCNEXT-Wiki)
+## 关于我们及合作共建
+参看[关于我们及合作共建](https://github.com/Million-Miles/BTCNEXT/wiki/BTC-NEXT)
 
 ## 部署工作流
 
