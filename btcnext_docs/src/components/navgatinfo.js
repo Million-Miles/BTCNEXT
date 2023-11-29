@@ -1,461 +1,135 @@
 export const selectTypeList = [
-  {
-    name: 'All',
-    type: 'all'
-  },
-  {
-    name: 'Release',
-    type: 'release'
-  },
-  {
-    name: 'AMA',
-    type: 'ama'
-  },
-    {
-    name: 'Airdrop',
-    type: 'airdrop'
-  },
-  {
-    name: 'Tokenomics',
-    type: 'tokenomics'
-  },
-  {
-    name: 'Community',
-    type: 'community'
-  },
-    {
-    name: 'Other',
-    type: 'other'
-  }
+//   {
+//     name: 'All',
+//     type: 'all'
+//   },
+//   {
+//     name: 'BRC20',
+//     type: 'BRC20'
+//   },
+//   {
+//     name: 'PIPE',
+//     type: 'PIPE'
+//   },
+//     {
+//     name: 'DRC',
+//     type: 'DRC'
+//   },
+//   {
+//     name: '闪电网络',
+//     type: 'LN'
+//   },
+//   {
+//     name: 'RGB',
+//     type: 'RGB'
+//   },
+//     {
+//     name: '钱包',
+//     type: 'Wallet'
+//   },
+//   {
+//   name: '数据统计',
+//   type: 'analyze'
+// },
+// {
+// name: 'AirDrop',
+// type: 'AirDrop'
+// }
+
 ]
 
 export const navpageinfolist = [
   {
     type: 'category', // category有二级目录 link只有一级
-    label: 'BTCNEXT推荐',
+    label: '铭文专区',
     collapsed: false, // 是否折叠
     collapsible: true, // 是否显示折叠图标
     items: [
       {
         type: 'link',
-        label: '🪂 空投必备',
-        href: '#AirDrop',
-        docId: 'AirDrop',
+        label: 'BRC20',
+        href: '#BRC20',
+        docId: 'BRC20',
         nextitems: [
           {
             avator:
-              'img/navigator/earni.png',
-            href: '/docs/installation',
-            title: 'earni',
-            type: 'release',
+              'img/navigator/unisat.png',
+            title: 'Unisat',
             desc:
-              "遗漏空投查询工具",
-            tags: ['AirDrop', 'Web3'],
+              "交易、Inscribe BRC-20 和 BTC NFT.  ",
+            tags: ['Unisat', 'BRC20','Market'],
+            type: 'BRC20',
             exterlink: [
               {
                 name: 'internet',
-                link: 'https://earni.fi/',
+                link: 'https://unisat.io/market',
               },
               {
                 name: 'twitter',
-                link: 'https://twitter.com/earni_fi/',
-              },
-              // {
-              //   name: 'github',
-              //   link: '',
-              // },
-              // {
-              //   name: 'discord',
-              //   link: '',
-              // },
-            ],
-          },
-          {
-            avator:
-              'img/navigator/AdsPower.png',
-            title: 'AdsPower指纹浏览器',
-            desc:
-              "是一款专注跨境电商账号矩阵安全管理的指纹浏览器",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://www.adspower.net/',
-              },{
-                name: 'twitter',
-                link: 'https://twitter.com/viamirror',
+                link: 'https://twitter.com/unisat_wallet',
               },
               {
-                name: 'telegram',
-                link: '',
-              },
-            ],
-          },
-          {
-            avator:
-              'img/navigator/DFarm.jpg',
-            title: 'DFarm',
-            desc:
-              "薅羊毛基础分享",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://mirror.xyz/dfarm.eth',
-              },{
-                name: 'Telegram',
-                link: 'https://t.me/adspowercn',
-              },
-              {
-                 name: 'Facebook',
-                 link: 'https://www.facebook.com/adspowerbrowser',
-              },
-            ],
-          },
-          {
-            avator:
-              'img/navigator/gopluslabs.png',
-            title: '代币合约安全检测',
-            desc:
-              "Token 安全检测开放的、无需许可的、用户驱动的代币安全检测平台",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://gopluslabs.io/token-security/',
-              },
-              {
-                name: 'twitter',
-                link: 'https://twitter.com/GoplusSecurity',
-              },
-               {
-                 name: 'Telegram',
-                 link: 'https://t.me/GoPlusSecurity',
-               },
-               {
-                 name: 'Discord',
-                 link: 'https://discord.com/invite/5cvSsaT8N5',
-               },
-               {
-                 name: 'Medium',
-                 link: 'https://goplussecurity.medium.com/',
-               },
-            ],
-          },          
-
-          {
-            avator:
-              'img/navigator/crunchbase.png',
-            title: '项目融资情况查看',
-            desc:
-              "web3项目融资情况查询网站",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://www.crunchbase.com/',
-              },
-              {
-                name: 'twitter',
-                link: 'https://twitter.com/crunchbase',
-              },
-               {
-                 name: 'Facebook',
-                 link: 'https://www.facebook.com/crunchbase/',
-               },
-            ],
-          },
-          {
-            avator:
-              'img/navigator/chaindrop.png',
-            title: 'ChainDrop测试网水龙头',
-            desc:
-              "ChainDrop Web3 Faucet Network",
-            tags: ['Faucet', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://chaindrop.org/',
-              }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/Faucet.png',
-            title: '水龙头-Faucet',
-            desc:
-              "适合所有人的多链式水龙头。各个链的水都有,很全,但是领取的额度很小,可以救急用",
-            tags: ['Faucet', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://faucet.triangleplatform.com/',
-              },
-              {
-                name:'twitter',
-                link:'https://twitter.com/triangleplatfrm/'
-              }
-            ],
-          },          
-          {
-            avator:
-              'img/navigator/danny.jpeg',
-            title: '测试网水龙头汇总',
-            desc:
-              "包括以太坊歌尔力测试网,BSC链测试网,多边形主网,比特币测试网等各种测试网。By:danny",
-            tags: ['Faucet', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://www.danny.hk/测试网水龙头/?dwaf=3467548',
-              }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/analytics.svg',
-            title: 'Analytics',
-            desc:
-              "区块链最近的所有募资筹款活动",
-            tags: ['NFT', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://icoanalytics.org/',
-              }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/mirrorbeats.png',
-            title: 'MirrorBeats',
-            desc:
-              "基于 Web3.0 内容平台 Mirror 的搜索引擎",
-            tags: ['NFT', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://www.mirrorbeats.xyz/',
-              }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/SMS-Man.png',
-            title: 'SMS-MAN全球短信接码',
-            desc:
-              "SMS-Man 是一个提供在线短信接收的国际平台,让你有机会在网上以最优惠的价格购买一个虚拟号码用于注册流行服务。",
-            tags: ['NFT', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://sms-man.com/cn',
-              }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/Bress.png',
-            title: 'Bress',
-            desc:
-              "Bress.xyz是基于Mirror开发的去中心化社交网络,在这里你可以找到 Mirror 生态上的高质量文章和优秀作者。",
-            tags: ['NFT', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://bress.xyz/',
-              },
-              {
-                name: 'twitter',
-                link: 'https://twitter.com/0xHaole',
+                name: 'github',
+                link: 'https://github.com/unisat-wallet/extension',
               },
               {
                 name: 'discord',
-                link: 'https://discord.com/invite/Qw2ZPteQqQ',
+                link: 'https://discord.com/invite/unisat',
               },
-              
             ],
           },
           {
             avator:
-              'img/navigator/yescap.png',
-            title: '识别谷歌图形验证码插件',
+              'img/navigator/okx.png',
+            title: 'OKX-Market:BRC20',
             desc:
-              "自动识别点击谷歌图像验证码",
-            tags: ['NFT', 'Web3'],
+              "OKX-Market交易BRC20",
+            tags: ['Unisat', 'BRC20','Market'],
+            type: 'BRC20',
             exterlink: [
               {
                 name: 'internet',
-                link: 'https://yescaptcha.com/',
-              }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/airdr.png',
-            title: '空投交互教程',
-            type: 'ama',
-            desc:
-              "每日更新",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://zlexdl.notion.site/db2e69b82a364d9e8bd356c4c73a228c?v=b3a4e992cd014603975d50df4e0fe9af',
+                link: 'https://www.okx.com/cn/web3/marketplace/ordinals/brc20',
               },
-              {
-                name:'twitter',
-                link:'https://twitter.com/zlexdl'
-              }
+              // {
+              //   name: 'twitter',
+              //   link: 'https://twitter.com/unisat_wallet',
+              // },
+              // {
+              //   name: 'github',
+              //   link: 'https://github.com/unisat-wallet/extension',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/unisat',
+              // },
             ],
           },
-          {
-            avator:
-              'img/navigator/lumao.png',
-            title: 'L0/L1/L2各个链信息简介',
-            desc:
-              "撸毛人必存,L0/L1/L2各个链信息",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://docs.google.com/spreadsheets/d/1RFWFwBhKz6Rqc7YypASqB92KsGsHASDNvYsJvdd_vXI/edit?ref=www.sihuo.club&pli=1#gid=1811352306',
-              }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/Coinowo.jpg',
-            title: 'Coinowo空投派发现',
-            type: 'ama',
-            desc:
-              "Coinowo发现分享最新空投和加密货币新闻,学习网格量化交易,研究流动性挖矿和各种Defi项目",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://coinowo.com/',
-              },
-              {
-                name: 'twitter',
-                link: 'https://twitter.com/Coinowodrop',
-              },
-              {
-                name: 'telegram',
-                link: 'https://t.me/coinowonewalpha',
-              }
-            
-            ],
-          },
-          {
-            avator:
-              'img/navigator/baozao.png',
-            title: '暴躁兔',
-            desc:
-              "暴躁兔是一个搞技术,数据为导向的社区",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://gamefi.ask4coin.com/',
-              },
-              {
-                name:'twitter',
-                link:'https://twitter.com/fengye2'
-              },
-              {
-                 name: 'Discord',
-                 link: 'https://discord.com/invite/NRMgYzxz3v',
-               }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/Bress.png',
-            desc:
-              "撸猫教程",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://bress.xyz/zh/author/0x4b2498C70cd42dEF5e7cC47F0f2C90B33bad6dC0',
-              }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/RabbitHole.png',
-            title: 'RabbitHole兔子洞',
-            desc:
-              "web3任务平台,做任务给奖励",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://rabbithole.gg/',
-              },
-              {
-                name:'twitter',
-                link:'https://twitter.com/rabbithole_gg'
-              },
-              {
-                 name: 'Discord',
-                 link: 'https://discord.com/invite/rabbitholegg',
-               }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/galxe.png',
-            title: 'Galxe: 银河',
-            desc:
-              "Web3 任务奖励平台",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://galxe.com/',
-              }
-            ],
-          },
-          {
-            avator:
-              'img/navigator/Layer3.png',
-            title: 'Layer3 任务平台',
-            desc:
-              "L3 任务平台",
-            tags: ['AirDrop', 'Web3'],
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://layer3.xyz/',
-              }
-            ],
-          }                                                                                
+          
+
         ]
       },
       {
         type: 'link',
-        label: '🏫 深度学习',
-        href: '#learn',
-        docId: 'learn',
+        label: 'ARC20',
+        href: '#ARC20',
+        docId: 'ARC20',
         nextitems: [
           {
             avator:
-              'img/navigator/btcstudy.png',
-            title: 'btcstudy',
-            type: 'ama',
+              'img/navigator/satsx.svg',
+            title: 'SatsX',
             desc:
-              "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
-            tags: ['BTC', 'LN','Payjoin'],
+              "🚀 pipe protocol、Atomicals、等铭文综合查询、铸造、交易平台",
+            tags: ['Atomicals','ARC20', 'Web3'],
             exterlink: [
               {
                 name: 'internet',
-                link: 'https://www.btcstudy.org/',
+                link: 'https://www.satsx.io/marketplace',
               },
               {
                 name: 'twitter',
-                link: 'https://twitter.com/btcstudy',
+                link: 'https://twitter.com/SatsXio',
               },
               // {
               //   name: 'github',
@@ -467,34 +141,270 @@ export const navpageinfolist = [
               // },
               {
                 name: 'telegram',
-                link: 'https://t.me/btcstudyorg',
+                link: 'https://discord.com/invite/hkH4PRVPSZ',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/atomicalMarket.svg',
+            title: 'Atomical Market',
+            desc:
+              "🚀 Atomicals等铭文综合查询、铸造、交易平台",
+            tags: ['Atomicals', 'ARC20','Relam'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://atomicalmarket.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/atomicalsxyz',
+              },
+              {
+                name: 'github',
+                link: 'https://github.com/atomicals/',
+              },
+              // {
+              //   name: 'discord',
+              //   link: '',
+              // },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://discord.com/invite/hkH4PRVPSZ',
+              // },
+            ],
+          },
+       
+          
+          {
+            avator:
+              'img/navigator/wizz.svg',
+            title: 'wizz',
+            desc:
+              "🚀 批量转账NFT、Realm、资产提现",
+            tags: ['Atomicals', 'ARC20','铭文'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://wizz.cash/dashboard',
+              },
+              // {
+              //   name: 'twitter',
+              //   link: 'https://twitter.com/nftsniper_club',
+              // },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: '',
+              // },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/btcstudyorg',
+              // },
+              
+            ],
+          },
+          {
+            avator:
+              'https://atomicalswallet.com/assets/logo-8fe490a4.svg',
+            title: 'ATOM Wallet',
+            desc:
+              "The first Atomicals wallet that can safeguard your ARC-20, Realms and NFTs.",
+            tags: ['NFT', 'Wallet', 'ARC20'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://atomicalswallet.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/atomicalswallet',
+              },
+              {
+                name: 'github',
+                link: 'https://github.com/atomicalswallet/atomicals-wallet-extension',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/atomicalsxyz',
+              },
+            ],
+          },
+        ]
+      },
+      {
+        type: 'link',
+        label: 'ETHs',
+        href: '#ETHs',
+        docId: 'ETHs',
+        nextitems: [
+         
+          
+          {
+            avator:
+              'img/navigator/nftsniper.jpeg',
+            title: 'ETHS',
+            desc:
+              "🚀 Ethscriptions查询网站",
+            tags: ['ETH', 'ETHs','铭文'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://data.nftsniper.club/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/nftsniper_club',
+              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: '',
+              // },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/btcstudyorg',
+              // },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/ethsMarket.png',
+            title: 'ethscriptions',
+            desc:
+              "🚀 ethscriptions Market",
+            tags: ['ETHs','铭文'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://ethscriptions.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/DogiDrc20',
+              },
+              // {
+              //   name: 'github',
+              //   link: 'https://github.com/verydogelabs',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/fjtwfDFHFr',
+              // },
+              {
+                name: 'telegram',
+                link: 'https://t.me/drc20_doginals',
               },
               
             ],
           },
           {
             avator:
-              'img/navigator/wtf.png',
-            title: 'wtf',
+              'img/navigator/eths.png',
+            title: 'eths.market',
             desc:
-              "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
-            tags: ['BTC', 'LN','Payjoin'],
+              "🚀 eths.market",
+            tags: ['ETHs','铭文'],
             exterlink: [
               {
                 name: 'internet',
-                link: 'https://www.wtf.academy/',
+                link: 'https://www.etch.market/market/token?category=token&collectionName=erc-20%20eths',
               },
               {
                 name: 'twitter',
-                link: 'https://twitter.com/0xAA_Science',
+                link: 'https://twitter.com/eths_X',
+              },
+              // {
+              //   name: 'github',
+              //   link: 'https://github.com/verydogelabs',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/fjtwfDFHFr',
+              // },
+              {
+                name: 'telegram',
+                link: 'https://t.me/ethscriptionsglobal',
+              },
+              
+            ],
+          },
+          
+ 
+        ]
+      },
+      {
+        type: 'link',
+        label: 'DRC20',
+        href: '#DRC20',
+        docId: 'DRC20',
+        nextitems: [
+        
+          {
+            avator:
+              'img/navigator/dogidrc20.jpeg',
+            title: 'dogi.world',
+            desc:
+              "🚀 DOG导航网站",
+            tags: ['DRC','铭文'],
+            type: 'DRC',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://dogi.world/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/DogiDrc20',
+              },
+              // {
+              //   name: 'github',
+              //   link: 'https://github.com/verydogelabs',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/fjtwfDFHFr',
+              // },
+              {
+                name: 'telegram',
+                link: 'https://t.me/drc20_doginals',
+              },
+              
+            ],
+          },
+          
+          {
+            avator:
+              'img/navigator/dog20.png',
+            title: 'wdrc-20.orgtf',
+            desc:
+              "🚀 DogeLabs is the official explorer of Drc-20",
+            tags: ['DRC','铭文'],
+            type: 'DRC',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://drc-20.org/marketplace',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/verydogelabs',
               },
               {
                 name: 'github',
-                link: 'https://github.com/WTFAcademy',
+                link: 'https://github.com/verydogelabs',
               },
               {
                 name: 'discord',
-                link: 'https://discord.com/invite/5akcruXrsk',
+                link: 'https://discord.com/invite/fjtwfDFHFr',
               },
               // {
               //   name: 'telegram',
@@ -505,20 +415,21 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'img/navigator/btcstudy.png',
-            title: 'bitcointalk',
+              'img/navigator/ordifind.jpeg',
+            title: 'ordifind',
             desc:
-              "🚀 这是一个论坛,汇集了比特币社区的成员,包括开发者、矿工和爱好者。这里有关于比特币开发的深入讨论和资源分享。",
-            tags: ['BTC', 'talk'],
+              "🚀 Ordifind 是一个您可以购买 $Dogi 的市场",
+            tags: ['DRC', '铭文'],
+            type: 'DRC',
             exterlink: [
               {
                 name: 'internet',
-                link: 'https://bitcointalk.org/',
+                link: 'https://ordifind.com/token/',
               },
-              // {
-              //   name: 'twitter',
-              //   link: 'https://twitter.com/0xAA_Science',
-              // },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/ordifind',
+              },
               // {
               //   name: 'github',
               //   link: 'https://github.com/WTFAcademy',
@@ -527,22 +438,407 @@ export const navpageinfolist = [
               //   name: 'discord',
               //   link: 'https://discord.com/invite/5akcruXrsk',
               // },
+              {
+                name: 'telegram',
+                link: 'https://t.me/ordifind',
+              },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/doggymarket.jpeg',
+            title: 'doggy_market',
+            desc:
+              "🚀 Doggy Marketplace 是一个可以购买 $Dogi 的地方",
+            tags: ['DRC', '铭文'],
+            type: 'DRC',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://doggy.market/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/doggy_market',
+              },
               // {
-              //   name: 'telegram',
-              //   link: 'https://t.me/btcstudyorg',
+              //   name: 'github',
+              //   link: 'https://github.com/WTFAcademy',
               // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/5akcruXrsk',
+              // },
+              {
+                name: 'telegram',
+                link: 'https://t.me/doggymarket',
+              },
               
             ],
           },
           
         ]
       },
+      {
+        type: 'link',
+        label: 'LTC20',
+        href: '#LTC20',
+        docId: 'LTC20',
+        nextitems: [
+        
+          {
+            avator:
+              'img/navigator/unilit.jpeg',
+            title: 'unilit',
+            desc:
+              "🚀 LTC的首个铭文LITE。",
+            tags: ['LTC20', '铭文'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.unilit.io/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/unilit_io',
+              },
+              // {
+              //   name: 'github',
+              //   link: 'https://github.com/WTFAcademy',
+              // },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/45QF5aHZgU',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/unilit_io',
+              },
+              
+            ],
+          },  
+        ]
+      },
+      {
+        type: 'link',
+        label: 'Base20',
+        href: '#Base20',
+        docId: 'Base20',
+        nextitems: [
+          {
+            avator:
+              'img/navigator/base20.png',
+            title: 'unilit',
+            desc:
+              "🚀 Base20的首个铭文base.",
+            tags: ['Base20', '铭文'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://base20.live/#/market',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/base20live',
+              },
+              {
+                name: 'github',
+                link: 'https://github.com/base-20/base20_interface',
+              },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/45QF5aHZgU',
+              // },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/unilit_io',
+              // },
+              
+            ],
+          },
+       
+        ]
+      },
+      {
+        type: 'link',
+        label: 'BNBs',
+        href: '#BNBS',
+        docId: 'BNBS',
+        nextitems: [
+          
+          {
+            avator:
+              'img/navigator/bsc20.webp',
+            title: 'unilit',
+            desc:
+              "🚀 币安智能链的首个铭文BNBS",
+            tags: ['BNBS', '铭文'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://evm.ink/',
+              },
+              // {
+              //   name: 'twitter',
+              //   link: 'https://twitter.com/base20live',
+              // },
+              {
+                name: 'github',
+                link: 'https://inscriptions.gitbook.io/docs/',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/VsxRaqJXGR',
+              },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/unilit_io',
+              // },
+              
+            ],
+          },
+     
+        ]
+      },
+      {
+        type: 'link',
+        label: 'Polygon',
+        href: '#Polygon',
+        docId: 'Polygon',
+        nextitems: [
+          {
+            avator:
+              'img/navigator/pols.jpeg',
+            title: 'polsmarket',
+            desc:
+              "🚀 Polygon的链上铭文市场POLS Market也已上线并开放交易.",
+            tags: ['Polygon', 'POLS','铭文'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.polsmarket.wtf/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/PolsMarket',
+              },
+              // {
+              //   name: 'github',
+              //   link: 'https://inscriptions.gitbook.io/docs/',
+              // },
+              {
+                name: 'discord',
+                link: 'https://t.co/FsWsGCnAxs',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/PolsMarket',
+              },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/okx.png',
+            title: 'OKX-Market:SPL-20',
+            desc:
+              "OKX-Market交易Solana铭文sols,基于类似Ordinals协议BRC20的SPL-20创建的，总量为21000",
+            tags: ['OKX-Market', 'sols','Market'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.okx.com/cn/web3/marketplace/nft/collection/sol/sols-spl20',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/SolsCN',
+              },
+              // {
+              //   name: 'github',
+              //   link: 'https://github.com/unisat-wallet/extension',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/unisat',
+              // },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/megic.png',
+            title: 'magiceden:SPL-20',
+            desc:
+              "magiceden-Market交易Solana铭文sols,基于类似Ordinals协议BRC20的SPL-20创建的，总量为21000",
+            tags: ['Markets', 'sols','SPL-20'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://magiceden.io/marketplace/sols_spl20',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/SolsCN',
+              },
+              // {
+              //   name: 'github',
+              //   link: 'https://ordinals-wallet.gitbook.io/api/',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/magiceden',
+              // },
+            ],
+          },
+        ]
+      },
+      {
+        type: 'link',
+        label: 'PIPE',
+        href: '#PIPE',
+        docId: 'PIPE',
+        nextitems: [
+          {
+            avator:
+              'img/navigator/pipe.jpeg',
+            title: 'PIPE',
+            type: 'PIPE',
+            desc:
+              "基于RUNES创建的协议",
+            tags: ['Markets', 'PIPE','Mint'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://pipe.inscrib3.land/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/inscrib3',
+              },
+              // {
+              //   name: 'github',
+              //   link: 'https://ordinals-wallet.gitbook.io/api/',
+              // },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/gpFGS4UJ5f',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/trac.png',
+            title: 'Trac',
+            desc:
+              "Ordinals协议资产查询",
+            tags: ['Tool', 'PIPE','Trac'],
+            type: 'PIPE',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://trac.network/index.html',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/trac_btc',
+              },
+              {
+                name: 'github',
+                link: 'https://github.com/BennyTheDev',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/sPyYDa5q6P',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/raritygarden',
+              },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/runex.png',
+            title: 'Runex',
+            desc:
+              "SWAP形式交易所,测试中",
+            tags: ['Tool', 'PIPE','Trac'],
+            type: 'PIPE',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://runex.tech/#',
+              },
+              // {
+              //   name: 'twitter',
+              //   link: 'https://twitter.com/trac_btc',
+              // },
+              // {
+              //   name: 'github',
+              //   link: 'https://github.com/BennyTheDev',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/sPyYDa5q6P',
+              // },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/raritygarden',
+              // },
+              
+            ],
+          },
+        ]
+      },
+      // {
+      //   type: 'link',
+      //   label: 'Mint',
+      //   href: '#dune',
+      //   docId: 'dune',
+      //   nextitems: [
+      //     {
+      //       avator:
+      //         'img/navigator/dune.svg',
+      //       href: '/docs/installation',
+      //       title: 'dune',
+      //       desc:
+      //         "前期撸毛工具，查询工具",
+      //       tags: ['AirDrop', 'dune','Mint'],
+            
+      //       exterlink: [
+      //         {
+      //           name: 'internet',
+      //           link: 'https://dune.com/browse/dashboards',
+      //         },
+      //         // {
+      //         //   name: 'twitter',
+      //         //   link: 'https://twitter.com/ArkhamIntel',
+      //         // },
+      //         // {
+      //         //   name: 'github',
+      //         //   link: '',
+      //         // },
+      //         {
+      //           name: 'discord',
+      //           link: 'https://discord.com/invite/ErrzwBz',
+      //         },
+      //         {
+      //           name: 'telegram',
+      //           link: 'https://t.me/dune_updates',
+      //         },
+              
+      //       ],
+      //     },
+      //   ]
+      // },
     ],
   },
   {
     type: 'category', // category有二级目录 link只有一级
     label: '交易所',
-    collapsed: true, // 是否折叠
+    collapsed: false, // 是否折叠
     collapsible: true, // 是否显示折叠图标
     items: [
       {
@@ -909,6 +1205,7 @@ export const navpageinfolist = [
             desc:
               "🚀 LNmarkets是一个基于比特币的闪电网络(Lightning Network)的金融交易平台。它特别针对比特币衍生品交易,如期货和期权交易.",
             tags: ['LN', 'BitCoin','Market'],
+            type: 'LN',
             exterlink: [
               {
                 name: 'internet',
@@ -939,6 +1236,7 @@ export const navpageinfolist = [
             desc:
               "UXUY以MPC为基础,为用户提供了无助记词和安全导向的去中心化交易所应用,UXUY 基于 Taproot Assets 协议正式上线 $TAPROOT,并开放LN节点.",
             tags: ['LN', 'BitCoin','Market'],
+            type: 'LN',
             exterlink: [
               {
                 name: 'internet',
@@ -985,6 +1283,7 @@ export const navpageinfolist = [
             desc:
               "The first open-source browser extension wallet for Bitcoin NFTs!",
             tags: ['NFT', 'Wallet', 'BRC20'],
+            type: 'Wallet',
             exterlink: [
               {
                 name: 'internet',
@@ -1011,6 +1310,7 @@ export const navpageinfolist = [
             desc:
               "The first Atomicals wallet that can safeguard your ARC-20, Realms and NFTs.",
             tags: ['NFT', 'Wallet', 'ARC20'],
+            type: 'Wallet',
             exterlink: [
               {
                 name: 'internet',
@@ -1037,6 +1337,7 @@ export const navpageinfolist = [
 			desc:
 			  "Your Bitcoin & Nostr companion for the web.",
 			tags: [ 'Wallet', 'Bitcoin', 'Nostr', 'LN'],
+      type: 'Wallet',
 			exterlink: [
 			  {
 				name: 'internet',
@@ -1067,6 +1368,7 @@ export const navpageinfolist = [
             desc:
               "The Bitcoin Wallet for everyone.",
             tags: ['BRC20', 'Wallet', 'LN', 'Ordinals', 'Stacks'],
+            type: 'Wallet',
             exterlink: [
               {
                 name: 'internet',
@@ -1093,6 +1395,7 @@ export const navpageinfolist = [
 			desc:
 			  "UXUY是一个安全的非托管钱包,采用多方计算（MPC）技术,通过无需密钥签名和无需种子恢复,提供极致的安全性和便捷性。",
 			tags: ['Wallet', 'ERC', 'BEP20', 'TRX20', 'LN'],
+      type: 'Wallet',
 			exterlink: [
 			  {
 				name: 'internet',
@@ -1123,6 +1426,7 @@ export const navpageinfolist = [
         desc:
           "同时开发了冷钱包、多签钱包等,多链钱包,支持BTC、ETH、BSC、TRON、Aptos、Polygon、Solana、Cosmos、Polkadot、EOS、IOST等",
         tags: ['Wallet', 'BTC','LN'],
+        type: 'Wallet',
         exterlink: [
           {
           name: 'internet',
@@ -1153,9 +1457,618 @@ export const navpageinfolist = [
   {
     type: 'category', // category有二级目录 link只有一级
     label: '工具',
-    collapsed: true, // 是否展开
+    collapsed: false, // 是否展开
     collapsible: true, // 是否显示折叠图标
     items: [
+      {
+        type: 'link',
+        label: '🏫 资料查询',
+        href: '#learn',
+        docId: 'learn',
+        nextitems: [
+          {
+            avator:
+              'img/navigator/btcstudy.png',
+            title: 'BTCStudy',
+            desc:
+              "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
+            tags: ['BTC', 'LN','Payjoin','learn'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.btcstudy.org/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/btcstudy',
+              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: '',
+              // },
+              {
+                name: 'telegram',
+                link: 'https://t.me/btcstudyorg',
+              },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/brcintroduce.png',
+            title: 'l1f',
+            desc:
+              "🚀 l1f是介绍BRC20和BRC100,社区提案网站",
+            tags: ['BRC20','BRC100','domo','learn'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://l1f.discourse.group/t/brc-20-introduction-to-brc-20/72',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/domodata',
+              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: '',
+              // },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/btcstudyorg',
+              // },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/wtf.png',
+            title: 'wtf',
+            desc:
+              "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
+            tags: ['BTC', 'LN','Payjoin','learn'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.wtf.academy/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/0xAA_Science',
+              },
+              {
+                name: 'github',
+                link: 'https://github.com/WTFAcademy',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/5akcruXrsk',
+              },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/btcstudyorg',
+              // },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/btcstudy.png',
+            title: 'BitcoinTalk',
+            desc:
+              "🚀 这是一个论坛,汇集了比特币社区的成员,包括开发者、矿工和爱好者。这里有关于比特币开发的深入讨论和资源分享。",
+            tags: ['BTC', 'talk','learn'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://bitcointalk.org/',
+              },
+              // {
+              //   name: 'twitter',
+              //   link: 'https://twitter.com/0xAA_Science',
+              // },
+              // {
+              //   name: 'github',
+              //   link: 'https://github.com/WTFAcademy',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: 'https://discord.com/invite/5akcruXrsk',
+              // },
+              // {
+              //   name: 'telegram',
+              //   link: 'https://t.me/btcstudyorg',
+              // },
+              
+            ],
+          },
+          
+        ]
+      },
+      {
+        type: 'link',
+        label: '🪂 空投必备',
+        href: '#AirDrop',
+        docId: 'AirDrop',
+        nextitems: [
+          {
+            avator:
+              'img/navigator/arkham.jpeg',
+            href: '/docs/installation',
+            title: 'ARRKHAM',
+            desc:
+              "Arkham 是一个情报平台,提供有关加密货币市场活动背后的现实世界实体和个人的信息。",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://platform.arkhamintelligence.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/ArkhamIntel',
+              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/arkham',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/arkhamintelligence',
+              },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/dune.svg',
+            href: '/docs/installation',
+            title: 'dune',
+            desc:
+              "前期撸毛工具，查询工具",
+            tags: ['AirDrop', 'Web3','Tool'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://dune.com/browse/dashboards',
+              },
+              // {
+              //   name: 'twitter',
+              //   link: 'https://twitter.com/ArkhamIntel',
+              // },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/ErrzwBz',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/dune_updates',
+              },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/earni.png',
+            href: '/docs/installation',
+            title: 'earni',
+            desc:
+              "遗漏空投查询工具",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://earni.fi/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/earni_fi/',
+              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
+              // {
+              //   name: 'discord',
+              //   link: '',
+              // },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/AdsPower.png',
+            title: 'AdsPower指纹浏览器',
+            desc:
+              "是一款专注跨境电商账号矩阵安全管理的指纹浏览器",
+            tags: ['AirDrop', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.adspower.net/',
+              },{
+                name: 'twitter',
+                link: 'https://twitter.com/viamirror',
+              },
+              {
+                name: 'telegram',
+                link: '',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/DFarm.jpg',
+            title: 'DFarm',
+            desc:
+              "薅羊毛基础分享",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://mirror.xyz/dfarm.eth',
+              },{
+                name: 'Telegram',
+                link: 'https://t.me/adspowercn',
+              },
+              {
+                 name: 'Facebook',
+                 link: 'https://www.facebook.com/adspowerbrowser',
+              },
+            ],
+          },
+          
+          {
+            avator:
+              'img/navigator/gopluslabs.png',
+            title: '代币合约安全检测',
+            desc:
+              "Token 安全检测开放的、无需许可的、用户驱动的代币安全检测平台",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://gopluslabs.io/token-security/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/GoplusSecurity',
+              },
+               {
+                 name: 'Telegram',
+                 link: 'https://t.me/GoPlusSecurity',
+               },
+               {
+                 name: 'Discord',
+                 link: 'https://discord.com/invite/5cvSsaT8N5',
+               },
+               {
+                 name: 'Medium',
+                 link: 'https://goplussecurity.medium.com/',
+               },
+            ],
+          },          
+
+          {
+            avator:
+              'img/navigator/crunchbase.png',
+            title: '项目融资情况查看',
+            desc:
+              "web3项目融资情况查询网站",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.crunchbase.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/crunchbase',
+              },
+               {
+                 name: 'Facebook',
+                 link: 'https://www.facebook.com/crunchbase/',
+               },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/chaindrop.png',
+            title: 'ChainDrop测试网水龙头',
+            desc:
+              "ChainDrop Web3 Faucet Network",
+            tags: ['Faucet', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://chaindrop.org/',
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/Faucet.png',
+            title: '水龙头-Faucet',
+            desc:
+              "适合所有人的多链式水龙头。各个链的水都有,很全,但是领取的额度很小,可以救急用",
+            tags: ['Faucet', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://faucet.triangleplatform.com/',
+              },
+              {
+                name:'twitter',
+                link:'https://twitter.com/triangleplatfrm/'
+              }
+            ],
+          },          
+          {
+            avator:
+              'img/navigator/danny.jpeg',
+            title: '测试网水龙头汇总',
+            desc:
+              "包括以太坊歌尔力测试网,BSC链测试网,多边形主网,比特币测试网等各种测试网。By:danny",
+            tags: ['Faucet', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.danny.hk/测试网水龙头/?dwaf=3467548',
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/analytics.svg',
+            title: 'Analytics',
+            desc:
+              "区块链最近的所有募资筹款活动",
+            tags: ['NFT', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://icoanalytics.org/',
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/mirrorbeats.png',
+            title: 'MirrorBeats',
+            desc:
+              "基于 Web3.0 内容平台 Mirror 的搜索引擎",
+            tags: ['NFT', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.mirrorbeats.xyz/',
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/SMS-Man.png',
+            title: 'SMS-MAN全球短信接码',
+            desc:
+              "SMS-Man 是一个提供在线短信接收的国际平台,让你有机会在网上以最优惠的价格购买一个虚拟号码用于注册流行服务。",
+            tags: ['NFT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://sms-man.com/cn',
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/Bress.png',
+            title: 'Bress',
+            desc:
+              "Bress.xyz是基于Mirror开发的去中心化社交网络,在这里你可以找到 Mirror 生态上的高质量文章和优秀作者。",
+            tags: ['NFT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://bress.xyz/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/0xHaole',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/Qw2ZPteQqQ',
+              },
+              
+            ],
+          },
+          {
+            avator:
+              'img/navigator/yescap.png',
+            title: '识别谷歌图形验证码插件',
+            desc:
+              "自动识别点击谷歌图像验证码",
+            tags: ['NFT', 'Web3'],
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://yescaptcha.com/',
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/airdr.png',
+            title: '空投交互教程',
+            desc:
+              "每日更新",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://zlexdl.notion.site/db2e69b82a364d9e8bd356c4c73a228c?v=b3a4e992cd014603975d50df4e0fe9af',
+              },
+              {
+                name:'twitter',
+                link:'https://twitter.com/zlexdl'
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/lumao.png',
+            title: 'L0/L1/L2各个链信息简介',
+            desc:
+              "撸毛人必存,L0/L1/L2各个链信息",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://docs.google.com/spreadsheets/d/1RFWFwBhKz6Rqc7YypASqB92KsGsHASDNvYsJvdd_vXI/edit?ref=www.sihuo.club&pli=1#gid=1811352306',
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/Coinowo.jpg',
+            title: 'Coinowo空投派发现',
+            desc:
+              "Coinowo发现分享最新空投和加密货币新闻,学习网格量化交易,研究流动性挖矿和各种Defi项目",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://coinowo.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/Coinowodrop',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/coinowonewalpha',
+              }
+            
+            ],
+          },
+          {
+            avator:
+              'img/navigator/baozao.png',
+            title: '暴躁兔',
+            desc:
+              "暴躁兔是一个搞技术,数据为导向的社区",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://gamefi.ask4coin.com/',
+              },
+              {
+                name:'twitter',
+                link:'https://twitter.com/fengye2'
+              },
+              {
+                 name: 'Discord',
+                 link: 'https://discord.com/invite/NRMgYzxz3v',
+               }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/Bress.png',
+            desc:
+              "撸猫教程",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://bress.xyz/zh/author/0x4b2498C70cd42dEF5e7cC47F0f2C90B33bad6dC0',
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/RabbitHole.png',
+            title: 'RabbitHole兔子洞',
+            desc:
+              "web3任务平台,做任务给奖励",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://rabbithole.gg/',
+              },
+              {
+                name:'twitter',
+                link:'https://twitter.com/rabbithole_gg'
+              },
+              {
+                 name: 'Discord',
+                 link: 'https://discord.com/invite/rabbitholegg',
+               }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/galxe.png',
+            title: 'Galxe: 银河',
+            desc:
+              "Web3 任务奖励平台",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://galxe.com/',
+              }
+            ],
+          },
+          {
+            avator:
+              'img/navigator/Layer3.png',
+            title: 'Layer3 任务平台',
+            desc:
+              "L3 任务平台",
+            tags: ['AirDrop', 'Web3'],
+            type: 'AirDrop',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://layer3.xyz/',
+              }
+            ],
+          }                                                                                
+        ]
+      },
       {
         type: 'link',
         label: '🔎 链上数据分析',
@@ -1169,6 +2082,7 @@ export const navpageinfolist = [
             desc:
               "Ordinal Inscriptions/collections 浏览器,界面友好,快速检索",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1195,6 +2109,7 @@ export const navpageinfolist = [
             desc:
               "搜索比特币生态铭文详情、查看Inscriptions及Collections。",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1221,6 +2136,7 @@ export const navpageinfolist = [
             desc:
               "体验完整比特币生态查询（包括闪电网络）底层区块查询。",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1247,6 +2163,7 @@ export const navpageinfolist = [
             desc:
               "BTC链浏览器",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1273,6 +2190,7 @@ export const navpageinfolist = [
             desc:
               "闪电网络搜索和分析引擎",
             tags: ['Tool', 'Web3'],
+            type: 'LN',
             exterlink: [
               {
                 name: 'internet',
@@ -1299,6 +2217,7 @@ export const navpageinfolist = [
             desc:
               "全球领先的 Web3 数据分析平台.区块链浏览器、链上数据分析及服务",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1324,11 +2243,12 @@ export const navpageinfolist = [
           },
           {
             avator:
-              'mg/navigator/oklink.png',
+              'img/navigator/geniidata.png',
             title: 'GeniiData',
             desc:
               "实时铭文内存池统计",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1355,6 +2275,7 @@ export const navpageinfolist = [
             desc:
               "BRC100铭刻、查询",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1381,6 +2302,7 @@ export const navpageinfolist = [
             desc:
               "BRC20代币行情实时查看",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1420,6 +2342,7 @@ export const navpageinfolist = [
             desc:
               "实时全链货币数据",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1451,6 +2374,7 @@ export const navpageinfolist = [
             desc:
               "各币种行情查询统计网站",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1477,6 +2401,7 @@ export const navpageinfolist = [
             desc:
               "BSC链所有项目数据",
             tags: ['Tool', 'Web3'],
+            type: 'analyze',
             exterlink: [
               {
                 name: 'internet',
@@ -1508,7 +2433,7 @@ export const navpageinfolist = [
   {
     type: 'category', // category有二级目录 link只有一级
     label: 'NFT',
-    collapsed: true, // 是否展开
+    collapsed: false, // 是否展开
     collapsible: true, // 是否显示折叠图标
     items: [
       {
@@ -1558,6 +2483,7 @@ export const navpageinfolist = [
             desc:
               "🔥第一个社区驱动的聚合市场,NFT交易市场,支持多个公链,多种钱包。用户可以获得最好的流动性、最低的交易成本和最高效的交易功能。",
             tags: ['NFT', 'BTC','ETH'],
+            href: '../../docs/navigation/Element',
             exterlink: [
               {
                 name: 'internet',
@@ -1690,7 +2616,7 @@ export const navpageinfolist = [
   {
     type: 'category', // category有二级目录 link只有一级
     label: 'GameFi',
-    collapsed: true, // 是否展开
+    collapsed: false, // 是否展开
     collapsible: true, // 是否显示折叠图标
     items: [
       {
@@ -1852,7 +2778,7 @@ export const navpageinfolist = [
   {
     type: 'category', // category有二级目录 link只有一级
     label: 'SocialFi',
-    collapsed: true, // 是否展开
+    collapsed: false, // 是否展开
     collapsible: true, // 是否显示折叠图标
     items: [
       {
@@ -1868,6 +2794,7 @@ export const navpageinfolist = [
             desc:
               "🚀 Damus(达摩)是一个基于开源协议Nostr的社交媒体应用程序。Nostr是一个新兴的分散式社交网络协议,旨在提供一个开放、无审查的平台。 Nostr, Jack Dorsey’s Favorite Decentralized Social Network。",
             tags: ['SocialFi', 'Nostr','Alby'],
+            type: 'LN',
             exterlink: [
               {
                 name: 'internet',
@@ -1894,6 +2821,7 @@ export const navpageinfolist = [
             desc:
               "🚀 这是一个利用比特币的闪电网络的通讯应用程序。Sphinx Chat允许用户通过微支付来发送消息和内容,同时也支持加密通信",
             tags: ['SocialFi', 'LightningNetwork',],
+            type: 'LN',
             exterlink: [
               {
                 name: 'internet',
@@ -1920,6 +2848,7 @@ export const navpageinfolist = [
             desc:
               "🔥 闪电实验室(ightning Labs)推出的协议,旨在在比特币的闪电网络上创建、发送和接收任何类型的资产。尽管Taro本身不是一个社交媒体平台,但它为未来可能出现的基于比特币的SocialFi应用提供了基础设施。",
             tags: ['LightningNetwork','Protocol','TaprootAssets'],
+            type: 'LN',
             exterlink: [
               {
                 name: 'internet',
@@ -1954,6 +2883,7 @@ export const navpageinfolist = [
             desc:
               "🔥 通过 NostrAsset 网页客户端传输 Taproot Assets和其他资产,无 Gas 费。",
             tags: ['Market', 'LN','TREAT','TRICK'],
+            type: 'LN',
             exterlink: [
               {
                 name: 'internet',
@@ -2011,7 +2941,7 @@ export const navpageinfolist = [
   {
     type: 'category', // category有二级目录 link只有一级
     label: 'DeFi',
-    collapsed: true, // 是否展开
+    collapsed: false, // 是否展开
     collapsible: true, // 是否显示折叠图标
     items: [
       {
