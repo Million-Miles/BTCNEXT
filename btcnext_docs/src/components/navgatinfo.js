@@ -485,7 +485,7 @@ export const navpageinfolist = [
           {
             avator:
               'img/btcnext_default.png',
-            title: 'LITE',
+            title: 'Base',
             desc:
               "Base上的第一个LTC20资产",
             tags: ['BASE20'],
