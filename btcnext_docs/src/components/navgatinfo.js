@@ -41,6 +41,541 @@ export const selectTypeList = [
 export const navpageinfolist = [
   {
     type: 'category', // category有二级目录 link只有一级
+    label: '热门资产',
+    collapsed: false, // 是否折叠
+    collapsible: true, // 是否显示折叠图标
+    items: [
+      {
+        type: 'link',
+        label: 'BRC20',
+        href: '#BRC20Asset',
+        docId: 'BRC20Asset',
+        nextitems: [
+          {
+            avator:
+              'img/navigator/ordi.png',
+            title: 'Ordi',
+            desc:
+              "Ordi是BTC 上第一个也是最有价值的 BRC-20 代币",
+            tags: ['Ordi', 'BRC20'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://ordinals.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/brc20roup',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Sats',
+            desc:
+              "比特币总量为2100 万枚，一枚比特币可细分为 1 亿个sat，总共有 2100 万亿个sat。它是通过使用 Ordinals 协议向satoshi写入内容而创建的",
+            tags: ['Sats', 'BRC20'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://satscoin.vip/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/satscoin_brc20',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/satsbrc20_community',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Rats',
+            desc:
+              "$rats是比特币区块链上使用BRC-20协议创建的动物币，和地球上最多的哺乳动物老鼠同名",
+            tags: ['Rats', 'BRC20'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://unisat.io/brc20/rats',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Pepe',
+            desc:
+              "BRC20上的Meme币",
+            tags: ['Pepe', 'BRC20'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://unisat.io/market/brc20?tick=pepe',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/trac.jpg',
+            title: 'Trac',
+            desc:
+              "Trac 是一款去中心化的 Ordinals 和比特币元协议跟踪器",
+            tags: ['Trac', 'BRC20'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://trac.network/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/trac_btc',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/raritygarden',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/sPyYDa5q6P',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/roup.jpeg',
+            title: 'Roup',
+            desc:
+              "Rolluper是BRC20资产上卷到比特币Layer2交易的关键通道，由社区发起，收益反馈给社区",
+            tags: ['Map', 'BRC20','Roup'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.rolluper.xyz/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/brc20roup',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/brc20maporoup',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/mapprotocol.jpeg',
+            title: 'Mapprotocol',
+            desc:
+              "基于轻客户端和ZK 技术构建的Bitcoin2层和点对点全链基础设施，专注于跨链#互操作性",
+            tags: ['Mapprotocol', 'BRC20','Mapo'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.mapprotocol.io/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/mapprotocol',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/MAPprotocol/',
+              },
+              {
+                 name: 'discord',
+                 link: 'https://discord.com/invite/kt4beeTVnw'
+              }
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'stst',
+            desc:
+              "stst是btc2层的unisat",
+            tags: ['stst', 'BRC20'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.mapprotocol.io/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/mapprotocol',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/MAPprotocol/',
+              },
+              {
+                 name: 'discord',
+                 link: 'https://discord.com/invite/kt4beeTVnw'
+              }
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Piin',
+            desc:
+              "Piin是一个brc20资产",
+            tags: ['Piin', 'BRC20'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://unisat.io/market/brc20?tick=piin',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Domo',
+            desc:
+              "Domo是一个brc20资产",
+            tags: ['Piin', 'BRC20'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://unisat.io/market/brc20?tick=domo',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'BC1P',
+            desc:
+              "BC1P是一个brc20资产",
+            tags: ['BC1P', 'BRC20'],
+            type: 'BRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://unisat.io/market/brc20?tick=bc1p',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'GROK',
+            desc:
+              "GROK是一个brc20资产",
+            tags: ['GROK', 'BRC20'],
+            type: 'GROK',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://unisat.io/market/brc20?tick=grok',
+              },
+            ],
+          },
+        ]
+      },
+      {
+        type: 'link',
+        label: 'ARC20',
+        href: '#ARC20Asset',
+        docId: 'ARC20Asset',
+        nextitems: [
+          {
+            avator:
+              'img/navigator/atomicals.jpeg',
+            title: 'Atom',
+            desc:
+              "Atomicals 协议是在比特币上创建数字对象的最简单、最强大的方式",
+            tags: ['Atomicals', 'ARC20'],
+            type: 'ARC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://atomicals.xyz/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/atomicalsxyz',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Realm',
+            desc:
+              "ARC20上的独特资产",
+            tags: ['Realm', 'ARC20'],
+            type: 'ARC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://atomicalmarket.com/marketplace/token?ticker=Realm',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'BitVM',
+            desc:
+              "ARC20上的独特资产",
+            tags: ['BitVM', 'ARC20'],
+            type: 'ARC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://atomicalmarket.com/marketplace/token?ticker=bitvm',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Dmint',
+            desc:
+              "ARC20上的独特资产",
+            tags: ['Dmint', 'ARC20'],
+            type: 'ARC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://atomicalmarket.com/marketplace/token?ticker=dmint',
+              },
+            ],
+          },
+        ]
+      },
+      {
+        type: 'link',
+        label: 'ETHs',
+        href: '#ETHAsset',
+        docId: 'ETHAsset',
+        nextitems: [
+          {
+            avator:
+              'img/navigator/eths_asset.png',
+            title: 'Eths',
+            desc:
+              "Ethscriptions上的第一个erc20资产",
+            tags: ['ETHs'],
+            type: 'ETHs',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.etch.market/market/token?category=token&collectionName=erc-20%20eths',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Facet',
+            desc:
+              "Facet erc20资产",
+            tags: ['ETHs'],
+            type: 'ETHs',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.etch.market/market/token?category=token&collectionName=erc-20%20Facet',
+              },
+            ],
+          },
+        ]
+      },
+      {
+        type: 'link',
+        label: 'DRC20',
+        href: '#DRC20Asset',
+        docId: 'DRC20Asset',
+        nextitems: [
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Dogi',
+            desc:
+              "Doge上的第一个drc20资产",
+            tags: ['DRC20'],
+            type: 'DRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://ordifind.com/token/dogi',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Pepe',
+            desc:
+              "Doge drc20资产",
+            tags: ['DRC20'],
+            type: 'DRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://ordifind.com/token/doge',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'doge',
+            desc:
+              "Doge drc20资产",
+            tags: ['DRC20'],
+            type: 'DRC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://ordifind.com/token/pepe',
+              },
+            ],
+          },
+        ]
+      },
+      {
+        type: 'link',
+        label: 'LTC20',
+        href: '#LTC20Asset',
+        docId: 'LTC20Asset',
+        nextitems: [
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'LITE',
+            desc:
+              "Litecoin上的第一个LTC20资产",
+            tags: ['LTC20'],
+            type: 'LTC20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.unilit.io/marketplace',
+              },
+            ],
+          },
+
+        ]
+      },
+      {
+        type: 'link',
+        label: 'Base20',
+        href: '#Base20Asset',
+        docId: 'Base20Asset',
+        nextitems: [
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'LITE',
+            desc:
+              "Base上的第一个LTC20资产",
+            tags: ['BASE20'],
+            type: 'BASE20',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://base20.live/#/market',
+              },
+            ],
+          },
+
+        ]
+      },
+      {
+        type: 'link',
+        label: 'BNBs',
+        href: '#BNBsAsset',
+        docId: 'BNBsAsset',
+        nextitems: [
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'BNBs',
+            desc:
+              "BNBs上的第一个BNBs20资产",
+            tags: ['BNBs'],
+            type: 'BNBs',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://evm.ink/',
+              },
+            ],
+          },
+
+        ]
+      },
+      {
+        type: 'link',
+        label: 'Polygon',
+        href: '#PolygonAsset',
+        docId: 'PolygonAsset',
+        nextitems: [
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Pols',
+            desc:
+              "Polygon上的第一个Polygon20资产",
+            tags: ['POLYGON'],
+            type: 'POLYGON',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.polsmarket.wtf/',
+              },
+            ],
+          },
+
+        ]
+      },
+      {
+        type: 'link',
+        label: 'PIPE',
+        href: '#PipeAsset',
+        docId: 'PipeAsset',
+        nextitems: [
+          {
+            avator:
+              'img/btcnext_default.png',
+            title: 'Pipe',
+            desc:
+              "PIPE协议上的第一个20资产",
+            tags: ['PIPE'],
+            type: 'PIPE',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://pipe.inscrib3.land/',
+              },
+            ],
+          },
+
+        ]
+      },
+    ],
+  },
+  {
+    type: 'category', // category有二级目录 link只有一级
     label: '铭文专区',
     collapsed: false, // 是否折叠
     collapsible: true, // 是否显示折叠图标
@@ -833,80 +1368,6 @@ export const navpageinfolist = [
       //     },
       //   ]
       // },
-    ],
-  },
-  {
-    type: 'category', // category有二级目录 link只有一级
-    label: '热门项目',
-    collapsed: false, // 是否折叠
-    collapsible: true, // 是否显示折叠图标
-    items: [
-      {
-        type: 'link',
-        label: 'BRC20',
-        href: '#BRC20Asset',
-        docId: 'BRC20Asset',
-        nextitems: [
-        {
-            avator:
-              'img/navigator/roup.jpeg',
-            title: 'Roup',
-            desc:
-              "Rolluper是BRC20资产上卷到比特币Layer2交易的关键通道，由社区发起，收益反馈给社区",
-            tags: ['Map', 'BRC20','Roup'],
-            type: 'BRC20',
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://www.rolluper.xyz/',
-              },
-              {
-                name: 'twitter',
-                link: 'https://twitter.com/brc20roup',
-              },
-              {
-                name: 'telegram',
-                link: 'https://t.me/brc20maporoup',
-              },
-            ],
-          },
-          {
-            avator:
-              'img/navigator/mapprotocol.jpeg',
-            title: 'Mapprotocol',
-            desc:
-              "Bitcoin layer-2 and peer-to-peer omnichain infrastructure built upon light clients and ZK technology, focusing on cross-chain interoperability.",
-            tags: ['Mapprotocol', 'BRC20','Mapo'],
-            type: 'BRC20',
-            exterlink: [
-              {
-                name: 'internet',
-                link: 'https://www.mapprotocol.io/',
-              },
-              {
-                name: 'twitter',
-                link: 'https://twitter.com/mapprotocol',
-              },
-              {
-                name: 'telegram',
-                link: 'https://t.me/MAPprotocol/',
-              },
-              {
-                 name: 'discord',
-                 link: 'https://discord.com/invite/kt4beeTVnw'
-              }
-            ],
-          },
-        ]
-      },
-      {
-        type: 'link',
-        label: 'ARC20',
-        href: '#ARC20Asset',
-        docId: 'ARC20Asset',
-        nextitems: [
-        ]
-      },
     ],
   },
   {
