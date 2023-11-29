@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { useLocation } from 'react-router-dom';
 
 import PageLayout from '../../components/layout/PageLayout';
-import DocSidebar from '@theme/DocSidebar';
+import DocSidebar from '../../theme/DocSidebar';
 import styles from './styles.module.css';
 import {
   navpageinfolist,
@@ -18,8 +18,8 @@ export default (props) => {
   const [newnavList, setNewnavList] = useState([]);
   const [fxstatus, setFxstatus] = useState({
     anum: -1,
-    bnum: -1
-  })
+    bnum: -1,
+  });
   // console.log(location)
   const exterlinklist = [
     {
@@ -53,6 +53,18 @@ export default (props) => {
       altdesc: 'telegram',
     },
   ];
+
+  // useEffect(() => {
+  //   let itemdoc = document.querySelector('.theme-doc-sidebar-item-link')
+  //   itemdoc.addEventListener('click', () => {
+  //     console.log(3333)
+  //   })
+  //   console.log(itemdoc)
+  // }, [])
+  // let itemdoc = document.querySelector('.theme-doc-sidebar-item-link')
+  // itemdoc.addEventListener('click', () => {
+  //   console.log(3333)
+  // })
 
   useEffect(() => {
     let navselectlist = [];
@@ -127,7 +139,11 @@ export default (props) => {
               onClick={() => {
                 handleSelect(item);
               }}>
-              <a href={`#${item.type}`} className={styles.navigatorSelectItemtitle}>{item.name}</a>
+              <a
+                href={`#${item.type}`}
+                className={styles.navigatorSelectItemtitle}>
+                {item.name}
+              </a>
             </div>
           );
         })}
@@ -135,71 +151,81 @@ export default (props) => {
     );
   }, [selecttype, handleSelect]);
 
-  const ItemCard = useCallback((sitem, sindex) => {
-    const bgcolor = [
-      '#D6BA26',
-      'beige',
-      'skyblue',
-      'yellowgreen',
-      'tan',
-      'lightslategrey',
-    ];
-    return (
-      <div
-        className={styles.navListBoxItem}
-        key={sindex}
-        onClick={() => {
-          handleLink(sitem);
-        }}>
-        <div className={styles.navListBoxItemTop}>
-          {sitem.avator && sitem.avator !== '' ? (
-            <img className={styles.imgAvatornav} src={sitem.avator} alt="" />
-          ) : (
-            <div
-              className={styles.notimgAvatornav}
-              style={{ backgroundColor: `${getRandomNumber(bgcolor)}` }}>
-              {sitem.title?.charAt(0)?.toUpperCase()}
-            </div>
-          )}
-          <div className={styles.navitemName}>{sitem.title}</div>
-        </div>
-        <div className={styles.navItemdesc}>{sitem.desc}</div>
-        <div className={styles.navItemTag}>
-          {sitem.tags.map((tagitem, tagindex) => (
-            <div className={styles.navItemTagItem} key={tagindex}>
-              {tagitem}
-            </div>
-          ))}
-        </div>
-        <div className={styles.navItemlinklist}>
-          {getExterInfo(sitem.exterlink)?.map((exitem, exindex) => {
-            return (
+  const ItemCard = useCallback(
+    (sitem, sindex) => {
+      const bgcolor = [
+        '#D6BA26',
+        'beige',
+        'skyblue',
+        'yellowgreen',
+        'tan',
+        'lightslategrey',
+      ];
+      return (
+        <div
+          className={styles.navListBoxItem}
+          key={sindex}
+          onClick={() => {
+            handleLink(sitem);
+          }}>
+          <div className={styles.navListBoxItemTop}>
+            {sitem.avator && sitem.avator !== '' ? (
+              <img className={styles.imgAvatornav} src={sitem.avator} alt="" />
+            ) : (
               <div
-                onClick={(event) => {
-                  handleExter(exitem);
-                  event.stopPropagation();
-                }}
-                onMouseEnter={() => {
-                  setFxstatus({
-                    anum: sindex,
-                    bnum: exindex
-                  })
-                }}
-                onMouseLeave={() => {
-                  setFxstatus({
-                    anum: -1,
-                    bnum: -1
-                  })
-                }}
-                key={exindex}>
-                <img src={(fxstatus.bnum === exindex && fxstatus.anum === sindex) ? exitem.hoverpath : exitem.imgpath} alt={exitem.altdesc} />
+                className={styles.notimgAvatornav}
+                style={{ backgroundColor: `${getRandomNumber(bgcolor)}` }}>
+                {sitem.title?.charAt(0)?.toUpperCase()}
               </div>
-            );
-          })}
+            )}
+            <div className={styles.navitemName}>{sitem.title}</div>
+          </div>
+          <div className={styles.navItemdesc}>{sitem.desc}</div>
+          <div className={styles.navItemTag}>
+            {sitem.tags.map((tagitem, tagindex) => (
+              <div className={styles.navItemTagItem} key={tagindex}>
+                {tagitem}
+              </div>
+            ))}
+          </div>
+          <div className={styles.navItemlinklist}>
+            {getExterInfo(sitem.exterlink)?.map((exitem, exindex) => {
+              return (
+                <div
+                  onClick={(event) => {
+                    handleExter(exitem);
+                    event.stopPropagation();
+                  }}
+                  onMouseEnter={() => {
+                    setFxstatus({
+                      anum: sindex,
+                      bnum: exindex,
+                    });
+                  }}
+                  onMouseLeave={() => {
+                    setFxstatus({
+                      anum: -1,
+                      bnum: -1,
+                    });
+                  }}
+                  key={exindex}>
+                  <img
+                    src={
+                      fxstatus.bnum === exindex && fxstatus.anum === sindex
+                        ? exitem.hoverpath
+                        : exitem.imgpath
+                    }
+                    alt={exitem.altdesc}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    );
-  }, [fxstatus]);
+      );
+    },
+    [fxstatus]
+  );
 
   const fullNavDom = useMemo(
     () =>
@@ -234,16 +260,20 @@ export default (props) => {
         {newnavList.map((sitem, sindex) => ItemCard(sitem, sindex))}
       </div>
     ),
-    [newnavList]
+    [newnavList, ItemCard]
   );
+
+  const handleCollapse = useCallback(() => {
+    if (selecttype !== 'all') {
+      // window.location.reload();
+      setSelecttype('all')
+    }
+  }, [selecttype]);
 
   return (
     <PageLayout>
       <div className={styles.navigatorCenter}>
-        <aside
-          className={styles.docSidebarContainer}
-          // onTransitionEnd={handleTransitionEnd}
-          role="complementary">
+        <aside className={styles.docSidebarContainer} role="complementary">
           <DocSidebar
             key={
               // Reset sidebar state on sidebar changes
@@ -252,8 +282,7 @@ export default (props) => {
             }
             sidebar={navpageinfolist}
             path={location?.hash}
-            // sidebarCollapsible={true}
-            // isHidden={false}
+            onDocItemClick={handleCollapse}
           />
         </aside>
         <div className={styles.navigatorCenterRight}>

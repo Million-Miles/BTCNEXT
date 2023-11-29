@@ -134,6 +134,8 @@
 .navItemTag {
   display: flex;
   margin: 14px 0;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .navItemTagItem {
@@ -142,7 +144,6 @@
   color: var(--docsearch-muted-color);
   border-radius: 5px;
   background: var(--ifm-code-background);
-  margin-right: 6px;
 }
 
 .navItemTagItem:hover {
