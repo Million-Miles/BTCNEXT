@@ -4,38 +4,33 @@ export const selectTypeList = [
      type: 'all'
    },
    {
-     name: 'BRC20',
-     type: 'BRC20'
+     name: 'Ordinals',
+     type: 'Ordinals'
+   },
+   {
+     name: 'Atomicals',
+     type: 'Atomicals'
    },
    {
      name: 'PIPE',
      type: 'PIPE'
    },
-     {
-     name: 'DRC',
-     type: 'DRC'
+   {
+     name: 'TaprootAsset',
+     type: 'TaprootAsset'
    },
    {
-     name: '闪电网络',
-     type: 'LN'
+     name: 'Stamps',
+     type: 'Stamps'
+   },
+   {
+     name: 'LightingNetwork',
+     type: 'LightingNetwork'
    },
    {
      name: 'RGB',
      type: 'RGB'
    },
-     {
-     name: '钱包',
-     type: 'Wallet'
-   },
-   {
-   name: '数据统计',
-   type: 'analyze'
- },
- {
- name: 'AirDrop',
- type: 'AirDrop'
- }
-
 ]
 
 export const navpageinfolist = [
@@ -57,8 +52,8 @@ export const navpageinfolist = [
             title: 'Ordi',
             desc:
               "Ordi是BTC 上第一个也是最有价值的 BRC-20 代币",
-            tags: ['Ordi', 'BRC20'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -76,8 +71,8 @@ export const navpageinfolist = [
             title: 'Sats',
             desc:
               "比特币总量为2100 万枚，一枚比特币可细分为 1 亿个sat，总共有 2100 万亿个sat。它是通过使用 Ordinals 协议向satoshi写入内容而创建的",
-            tags: ['Sats', 'BRC20'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'Sats', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -99,8 +94,8 @@ export const navpageinfolist = [
             title: 'Rats',
             desc:
               "$rats是比特币区块链上使用BRC-20协议创建的动物币，和地球上最多的哺乳动物老鼠同名",
-            tags: ['Rats', 'BRC20'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'Rats', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -114,8 +109,8 @@ export const navpageinfolist = [
             title: 'Pepe',
             desc:
               "BRC20上的Meme币",
-            tags: ['Pepe', 'BRC20'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'Pepe', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -129,8 +124,8 @@ export const navpageinfolist = [
             title: 'Trac',
             desc:
               "Trac 是一款去中心化的 Ordinals 和比特币元协议跟踪器",
-            tags: ['Trac', 'BRC20'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'Trac', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -156,8 +151,8 @@ export const navpageinfolist = [
             title: 'Roup',
             desc:
               "Rolluper是BRC20资产上卷到比特币Layer2交易的关键通道，由社区发起，收益反馈给社区",
-            tags: ['Map', 'BRC20','Roup'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'BRC20','Roup'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -179,8 +174,8 @@ export const navpageinfolist = [
             title: 'Mapprotocol',
             desc:
               "基于轻客户端和ZK 技术构建的Bitcoin2层和点对点全链基础设施，专注于跨链#互操作性",
-            tags: ['Mapprotocol', 'BRC20','Mapo'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'BRC20','Mapo'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -206,8 +201,8 @@ export const navpageinfolist = [
             title: 'stst',
             desc:
               "stst是btc2层的unisat",
-            tags: ['stst', 'BRC20'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'stst', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -233,8 +228,8 @@ export const navpageinfolist = [
             title: 'Piin',
             desc:
               "Piin是一个brc20资产",
-            tags: ['Piin', 'BRC20'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'Piin', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -248,8 +243,8 @@ export const navpageinfolist = [
             title: 'Domo',
             desc:
               "Domo是一个brc20资产",
-            tags: ['Piin', 'BRC20'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'domo', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -263,8 +258,8 @@ export const navpageinfolist = [
             title: 'BC1P',
             desc:
               "BC1P是一个brc20资产",
-            tags: ['BC1P', 'BRC20'],
-            type: 'BRC20',
+            tags: ['Ordinals', 'BC1P', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -278,8 +273,8 @@ export const navpageinfolist = [
             title: 'GROK',
             desc:
               "GROK是一个brc20资产",
-            tags: ['GROK', 'BRC20'],
-            type: 'GROK',
+            tags: ['Ordinals', 'GROK', 'BRC20'],
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -302,7 +297,7 @@ export const navpageinfolist = [
             desc:
               "Atomicals 协议是在比特币上创建数字对象的最简单、最强大的方式",
             tags: ['Atomicals', 'ARC20'],
-            type: 'ARC20',
+            type: 'Atomicals',
             exterlink: [
               {
                 name: 'internet',
@@ -320,8 +315,8 @@ export const navpageinfolist = [
             title: 'Realm',
             desc:
               "ARC20上的独特资产",
-            tags: ['Realm', 'ARC20'],
-            type: 'ARC20',
+            tags: ['Atomicals', 'Realm', 'ARC20'],
+            type: 'Atomicals',
             exterlink: [
               {
                 name: 'internet',
@@ -335,8 +330,8 @@ export const navpageinfolist = [
             title: 'BitVM',
             desc:
               "ARC20上的独特资产",
-            tags: ['BitVM', 'ARC20'],
-            type: 'ARC20',
+            tags: ['Atomicals', 'BitVM', 'ARC20'],
+            type: 'Atomicals',
             exterlink: [
               {
                 name: 'internet',
@@ -350,8 +345,8 @@ export const navpageinfolist = [
             title: 'Dmint',
             desc:
               "ARC20上的独特资产",
-            tags: ['Dmint', 'ARC20'],
-            type: 'ARC20',
+            tags: ['Atomicals', 'Dmint', 'ARC20'],
+            type: 'Atomicals',
             exterlink: [
               {
                 name: 'internet',
@@ -473,7 +468,6 @@ export const navpageinfolist = [
               },
             ],
           },
-
         ]
       },
       {
@@ -497,7 +491,6 @@ export const navpageinfolist = [
               },
             ],
           },
-
         ]
       },
       {
@@ -521,7 +514,6 @@ export const navpageinfolist = [
               },
             ],
           },
-
         ]
       },
       {
@@ -593,7 +585,7 @@ export const navpageinfolist = [
             desc:
               "交易、Inscribe BRC-20 和 BTC NFT.  ",
             tags: ['Unisat', 'BRC20','Market'],
-            type: 'BRC20',
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -620,7 +612,7 @@ export const navpageinfolist = [
             desc:
               "OKX-Market交易BRC20",
             tags: ['Unisat', 'BRC20','Market'],
-            type: 'BRC20',
+            type: 'Ordinals',
             exterlink: [
               {
                 name: 'internet',
@@ -640,8 +632,6 @@ export const navpageinfolist = [
               // },
             ],
           },
-          
-
         ]
       },
       {
@@ -657,6 +647,7 @@ export const navpageinfolist = [
             desc:
               "🚀 pipe protocol、Atomicals、等铭文综合查询、铸造、交易平台",
             tags: ['Atomicals','ARC20', 'Web3'],
+            type: 'Atomicals',
             exterlink: [
               {
                 name: 'internet',
@@ -687,6 +678,7 @@ export const navpageinfolist = [
             desc:
               "🚀 Atomicals等铭文综合查询、铸造、交易平台",
             tags: ['Atomicals', 'ARC20','Relam'],
+            type: 'Atomicals',
             exterlink: [
               {
                 name: 'internet',
@@ -710,8 +702,6 @@ export const navpageinfolist = [
               // },
             ],
           },
-       
-          
           {
             avator:
               'img/navigator/wizz.svg',
@@ -719,6 +709,7 @@ export const navpageinfolist = [
             desc:
               "🚀 批量转账NFT、Realm、资产提现",
             tags: ['Atomicals', 'ARC20','铭文'],
+            type: 'Atomicals',
             exterlink: [
               {
                 name: 'internet',
@@ -749,7 +740,8 @@ export const navpageinfolist = [
             title: 'ATOM Wallet',
             desc:
               "The first Atomicals wallet that can safeguard your ARC-20, Realms and NFTs.",
-            tags: ['NFT', 'Wallet', 'ARC20'],
+            tags: ['Atomicals', 'Wallet', 'ARC20'],
+            type: 'Atomicals',
             exterlink: [
               {
                 name: 'internet',
@@ -777,15 +769,14 @@ export const navpageinfolist = [
         href: '#ETHs',
         docId: 'ETHs',
         nextitems: [
-         
-          
           {
             avator:
               'img/navigator/nftsniper.jpeg',
             title: 'ETHS',
             desc:
               "🚀 Ethscriptions查询网站",
-            tags: ['ETH', 'ETHs','铭文'],
+            tags: ['ETHs','Ordinals'],
+            type: 'ETHs',
             exterlink: [
               {
                 name: 'internet',
@@ -816,7 +807,8 @@ export const navpageinfolist = [
             title: 'ethscriptions',
             desc:
               "🚀 ethscriptions Market",
-            tags: ['ETHs','铭文'],
+            tags: ['ETHs','Ordinals'],
+            type: 'ETHs',
             exterlink: [
               {
                 name: 'internet',
@@ -847,7 +839,8 @@ export const navpageinfolist = [
             title: 'eths.market',
             desc:
               "🚀 eths.market",
-            tags: ['ETHs','铭文'],
+            tags: ['ETHs','Ordinals'],
+            type: 'ETHs',
             exterlink: [
               {
                 name: 'internet',
@@ -872,8 +865,6 @@ export const navpageinfolist = [
               
             ],
           },
-          
- 
         ]
       },
       {
@@ -882,15 +873,14 @@ export const navpageinfolist = [
         href: '#DRC20',
         docId: 'DRC20',
         nextitems: [
-        
           {
             avator:
               'img/navigator/dogidrc20.jpeg',
             title: 'dogi.world',
             desc:
               "🚀 DOG导航网站",
-            tags: ['DRC','铭文'],
-            type: 'DRC',
+            tags: ['DRC20','Ordinals'],
+            type: 'DRC20',
             exterlink: [
               {
                 name: 'internet',
@@ -915,15 +905,14 @@ export const navpageinfolist = [
               
             ],
           },
-          
           {
             avator:
               'img/navigator/dog20.png',
             title: 'wdrc-20.orgtf',
             desc:
               "🚀 DogeLabs is the official explorer of Drc-20",
-            tags: ['DRC','铭文'],
-            type: 'DRC',
+            tags: ['DRC20','Ordinals'],
+            type: 'DRDRC20C',
             exterlink: [
               {
                 name: 'internet',
@@ -954,8 +943,8 @@ export const navpageinfolist = [
             title: 'ordifind',
             desc:
               "🚀 Ordifind 是一个您可以购买 $Dogi 的市场",
-            tags: ['DRC', '铭文'],
-            type: 'DRC',
+            tags: ['DRC20', 'Ordinals'],
+            type: 'DRC20',
             exterlink: [
               {
                 name: 'internet',
@@ -986,8 +975,8 @@ export const navpageinfolist = [
             title: 'doggy_market',
             desc:
               "🚀 Doggy Marketplace 是一个可以购买 $Dogi 的地方",
-            tags: ['DRC', '铭文'],
-            type: 'DRC',
+            tags: ['DRC20', 'Ordinals'],
+            type: 'DRC20',
             exterlink: [
               {
                 name: 'internet',
@@ -1012,7 +1001,6 @@ export const navpageinfolist = [
               
             ],
           },
-          
         ]
       },
       {
@@ -1021,14 +1009,14 @@ export const navpageinfolist = [
         href: '#LTC20',
         docId: 'LTC20',
         nextitems: [
-        
           {
             avator:
               'img/navigator/unilit.jpeg',
             title: 'unilit',
             desc:
               "🚀 LTC的首个铭文LITE。",
-            tags: ['LTC20', '铭文'],
+            tags: ['LTC20', 'Ordinals'],
+            type: 'LTC20',
             exterlink: [
               {
                 name: 'internet',
@@ -1067,7 +1055,8 @@ export const navpageinfolist = [
             title: 'unilit',
             desc:
               "🚀 Base20的首个铭文base.",
-            tags: ['Base20', '铭文'],
+            tags: ['Base20', 'Ordinals'],
+            type: 'Base20',
             exterlink: [
               {
                 name: 'internet',
@@ -1092,7 +1081,6 @@ export const navpageinfolist = [
               
             ],
           },
-       
         ]
       },
       {
@@ -1101,14 +1089,14 @@ export const navpageinfolist = [
         href: '#BNBS',
         docId: 'BNBS',
         nextitems: [
-          
           {
             avator:
               'img/navigator/bsc20.webp',
             title: 'unilit',
             desc:
               "🚀 币安智能链的首个铭文BNBS",
-            tags: ['BNBS', '铭文'],
+            tags: ['BNBS', 'Ordinals'],
+            type: 'BNBS',
             exterlink: [
               {
                 name: 'internet',
@@ -1133,7 +1121,6 @@ export const navpageinfolist = [
               
             ],
           },
-     
         ]
       },
       {
@@ -1148,7 +1135,8 @@ export const navpageinfolist = [
             title: 'polsmarket',
             desc:
               "🚀 Polygon的链上铭文市场POLS Market也已上线并开放交易.",
-            tags: ['Polygon', 'POLS','铭文'],
+            tags: ['Polygon', 'POLS','Oridnals'],
+            type: 'Polygon',
             exterlink: [
               {
                 name: 'internet',
@@ -1179,7 +1167,8 @@ export const navpageinfolist = [
             title: 'OKX-Market:SPL-20',
             desc:
               "OKX-Market交易Solana铭文sols,基于类似Ordinals协议BRC20的SPL-20创建的，总量为21000",
-            tags: ['OKX-Market', 'sols','Market'],
+            tags: ['Polygon', 'sols','Market'],
+            type: 'Polygon',
             exterlink: [
               {
                 name: 'internet',
@@ -1206,7 +1195,8 @@ export const navpageinfolist = [
             title: 'magiceden:SPL-20',
             desc:
               "magiceden-Market交易Solana铭文sols,基于类似Ordinals协议BRC20的SPL-20创建的，总量为21000",
-            tags: ['Markets', 'sols','SPL-20'],
+            tags: ['Polygon', 'sols','SPL-20'],
+            type: 'Polygon',
             exterlink: [
               {
                 name: 'internet',
@@ -1241,7 +1231,7 @@ export const navpageinfolist = [
             type: 'PIPE',
             desc:
               "基于RUNES创建的协议",
-            tags: ['Markets', 'PIPE','Mint'],
+            tags: ['Market', 'PIPE','Mint'],
             exterlink: [
               {
                 name: 'internet',
@@ -1697,11 +1687,58 @@ export const navpageinfolist = [
         nextitems: [
           {
             avator:
+              'img/navigator/StampExplore.ico',
+            title: 'Stamp Explore',
+            desc:
+              "Stamps 浏览器",
+            tags: ['Stamps', 'NFT', 'SRC20'],
+            type: 'Stamps',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://stampchain.io/',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/BitcoinStamps',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/OpenStamp.ico',
+            title: 'OpenStamp',
+            desc:
+              "Stamps市场",
+            tags: ['Stamps', 'NFT', 'SRC20'],
+            type: 'Stamps',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://openstamp.io/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/btcopenstamp',
+              },
+              // {
+              //   name: 'github',
+              //   link: '',
+              // },
+              {
+                name: 'telegram',
+                link: 'https://t.me/btcopenstamp',
+              },
+            ],
+          },
+          {
+            avator:
               'img/navigator/stampscan.png',
             title: 'StampScan',
             desc:
               "铸造、部署、交易STAMP资产的平台。",
-            tags: ['NFT', 'Web3'],
+            tags: ['Stamps', 'NFT', 'SRC20'],
+            type: 'Stamps',
             exterlink: [
               {
                 name: 'internet',
@@ -1724,14 +1761,102 @@ export const navpageinfolist = [
                 link: 'https://t.me/stampscan',
               },
             ],
-          }
+          },
+          {
+            avator:
+              'img/navigator/leather.png',
+            title: 'Leather Stamp Wallet',
+            desc:
+              "Leather Stamp Wallet",
+            tags: ['Stamps', 'Wallet', 'SRC20'],
+            type: 'Stamps',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://leather.io/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/LeatherBTC',
+              },
+               {
+                 name: 'github',
+                 link: 'https://github.com/leather-wallet',
+               },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/67cZyTz8w6',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/StampNFTmarket.png',
+            title: 'Stamp NFT Market',
+            desc:
+              "Stamp NFT Market",
+            tags: ['Stamps', 'Market', 'SRC20'],
+            type: 'Stamps',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.rarestamp.xyz/0',
+              },
+              {
+                 name: 'discord',
+                 link: 'https://discord.com/invite/BEMq6wSD6x',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/BitcoinStamps',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/StampWallet.ico',
+            title: 'Stamp Wallet',
+            desc:
+              "Stamp Wallet",
+            tags: ['Stamps', 'Wallet', 'SRC20'],
+            type: 'Stamps',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.thestampwallet.com/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/thestampwallet',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/thestampwalletsupport',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/StampMarketCap.png',
+            title: 'Stamp Market Cap',
+            desc:
+              "Stamp Market Cap",
+            tags: ['Stamps', 'Wallet', 'SRC20'],
+            type: 'Stamps',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://stampmarketcap.com/',
+              },
+            ],
+          },
         ]
       },
       {
         type: 'link',
         label: '⚡️ LightningNetwork',
-        href: '#LN',
-        docId: 'LN',
+        href: '#LightingNetwork',
+        docId: 'LightingNetwork',
         nextitems: [
           {
             avator:
@@ -1739,8 +1864,8 @@ export const navpageinfolist = [
             title: 'lnmarkets',
             desc:
               "🚀 LNmarkets是一个基于比特币的闪电网络(Lightning Network)的金融交易平台。它特别针对比特币衍生品交易,如期货和期权交易.",
-            tags: ['LN', 'BitCoin','Market'],
-            type: 'LN',
+            tags: ['LightingNetwork', 'BitCoin','Market'],
+            type: 'LightingNetwork',
             exterlink: [
               {
                 name: 'internet',
@@ -1770,8 +1895,8 @@ export const navpageinfolist = [
             title: 'UXUY Exchange',
             desc:
               "UXUY以MPC为基础,为用户提供了无助记词和安全导向的去中心化交易所应用,UXUY 基于 Taproot Assets 协议正式上线 $TAPROOT,并开放LN节点.",
-            tags: ['LN', 'BitCoin','Market'],
-            type: 'LN',
+            tags: ['LightingNetwork', 'BitCoin','Market'],
+            type: 'LightingNetwork',
             exterlink: [
               {
                 name: 'internet',
@@ -1796,6 +1921,74 @@ export const navpageinfolist = [
             ],
           }
           
+        ]
+      },
+      {
+        type: 'link',
+        label: '🌈 RGB',
+        href: '#RGB',
+        docId: 'RGB',
+        nextitems: [
+          {
+            avator:
+              'img/navigator/diba.png',
+            title: 'DIBA',
+            desc:
+              "RGB协议上的UDA交易市场",
+            tags: ['LightingNetwork', 'RGB','Market'],
+            type: 'LightingNetwork',
+            type: 'RGB',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://diba.io/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/trydiba',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/joinchat/Ajbxchsrj75kMDRi',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/rVhJcKw3yn',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/uxuy.png',
+            title: 'UXUY Exchange',
+            desc:
+              "UXUY以MPC为基础,为用户提供了无助记词和安全导向的去中心化交易所应用,UXUY 基于 Taproot Assets 协议正式上线 $TAPROOT,并开放LN节点.",
+            tags: ['LightingNetwork', 'BitCoin','Market'],
+            type: 'LightingNetwork',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://uxuy.com/zh-Hans',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/uxuycom',
+              },
+              {
+                name: 'github',
+                link: 'https://github.com/uxuycom',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/BZwZA27Zkv',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/uxuycom',
+              },
+            ],
+          }
+
         ]
       },
     ],
@@ -1871,8 +2064,9 @@ export const navpageinfolist = [
 			title: 'Alby',
 			desc:
 			  "Your Bitcoin & Nostr companion for the web.",
-			tags: [ 'Wallet', 'Bitcoin', 'Nostr', 'LN'],
-      type: 'Wallet',
+			tags: [ 'Wallet', 'Nostr', 'LightingNetwork'],
+            type: 'Wallet',
+            type: 'TaprootAsset',
 			exterlink: [
 			  {
 				name: 'internet',
@@ -1902,8 +2096,9 @@ export const navpageinfolist = [
             title: 'Xverse',
             desc:
               "The Bitcoin Wallet for everyone.",
-            tags: ['BRC20', 'Wallet', 'LN', 'Ordinals', 'Stacks'],
+            tags: ['LightingNetwork', 'Ordinals', 'Stacks'],
             type: 'Wallet',
+            type: 'LightingNetwork',
             exterlink: [
               {
                 name: 'internet',
@@ -1929,8 +2124,9 @@ export const navpageinfolist = [
 			title: 'uxuy Wallet',
 			desc:
 			  "UXUY是一个安全的非托管钱包,采用多方计算（MPC）技术,通过无需密钥签名和无需种子恢复,提供极致的安全性和便捷性。",
-			tags: ['Wallet', 'ERC', 'BEP20', 'TRX20', 'LN'],
-      type: 'Wallet',
+			tags: ['Wallet', 'BEP20', 'TRX20', 'LightingNetwork'],
+            type: 'Wallet',
+            type: 'LightingNetwork',
 			exterlink: [
 			  {
 				name: 'internet',
@@ -1954,14 +2150,15 @@ export const navpageinfolist = [
 			  },
 			],
 		  },	
-      {
+          {
         avator:
           'img/navigator/tp Wallet.png',
         title: 'TokenPocket',
         desc:
           "同时开发了冷钱包、多签钱包等,多链钱包,支持BTC、ETH、BSC、TRON、Aptos、Polygon、Solana、Cosmos、Polkadot、EOS、IOST等",
-        tags: ['Wallet', 'BTC','LN'],
+        tags: ['Wallet', 'BTC','LightingNetwork'],
         type: 'Wallet',
+        type: 'LightingNetwork',
         exterlink: [
           {
           name: 'internet',
@@ -1984,7 +2181,61 @@ export const navpageinfolist = [
           link: 'https://t.me/tokenPocket_cn',
           },
         ],
-        },	  
+        },
+          {
+            avator:
+              'img/navigator/bitmask.png',
+            title: 'BitMask',
+            desc:
+              "支持RGB协议的比特币闪电网络钱包",
+            tags: ['Tool', 'RGB', 'Wallet'],
+            type: 'RGB',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://bitmask.app/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/bitmask_app?s=21&t=VH4nq5qpcV5iPRa2Z4gEyA',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/tryDIBA',
+              },
+                            {
+                name: 'twitter',
+                link: 'https://discord.com/invite/RzKxTJg24K',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/MyCitadel.png',
+            title: 'MyCitadel',
+            desc:
+              "终极数字主权，以隐私为中心的软件",
+            tags: ['Tool', 'RGB', 'Wallet'],
+            type: 'RGB',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://mycitadel.io/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/mycitadel_io',
+              },
+              {
+                name: 'telegram',
+                link: 'https://t.me/mycitadel',
+              },
+              {
+                name: 'github',
+                link: 'https://github.com/mycitadel',
+              },
+            ],
+          },
         ]
       },
     ],
@@ -2007,7 +2258,8 @@ export const navpageinfolist = [
             title: 'BTCStudy',
             desc:
               "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
-            tags: ['BTC', 'LN','Payjoin','learn'],
+            tags: ['BTC', 'LightingNetwork','Payjoin'],
+            type: 'LightingNetwork',
             exterlink: [
               {
                 name: 'internet',
@@ -2069,7 +2321,7 @@ export const navpageinfolist = [
             title: 'wtf',
             desc:
               "🚀 BTCStudy网站是一个专注于比特币和相关技术的在线资源。网站提供了有关比特币的各种话题的深入分析和讨论.比特币主网、Payjoin 、货币理念、闪电网络",
-            tags: ['BTC', 'LN','Payjoin','learn'],
+            tags: ['BTC', 'LightingNetwork','Payjoin'],
             exterlink: [
               {
                 name: 'internet',
@@ -2125,7 +2377,71 @@ export const navpageinfolist = [
               
             ],
           },
-          
+          {
+            avator:
+              'img/navigator/pandoraprime.ico',
+            title: 'Pandora Prime',
+            desc:
+              "RGB协议团队官网",
+            tags: ['RGB', 'LightingNetwork'],
+            type: 'RGB',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://pandoraprime.ch/',
+              },
+               {
+                 name: 'github',
+                 link: 'https://github.com/22388o/awesome-rgb-protocol',
+               },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/infinitas.png',
+            title: 'Infinitas',
+            desc:
+              "融合RGB协议和闪电网络的比特币应用生态网络",
+            tags: ['RGB'],
+            type: 'RGB',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://www.iftas.tech/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/iftas_eco',
+              },
+              {
+                name: 'discord',
+                link: 'https://discord.com/invite/wukSjfSd6a',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/infinitas.png',
+            title: 'RGB Smart',
+            desc:
+              "RGB技术官网",
+            tags: ['RGB'],
+            type: 'RGB',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://rgb.tech/',
+              },
+              {
+                name: 'twitter',
+                link: 'https://twitter.com/lnp_bp',
+              },
+              {
+                name: 'github',
+                link: 'https://github.com/RGB-WG',
+              },
+            ],
+          },
         ]
       },
       {
@@ -2724,8 +3040,8 @@ export const navpageinfolist = [
             title: '1ML',
             desc:
               "闪电网络搜索和分析引擎",
-            tags: ['Tool', 'Web3'],
-            type: 'LN',
+            tags: ['LightingNetwork', 'Tool', 'Web3'],
+            type: 'LightingNetwork',
             exterlink: [
               {
                 name: 'internet',
@@ -2860,6 +3176,36 @@ export const navpageinfolist = [
                link: 'https://t.me/btctoolgroup',
               }, 
                                         
+            ],
+          },
+          {
+            avator:
+              'img/navigator/btctool.png',
+            title: 'Lighting Terminal',
+            desc:
+              "闪电网络Taproot资产浏览器",
+            tags: ['Tool', 'Web3', 'TaprootAsset'],
+            type: 'TaprootAsset',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://terminal.lightning.engineering/assets/mainnet/',
+              },
+            ],
+          },
+          {
+            avator:
+              'img/navigator/rgbex.io.ico',
+            title: 'RGBExplore',
+            desc:
+              "RGB协议资产浏览器",
+            tags: ['Tool', 'RGB'],
+            type: 'RGB',
+            exterlink: [
+              {
+                name: 'internet',
+                link: 'https://rgbex.io/',
+              },
             ],
           },
         ]
@@ -3328,8 +3674,9 @@ export const navpageinfolist = [
             title: 'Damus(达摩)',
             desc:
               "🚀 Damus(达摩)是一个基于开源协议Nostr的社交媒体应用程序。Nostr是一个新兴的分散式社交网络协议,旨在提供一个开放、无审查的平台。 Nostr, Jack Dorsey’s Favorite Decentralized Social Network。",
-            tags: ['SocialFi', 'Nostr','Alby'],
-            type: 'LN',
+            tags: ['LightingNetwork', 'SocialFi', 'Nostr'],
+            type: 'LightingNetwork',
+            type: 'TaprootAsset',
             exterlink: [
               {
                 name: 'internet',
@@ -3355,8 +3702,8 @@ export const navpageinfolist = [
             title: 'Sphinx Chat ',
             desc:
               "🚀 这是一个利用比特币的闪电网络的通讯应用程序。Sphinx Chat允许用户通过微支付来发送消息和内容,同时也支持加密通信",
-            tags: ['SocialFi', 'LightningNetwork',],
-            type: 'LN',
+            tags: ['SocialFi', 'LightingNetwork',],
+            type: 'LightingNetwork',
             exterlink: [
               {
                 name: 'internet',
@@ -3382,8 +3729,8 @@ export const navpageinfolist = [
             title: 'TaprootAssets(Taro)',
             desc:
               "🔥 闪电实验室(ightning Labs)推出的协议,旨在在比特币的闪电网络上创建、发送和接收任何类型的资产。尽管Taro本身不是一个社交媒体平台,但它为未来可能出现的基于比特币的SocialFi应用提供了基础设施。",
-            tags: ['LightningNetwork','Protocol','TaprootAssets'],
-            type: 'LN',
+            tags: ['LightingNetwork','Protocol','TaprootAssets'],
+            type: 'LightingNetwork',
             exterlink: [
               {
                 name: 'internet',
@@ -3417,8 +3764,9 @@ export const navpageinfolist = [
             title: 'NostrAssets',
             desc:
               "🔥 通过 NostrAsset 网页客户端传输 Taproot Assets和其他资产,无 Gas 费。",
-            tags: ['Market', 'LN','TREAT','TRICK'],
-            type: 'LN',
+            tags: ['TaprootAsset', 'Market', 'LightingNetwork'],
+            type: 'LightingNetwork',
+            type: "TaprootAsset",
             exterlink: [
               {
                 name: 'internet',
