@@ -9,7 +9,7 @@ Element Market，首个社区驱动的聚合市场。为用户提供高流动性
 Element Bitcoin Marketplace 于2023年7月正式上线。它拥有丰富的功能，包括超过3000个NFT合集、批量操作、铭刻、域名合集属性分类筛选等。
 
 ## 主要功能
-![element_bitcoin](../../static/img/navigator/element/element_bitcoin.PNG)
+![element_bitcoin](../../static/img/navigator/element/element_bitcoin.png)
 
 1. 批量购买：
 2. 批量上架： 

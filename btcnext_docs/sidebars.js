@@ -6,6 +6,7 @@ module.exports = {
       collapsed: false,
       items: [
         'quick_start/introduction',
+        'quick_start/contribute'
       ],
     },
     {

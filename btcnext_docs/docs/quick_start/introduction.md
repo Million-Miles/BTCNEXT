@@ -1,7 +1,7 @@
 ---
 id: introduction
-title: introduction
-sidebar_label: introduction
+title: 介绍
+sidebar_label: 介绍
 slug: /quick-start/introduction
 ---
 
